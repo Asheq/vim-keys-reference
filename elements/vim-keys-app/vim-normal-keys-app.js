@@ -16,11 +16,7 @@ Polymer({
       value: true
     }
   },
-  ready: function() {
-    $.get('/data/default-normal-mode-keys.json', (data) => {
-      this.keysJson = data;
-    });
-  },
+  ready: function() {},
   _computeKeys(keysJson) {
     var el = this;
     var keys = keysJson.keys.map(function(keyObj) {

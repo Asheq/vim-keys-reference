@@ -2,12 +2,20 @@
 <link rel="import" href="../../bower_components/paper-toggle-button/paper-toggle-button.html">
 <link rel="import" href="../../bower_components/paper-tooltip/paper-tooltip.html">
 <link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../keyboard-key/keyboard-key.html">
 <link rel="import" href="vim-normal-keys-app-styles.html">
 
 <dom-module id="vim-normal-keys-app">
   <template>
     <style include="vim-normal-keys-app-styles"></style>
+    <iron-ajax
+           auto
+           url="../../data/default-normal-mode-keys.json"
+           handle-as="json"
+           loading="{{dataLoading}}"
+           last-response="{{keysJson}}">
+    </iron-ajax>
     <div class="top-bar">
       <div class="top-bar__wrapper">
         <div class="options">
