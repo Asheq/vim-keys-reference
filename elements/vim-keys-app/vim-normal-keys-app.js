@@ -17,7 +17,7 @@ Polymer({
     }
   },
   ready: function() {
-    $.get('../../data/default-normal-mode-keys.json', (data) => {
+    $.get('/data/default-normal-mode-keys.json', (data) => {
       this.keysJson = data;
     });
   },
