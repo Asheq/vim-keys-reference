@@ -22,6 +22,11 @@
         padding: 1em;
         font-size: 1.5em;
       }
+      .title__img {
+        width: 80px;
+        vertical-align: -10px;
+        display: inline-block;
+      }
 
       .modes-list {
         margin-left: 2em;
@@ -47,7 +52,8 @@
                   data="{{routeData}}">
     </app-route>
     <div class="title">
-      Vim Keys Reference
+      <img class="title__img" src="images/vim-logo.svg">
+      Keys Reference
     </div>
     <iron-selector selected="[[page]]" attr-for-selected="name" class="modes-list" role="navigation">
       <a name="normal-mode-keys" href="[[rootPath]]#normal-mode-keys">Normal Mode</a>
