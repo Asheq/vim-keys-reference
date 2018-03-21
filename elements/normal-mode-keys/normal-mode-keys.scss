@@ -1,0 +1,69 @@
+// Re-usable skins
+
+.table-skin {
+  border-collapse: collapse;
+}
+
+.td-skin {
+  border: 1px solid black;
+  color: black;
+  padding: 0.5em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.operator-skin {
+  background-color: #60b886;
+}
+.motion-skin {
+  background-color: #b86960;
+}
+.command-skin {
+  background-color: #b89560;
+}
+.unused-skin {
+  background-color: transparent;
+}
+
+// Components
+.legend {
+  margin-bottom: 1em;
+}
+.legend__table {
+  @extend .table-skin;
+}
+.legend__td {
+  @extend .td-skin;
+}
+.legend__td_operator {
+  @extend .td-skin;
+  @extend .operator-skin;
+}
+.legend__td_motion {
+  @extend .td-skin;
+  @extend .motion-skin;
+}
+.legend__td_command {
+  @extend .td-skin;
+  @extend .command-skin;
+}
+.legend__td_unused {
+  @extend .td-skin;
+  @extend .unused-skin;
+}
+
+.keys {
+}
+.keys__table {
+  @extend .table-skin;
+  table-layout: fixed;
+  width: 100%;
+  min-width: 900px;
+}
+.keys__table-header {
+  & th {
+    @extend .td-skin;
+    background-color: var(--app-primary-color);
+    color: var(--app-secondary-color);
+  }
+}

@@ -13,7 +13,10 @@
     "iron-selector": "PolymerElements/iron-selector#^2.0.0",
     "polymer": "Polymer/polymer#^2.0.0",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
-    "paper-checkbox": "PolymerElements/paper-checkbox#^2.0.2"
+    "paper-checkbox": "PolymerElements/paper-checkbox#^2.0.2",
+    "iron-ajax": "^2.1.3",
+    "iron-icons": "^2.1.1",
+    "paper-tooltip": "^2.1.1"
   },
   "resolutions": {
     "polymer": "^2.0.0"

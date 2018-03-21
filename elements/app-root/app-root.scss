@@ -1,0 +1,33 @@
+:host {
+  --app-primary-color: #006598;
+  --app-secondary-color: #fff;
+}
+
+.title {
+  color: var(--app-secondary-color);
+  background-color: var(--app-primary-color);
+  padding: 1em;
+  font-size: 1.5em;
+}
+.title__img {
+  width: 80px;
+  vertical-align: -10px;
+  display: inline-block;
+}
+
+.modes-list {
+  margin-left: 2em;
+}
+
+.modes-list a {
+  display: inline-block;
+  padding-right: 1em;
+  padding-top: 1em;
+  text-decoration: none;
+  color: black;
+}
+
+.modes-list a.iron-selected {
+  color: black;
+  font-weight: bold;
+}

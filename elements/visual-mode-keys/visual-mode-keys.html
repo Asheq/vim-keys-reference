@@ -1,0 +1,27 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../shared-styles.html">
+
+<dom-module id="visual-mode-keys">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        /* padding: 10px; */
+      }
+    </style>
+
+    <div class="card">
+        Visual Mode Keys
+        TBD
+    </div>
+  </template>
+
+  <script>
+    class VisualModeKeys extends Polymer.Element {
+      static get is() { return 'visual-mode-keys'; }
+    }
+
+    window.customElements.define(VisualModeKeys.is, VisualModeKeys);
+  </script>
+</dom-module>

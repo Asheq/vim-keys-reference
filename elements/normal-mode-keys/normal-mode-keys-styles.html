@@ -1,0 +1,40 @@
+<dom-module id="normal-mode-keys-styles">
+<template>
+<style>
+.table-skin, .legend__table, .keys__table {
+  border-collapse: collapse; }
+
+.td-skin, .legend__td, .legend__td_operator, .legend__td_motion, .legend__td_command, .legend__td_unused, .keys__table-header th {
+  border: 1px solid black;
+  color: black;
+  padding: 0.5em;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.operator-skin, .legend__td_operator {
+  background-color: #60b886; }
+
+.motion-skin, .legend__td_motion {
+  background-color: #b86960; }
+
+.command-skin, .legend__td_command {
+  background-color: #b89560; }
+
+.unused-skin, .legend__td_unused {
+  background-color: transparent; }
+
+.legend {
+  margin-bottom: 1em; }
+
+.keys__table {
+  table-layout: fixed;
+  width: 100%;
+  min-width: 900px; }
+
+.keys__table-header th {
+  background-color: var(--app-primary-color);
+  color: var(--app-secondary-color); }
+
+</style>
+</template>
+</dom-module>
