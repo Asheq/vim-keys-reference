@@ -12,85 +12,107 @@
     <style include="normal-mode-keys-styles"></style>
     <div class="card">
       <iron-ajax
-         auto
-         url="data/default-normal-mode-keys.json"
-         handle-as="json"
-         loading="{{dataLoading}}"
-         last-response="{{keysJson}}">
+        auto
+        url="data/default-normal-mode-keys.json"
+        handle-as="json"
+        loading="{{dataLoading}}"
+        last-response="{{keysJson}}">
       </iron-ajax>
       <paper-checkbox label="Show Descriptions" checked="{{showDescriptions}}"></paper-checkbox> Show Descriptions
       <div class="legend">
-        <h4 class="legend__label">Legend</h4>
+        <h3 class="legend__label">Legend</h3>
         <table class="legend__table">
           <tr>
-            <td class="legend__td_operator">Operator</td>
-            <td class="legend__td_motion">Motion</td>
-            <td class="legend__td_command">Command</td>
-            <td class="legend__td_unused">Unused</td>
+            <td class="legend__td--operator">Operator</td>
+            <td class="legend__td--motion">Motion</td>
+            <td class="legend__td--command">Command</td>
+            <td class="legend__td--extra">Extra</td>
+            <td class="legend__td--unused">Unused</td>
           </tr>
         </table>
+        <!-- TODO: d, y, c Key and Shift+Key -->
+        <!-- <template is="dom-if" if="[[showDescriptions]]"> -->
+        <!--   <p> -->
+        <!--   <i>CHAR</i> - any non-blank character<br> -->
+        <!--   <i>WORD</i> - a sequence of non-blank characters<br> -->
+        <!--   <i>N</i> - a number entered before the command<br> -->
+        <!--   <i>{motion}</i> - a cursor movement command<br> -->
+        <!--   <i>Nmove</i> - the text that is moved over with a {motion}<br> -->
+        <!--   <i>SECTION</i> - a section that possibly starts with '}' instead of '{'<br> -->
+        <!--   </p> -->
+        <!-- </template> -->
       </div>
-      <!-- <div class="keys"> -->
-      <!--   <table class="keys__table"> -->
-      <!--     <thead class="keys__table&#45;header"> -->
-      <!--       <tr> -->
-      <!--         <th> -->
-      <!--           Key -->
-      <!--         </th> -->
-      <!--         <th> -->
-      <!--           Shift+Key -->
-      <!--         </th> -->
-      <!--         <th> -->
-      <!--           Ctrl+Key -->
-      <!--         </th> -->
-      <!--         <th> -->
-      <!--           g Key -->
-      <!--         </th> -->
-      <!--         <th> -->
-      <!--           z Key -->
-      <!--         </th> -->
-      <!--         <th> -->
-      <!--           [ Key -->
-      <!--         </th> -->
-      <!--         <th> -->
-      <!--           g Shift+Key -->
-      <!--         </th> -->
-      <!--         <th> -->
-      <!--           z Shift+Key -->
-      <!--         </th> -->
-      <!--         <th> -->
-      <!--           [ Shift+Key -->
-      <!--         </th> -->
-      <!--       </tr> -->
-      <!--     </thead> -->
-      <!--     <tbody> -->
-      <!--  -->
-      <!--       <!&#45;&#45; TODO &#45;&#45;> -->
-      <!--       <template is="dom&#45;repeat" items="[[keys]]" as="keyObj"> -->
-      <!--         <tr> -->
-      <!--           <template is="dom&#45;repeat" items="[[_toArray(keyObj.variations)]]" as="variation"> -->
-      <!--             <td class$="[[computeType(variation.value.type)]]"> -->
-      <!--               <div> -->
-      <!--                 [[variation.value.prettyDisplay]] -->
-      <!--                 <template is="dom&#45;if" if=[[variation.value.duplicates]]> -->
-      <!--                   <div style="display:inline&#45;block"> -->
-      <!--                     <iron&#45;icon id="duplicate&#45;icon" icon="content&#45;copy"></iron&#45;icon> -->
-      <!--                     <paper&#45;tooltip>Duplicate with [[variation.value.duplicates]]</paper&#45;tooltip> -->
-      <!--                   </div> -->
-      <!--                 </template> -->
-      <!--               </div> -->
-      <!--               <template is="dom&#45;if" if="[[showDescriptions]]"> -->
-      <!--                 <div> -->
-      <!--                   [[variation.value.description]] -->
-      <!--                 </div> -->
-      <!--               </template> -->
-      <!--             </td> -->
-      <!--           </template> -->
-      <!--         </tr> -->
-      <!--       </template> -->
-      <!--     </tbody> -->
-      <!--   </table> -->
-      <!-- </div> -->
+      <div class="keys">
+        <table class="keys__table">
+          <thead class="keys__table-header">
+            <tr>
+              <th>
+                Key
+              </th>
+              <th>
+                Shift+Key
+              </th>
+              <th>
+                g Key
+              </th>
+              <th>
+                g Shift+Key
+              </th>
+              <th>
+                z Key
+              </th>
+              <th>
+                z Shift+Key
+              </th>
+              <th>
+                [ Key
+              </th>
+              <th>
+                [ Shift+Key
+              </th>
+              <th>
+                Ctrl+Key
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <template is="dom-repeat" items="[[keys]]" as="keyObj">
+              <tr>
+                <template is="dom-repeat" items="[[_toArray(keyObj.variations)]]" as="variation">
+                  <td class$="keys__td--[[variation.value.type]]">
+
+                    <!-- Pretty display -->
+                    <div class=keys__td-pretty-display>
+                      [[variation.value.prettyDisplay]]
+                    </div>
+
+                    <!-- Description -->
+                    <template is="dom-if" if="[[showDescriptions]]">
+                      <div>
+                        <span>[[variation.value.description]]</span>
+                        <template is="dom-if" if="[[isEqual(variation.value.type,'unused')]]">
+                          <div class="free-div">
+                            <i>Free!</i>
+                          </div>
+                        </template>
+                      </div>
+                    </template>
+
+                    <!-- Special icons -->
+                    <template is="dom-if" if=[[variation.value.duplicates]]>
+                      <div style="display:inline-block">
+                        <iron-icon icon="content-copy"></iron-icon>
+                        <paper-tooltip>Duplicate with [[variation.value.duplicates]]</paper-tooltip>
+                      </div>
+                    </template>
+
+                  </td>
+                </template>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+      </div>
     </div>
   </template>
 

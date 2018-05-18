@@ -6,6 +6,7 @@
 
 <link rel="import" href="../normal-mode-keys/normal-mode-keys.html">
 <link rel="import" href="../visual-mode-keys/visual-mode-keys.html">
+<link rel="import" href="../insert-mode-keys/insert-mode-keys.html">
 <link rel="import" href="../page-404/page-404.html">
 
 <link rel="import" href="app-root-styles.html">
@@ -26,6 +27,7 @@
     <iron-selector selected="[[page]]" attr-for-selected="name" class="modes-list" role="navigation">
       <a name="normal-mode-keys" href="[[rootPath]]#normal-mode-keys">Normal Mode</a>
       <a name="visual-mode-keys" href="[[rootPath]]#visual-mode-keys">Visual Mode</a>
+      <a name="insert-mode-keys" href="[[rootPath]]#insert-mode-keys">Insert Mode</a>
     </iron-selector>
     <iron-pages selected="[[page]]"
                 attr-for-selected="name"
@@ -33,6 +35,7 @@
                 role="main">
       <normal-mode-keys name="normal-mode-keys"></normal-mode-keys>
       <visual-mode-keys name="visual-mode-keys"></visual-mode-keys>
+      <insert-mode-keys name="insert-mode-keys"></insert-mode-keys>
       <page-404 name="page-404"></page-404>
     </iron-pages>
   </template>

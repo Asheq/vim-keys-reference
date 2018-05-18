@@ -1,990 +1,1071 @@
 {
+  "variationDescriptions": {
+    "solo": {
+      "description": "Press the key by itself",
+      "hasShiftKey": "false",
+      "prefix": ""
+    },
+    "shift": {
+      "description": "Press the key while holding shift",
+      "hasShiftKey": "true",
+      "prefix": ""
+    },
+    "g": {
+      "description": "Press `g` followed by the key",
+      "hasShiftKey": "false",
+      "prefix": "g"
+    },
+    "gShift": {
+      "description": "Press `g` followed by the key while holding shift",
+      "hasShiftKey": "true",
+      "prefix": "g"
+    },
+    "z": {
+      "description": "Press `z` followed by the key",
+      "hasShiftKey": "false",
+      "prefix": "z"
+    },
+    "zShift": {
+      "description": "Press `z` followed by the key while holding shift",
+      "hasShiftKey": "true",
+      "prefix": "z"
+    },
+    "squareBracket": {
+      "description": "Press `[` or `]` followed by the key",
+      "hasShiftKey": "false",
+      "prefix": "["
+    },
+    "squareBracketShift": {
+      "description": "Press `[` or `]` followed by the key while holding shift",
+      "hasShiftKey": "true",
+      "prefix": "["
+    },
+    "control": {
+      "description": "Press the key while holding control",
+      "hasShiftKey": "false",
+      "prefix": "^"
+    }
+  },
   "keys": [{
-    "baseKey": "a",
-    "shiftKey": "A",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "command",
-        "duplicates": ["test-1", "test-2"]
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
+      "baseKey": "a",
+      "shiftKey": "A",
+      "variations": {
+        "solo": {
+          "description": "append text after the cursor N times",
+          "type": "command"
+        },
+        "shift": {
+          "description": "append text after the end of the line N times",
+          "type": "command"
+        },
+        "g": {
+          "description": "print ascii value of character under the cursor",
+          "type": "command"
+        },
+        "gShift": {
+          "type": "unused"
+        },
+        "z": {
+          "description": "open a closed fold, close an open fold",
+          "type": "command"
+        },
+        "zShift": {
+          "description": "open a closed fold or close an open fold recursively",
+          "type": "command"
+        },
+        "squareBracket": {
+          "type": "unused"
+        },
+        "squareBracketShift": {
+          "type": "unused"
+        },
+        "control": {
+          "description": "add N to number at/after cursor",
+          "type": "command"
+        }
+      }
+    }, {
+      "baseKey": "b",
+      "shiftKey": "B",
+      "variations": {
+        "solo": {
+          "description": "cursor N words backward",
+          "type": "motion"
+        },
+        "shift": {
+          "description": "cursor N WORDS backward",
+          "type": "motion"
+        },
+        "g": {
+          "type": "unused"
+        },
+        "gShift": {
+          "type": "unused"
+        },
+        "z": {
+          "description": "redraw, cursor line at bottom of window",
+          "type": "command"
+        },
+        "zShift": {
+          "type": "unused"
+        },
+        "squareBracket": {
+          "type": "unused"
+        },
+        "squareBracketShift": {
+          "type": "unused"
+        },
+        "control": {
+          "description": "scroll N screens Backwards",
+          "type": "command"
+        }
+      }
+    }, {
+      "baseKey": "c",
+      "shiftKey": "C",
+      "variations": {
+        "solo": {
+          "description": "delete Nmove text [into register x] and start insert",
+          "type": "operator"
+        },
+        "shift": {
+          "description": "change from the cursor position to the end of the line, and N-1 more lines [into register x]; synonym for 'c$'",
+          "type": "command"
+        },
+        "g": {
+          "type": "unused"
+        },
+        "gShift": {
+          "type": "unused"
+        },
+        "z": {
+          "description": "close a fold",
+          "type": "command"
+        },
+        "zShift": {
+          "description": "close folds recursively",
+          "type": "command"
+        },
+        "squareBracket": {
+          "description": "move to start of open fold",
+          "type": "command"
+        },
+        "squareBracketShift": {
+          "type": "unused"
+        },
+        "control": {
+          "description": "interrupt current (search) command",
+          "type": "command"
+        }
+      }
+    }, {
+      "baseKey": "d",
+      "shiftKey": "D",
+      "variations": {
+        "solo": {
+          "description": "delete Nmove text [into register x]",
+          "type": "operator"
+        },
+        "shift": {
+          "description": "delete the characters under the cursor until the end of the line and N-1 more lines [into register x]; synonym for 'd$'",
+          "type": "command"
+        },
+        "g": {
+          "description": "go to definition of word under the cursor in current function",
+          "type": "command"
+        },
+        "gShift": {
+          "description": "go to definition of word under the cursor in current file",
+          "type": "command"
+        },
+        "z": {
+          "description": "delete a fold",
+          "type": "command"
+        },
+        "zShift": {
+          "description": "delete folds recursively",
+          "type": "command"
+        },
+        "squareBracket": {
+          "description": "show first #define found in current and included files matching the word under the cursor, start searching at beginning of current file",
+          "type": "command"
+        },
+        "squareBracketShift": {
+          "description": "list all #defines found in current and included files matching the word under the cursor, start searching at cursor position",
+          "type": "command"
+        },
+        "control": {
+          "description": "scroll Down N lines (default: half a screen)",
+          "type": "command"
+        }
+      }
+    }, {
+      "baseKey": "e",
+      "shiftKey": "E",
+      "variations": {
+        "solo": {
+          "description": "cursor forward to the end of word N",
+          "type": "motion"
+        },
+        "shift": {
+          "description": "cursor forward to the end of WORD N",
+          "type": "motion"
+        },
+        "g": {
+          "description": "go backwards to the end of the previous word",
+          "type": "motion"
+        },
+        "gShift": {
+          "description": "go backwards to the end of the previous WORD",
+          "type": "motion"
+        },
+        "z": {
+          "description": "when 'wrap' off scroll horizontally to position the cursor at the end (right side) of the screen",
+          "type": "command"
+        },
+        "zShift": {
+          "description": "eliminate all folds",
+          "type": "command"
+        },
+        "squareBracket": {
+          "type": "unused"
+        },
+        "squareBracketShift": {
+          "type": "unused"
+        },
+        "control": {
+          "description": "scroll N lines upwards (N lines Extra)",
+          "type": "command"
+        }
+      }
+    }, {
+      "baseKey": "f",
+      "shiftKey": "F",
+      "variations": {
+        "solo": {
+          "description": "cursor to Nth occurrence of {char} to the right",
+          "type": "motion"
+        },
+        "shift": {
+          "description": "cursor to the Nth occurrence of {char} to the left",
+          "type": "motion"
+        },
+        "g": {
+          "description": "start editing the file whose name is under the cursor",
+          "type": "command"
+        },
+        "gShift": {
+          "description": "start editing the file whose name is under the cursor and jump to the line number following the filename.",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    }, {
+      "baseKey": "g",
+      "shiftKey": "G",
+      "variations": {
+        "solo": {
+          "description": "commands, see |g| below",
+          "type": "extra"
+        },
+        "shift": {
+          "description": "cursor to line N, default last line",
+          "type": "motion"
+        },
+        "g": {
+          "description": "cursor to line N, default first line",
+          "type": "motion"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    }, {
+      "baseKey": "h",
+      "shiftKey": "H",
+      "variations": {
+        "solo": {
+          "description": "cursor N chars to the left",
+          "type": "motion"
+        },
+        "shift": {
+          "description": "cursor to line N from top of screen",
+          "type": "motion"
+        },
+        "g": {
+          "description": "start Select mode",
+          "type": "command"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    }, {
+      "baseKey": "i",
+      "shiftKey": "I",
+      "variations": {
+        "solo": {
+          "description": "insert text before the cursor N times",
+          "type": "command"
+        },
+        "shift": {
+          "description": "insert text before the first CHAR on the line N times",
+          "type": "command"
+        },
+        "g": {
+          "description": "like 'i', but first move to the |'^| mark",
+          "type": "command"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    }, {
+      "baseKey": "j",
+      "shiftKey": "J",
+      "variations": {
+        "solo": {
+          "description": "cursor N lines downward",
+          "type": "motion"
+        },
+        "shift": {
+          "description": "Join N lines; default is 2",
+          "type": "command"
+        },
+        "g": {
+          "description": "like 'j', but when 'wrap' on go N screen lines down",
+          "type": "motion"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    }, {
+      "baseKey": "k",
+      "shiftKey": "K",
+      "variations": {
+        "solo": {
+          "description": "cursor N lines upward",
+          "type": "motion"
+        },
+        "shift": {
+          "description": "Keyword under the cursor with 'keywordprg'",
+          "type": "command"
+        },
+        "g": {
+          "description": "like 'k', but when 'wrap' on go N screen lines up",
+          "type": "motion"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    }, {
+      "baseKey": "l",
+      "shiftKey": "L",
+      "variations": {
+        "solo": {
+          "description": "cursor N chars to the right",
+          "type": "motion"
+        },
+        "shift": {
+          "description": "cursor to line N from bottom of screen",
+          "type": "motion"
+        },
+        "g": {
+          "description": "",
+          "type": "unused"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    }, {
+      "baseKey": "m",
+      "shiftKey": "M",
+      "variations": {
+        "solo": {
+          "description": "mark {A-Za-z} at cursor position",
+          "type": "command"
+        },
+        "shift": {
+          "description": "cursor to middle line of screen",
+          "type": "motion"
+        },
+        "g": {
+          "description": "go to character at middle of the screenline",
+          "type": "motion"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    }, {
+      "baseKey": "n",
+      "shiftKey": "N",
+      "variations": {
+        "solo": {
+          "description": "repeat the latest '/' or '?' N times",
+          "type": "motion"
+        },
+        "shift": {
+          "description": "repeat the latest '/' or '?' N times in opposite direction",
+          "type": "motion"
+        },
+        "g": {
+          "description": "find the next match with the last used search pattern and Visually select it",
+          "type": "command"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    }, {
+      "baseKey": "o",
+      "shiftKey": "O",
+      "variations": {
+        "solo": {
+          "description": "begin a new line below the cursor and insert text, repeat N times",
+          "type": "command"
+        },
+        "shift": {
+          "description": "begin a new line above the cursor and insert text, repeat N times",
+          "type": "command"
+        },
+        "g": {
+          "description": "cursor to byte N in the buffer",
+          "type": "motion"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    }, {
+      "baseKey": "p",
+      "shiftKey": "P",
+      "variations": {
+        "solo": {
+          "description": "put the text [from register x] after the cursor N times",
+          "type": "command"
+        },
+        "shift": {
+          "description": "put the text [from register x] before the cursor N times",
+          "type": "command"
+        },
+        "g": {
+          "description": "put the text [from register x] after the cursor N times, leave the cursor after it",
+          "type": "command"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    }, {
+      "baseKey": "q",
+      "shiftKey": "Q",
+      "variations": {
+        "solo": {
+          "description": "typed characters into named register {0-9a-zA-Z}(uppercase to append). There are three special cases (q: q/ q?) which allow you to edit previous commands and searches in command-line window",
+          "type": "command"
+        },
+        "shift": {
+          "description": "to 'Ex' mode",
+          "type": "command"
+        },
+        "g": {
+          "description": "format Nmove text",
+          "type": "operator"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "r",
+      "shiftKey": "R",
+      "variations": {
+        "solo": {
+          "description": "replace N chars with {char}",
+          "type": "command"
+        },
+        "shift": {
+          "description": "enter replace mode: overtype existing characters, repeat the entered text N-1 times",
+          "type": "command"
+        },
+        "g": {
+          "description": "virtual replace N chars with {char}",
+          "type": "command"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "s",
+      "shiftKey": "S",
+      "variations": {
+        "solo": {
+          "description": "(substitute) delete N characters [into register x] and start insert",
+          "type": "command"
+        },
+        "shift": {
+          "description": "delete N lines [into register x] and start insert; synonym for 'cc'.",
+          "type": "command"
+        },
+        "g": {
+          "description": "go to sleep for N seconds (default 1)",
+          "type": "command"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "t",
+      "shiftKey": "T",
+      "variations": {
+        "solo": {
+          "description": "cursor till before Nth occurrence of {char} to the right",
+          "type": "motion"
+        },
+        "shift": {
+          "description": "cursor till after Nth occurrence of {char} to the left",
+          "type": "motion"
+        },
+        "g": {
+          "description": "go to the next tab page",
+          "type": "command"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "u",
+      "shiftKey": "U",
+      "variations": {
+        "solo": {
+          "description": "undo changes",
+          "type": "command"
+        },
+        "shift": {
+          "description": "undo all latest changes on one line",
+          "type": "command"
+        },
+        "g": {
+          "description": "make Nmove text lowercase",
+          "type": "command"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "v",
+      "shiftKey": "V",
+      "variations": {
+        "solo": {
+          "description": "characterwise Visual mode",
+          "type": "command"
+        },
+        "shift": {
+          "description": "linewise Visual mode",
+          "type": "command"
+        },
+        "g": {
+          "description": "reselect the previous Visual area",
+          "type": "command"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "w",
+      "shiftKey": "W",
+      "variations": {
+        "solo": {
+          "description": "cursor N words forward",
+          "type": "motion"
+        },
+        "shift": {
+          "description": "cursor N WORDS forward",
+          "type": "motion"
+        },
+        "g": {
+          "description": "format Nmove text and keep cursor",
+          "type": "operator"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "x",
+      "shiftKey": "X",
+      "variations": {
+        "solo": {
+          "description": "delete N characters under and after the cursor [into register x]",
+          "type": "command"
+        },
+        "shift": {
+          "description": "delete N characters before the cursor [into register x]",
+          "type": "command"
+        },
+        "g": {
+          "description": "",
+          "type": "unused"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "y",
+      "shiftKey": "Y",
+      "variations": {
+        "solo": {
+          "description": "Nmove text [into register x]",
+          "type": "command"
+        },
+        "shift": {
+          "description": "yank N lines [into register x]; synonym for 'yy'",
+          "type": "command"
+        },
+        "g": {
+          "description": "",
+          "type": "unused"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "z",
+      "shiftKey": "Z",
+      "variations": {
+        "solo": {
+          "description": "commands starting with 'z', see |z| below",
+          "type": "extra"
+        },
+        "shift": {
+          "description": "",
+          "type": "unused"
+        },
+        "g": {
+          "description": "",
+          "type": "unused"
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "type": ""
+        },
+        "squareBracketShift": {
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
       }
     }
-  }, {
-    "baseKey": "b",
-    "shiftKey": "B",
-    "variations": {
-      "solo": {
-        "description": "cursor N words backward",
-        "type": "motion"
-      },
-      "shift": {
-        "description": "cursor N WORDS backward",
-        "type": "motion"
-      },
-      "control": {
-        "description": "scroll N screens Backwards",
-        "type": "command"
-      },
-      "g": {
-        "description": "",
-        "type": ""
-      },
-      "z": {
-        "description": "redraw, cursor line at bottom of window",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "",
-        "type": ""
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-5", "test-6"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }, {
-    "baseKey": "c",
-    "shiftKey": "C",
-    "variations": {
-      "solo": {
-        "description": "append text after the cursor N times",
-        "type": "operator",
-        "duplicates": []
-      },
-      "shift": {
-        "description": "append text after the end of the line N times",
-        "type": "command",
-        "duplicates": ["test-3", "test-4"]
-      },
-      "control": {
-        "description": "add N to number at/after cursor",
-        "type": "command"
-      },
-      "g": {
-        "description": "print ascii value of character under the cursor",
-        "type": "command"
-      },
-      "z": {
-        "description": "open a closed fold, close an open fold",
-        "type": "command"
-      },
-      "squareBracket": {
-        "description": "",
-        "type": ""
-      },
-      "gShift": {
-        "description": "",
-        "type": ""
-      },
-      "zShift": {
-        "description": "open a closed fold or close an open fold recursively",
-        "type": "command"
-      },
-      "squareBracketShift": {
-        "description": "",
-        "type": ""
-      }
-    }
-  }]
+  ]
 }

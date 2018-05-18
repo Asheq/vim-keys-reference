@@ -1,3 +1,9 @@
+// TODO: Add command sub-types!
+// - scroll
+// - insert
+// - search
+// - various
+// - etc.???
 class NormalModeKeys extends Polymer.Element {
   static get is() { return 'normal-mode-keys' }
   static get properties() {
@@ -9,8 +15,15 @@ class NormalModeKeys extends Polymer.Element {
       descriptionDisplayOrder: {
         type: Array,
         value: function() {
-          return ['shift', 'control', 'g', 'z', 'squareBracket',
-            'gShift', 'zShift', 'squareBracketShift',
+          return [
+            'shift',
+            'g',
+            'gShift',
+            'z',
+            'zShift',
+            'squareBracket',
+            'squareBracketShift',
+            'control',
           ]
         },
       },
@@ -29,9 +42,10 @@ class NormalModeKeys extends Polymer.Element {
       var variationObj = keyObj.variations
       for (let variation in variationObj) {
         if (variationObj.hasOwnProperty(variation)) {
-          variationObj[variation].prettyDisplay =
-            el._getVariationPrefix(variation) +
-            el._getKeyCase(keyObj, variation)
+          let prettyDisplay = ''
+          prettyDisplay += keysJson.variationDescriptions[variation].prefix
+          prettyDisplay += keysJson.variationDescriptions[variation].hasShiftKey === 'true' ? keyObj.shiftKey : keyObj.baseKey
+          variationObj[variation].prettyDisplay = prettyDisplay
         }
       }
       return keyObj
@@ -50,37 +64,8 @@ class NormalModeKeys extends Polymer.Element {
       this.descriptionDisplayOrder.indexOf(b.name))
     return arr
   }
-  _getVariationPrefix(variation) {
-    return {
-      'solo': '',
-      'shift': '',
-      'control': '^',
-      'g': 'g',
-      'z': 'z',
-      'squareBracket': '[',
-      'gShift': 'g',
-      'zShift': 'z',
-      'squareBracketShift': '[',
-    }[variation]
-  }
-  _isUpperCase(variation) {
-    return {
-      'solo': false,
-      'shift': true,
-      'control': false,
-      'g': false,
-      'z': false,
-      'squareBracket': false,
-      'gShift': true,
-      'zShift': true,
-      'squareBracketShift': true,
-    }[variation]
-  }
-  _getKeyCase(keyObj, variation) {
-    return (this._isUpperCase(variation) ? keyObj.shiftKey : keyObj.baseKey)
-  }
-  computeType(type) {
-    return type ? type : 'unused'
+  isEqual(one, two) {
+    return one === two
   }
 }
 

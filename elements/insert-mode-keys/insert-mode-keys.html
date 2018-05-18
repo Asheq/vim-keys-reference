@@ -1,0 +1,27 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../shared-styles.html">
+
+<dom-module id="insert-mode-keys">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        /* padding: 10px; */
+      }
+    </style>
+
+    <div class="card">
+        Insert Mode Keys
+        TBD
+    </div>
+  </template>
+
+  <script>
+    class InsertModeKeys extends Polymer.Element {
+      static get is() { return 'insert-mode-keys'; }
+    }
+
+    window.customElements.define(InsertModeKeys.is, InsertModeKeys);
+  </script>
+</dom-module>

@@ -4,7 +4,8 @@
     "ecmaVersion": 6
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "node": true
   },
   "plugins": [
     "html"
@@ -14,7 +15,8 @@
     "semi": "off",
     "new-cap": ["error", { "capIsNewExceptions": ["Polymer"] }],
     "no-var": "off",
-    "require-jsdoc": "off"
+    "require-jsdoc": "off",
+    "no-console": "off"
   },
   "globals": {
     "Polymer": true

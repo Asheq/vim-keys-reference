@@ -15,13 +15,12 @@ module.exports = function(src, gulp) {
       importer: importOnce,
       importOnce: {
         index: true,
-        bower: true
-      }
+        bower: true,
+      },
     }).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(gulp.dest(function(file) {
       console.log('Finished compiling scss file: ' + getName(file));
       return file.base;
     }));
-
 }

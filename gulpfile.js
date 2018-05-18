@@ -1,8 +1,8 @@
 'use strict';
 
 const gulp = require('gulp');
-const nodemon = require('gulp-nodemon');
-const compileElementScss = require('./gulp-task-helpers/compile-element-scss.js');
+const compileElementScss =
+  require('./gulp-task-helpers/compile-element-scss.js');
 
 let elementScssFilesGlob = ['./elements/**/*.scss'];
 
@@ -13,7 +13,7 @@ gulp.task('compile-element-scss', function() {
   return compileElementScss(gulp.src(elementScssFilesGlob), gulp);
 });
 gulp.task('compile-element-scss:watch', ['compile-element-scss'], function() {
-  gulp.watch(elementScssFilesGlob).on('change', function({ path }) {
+  gulp.watch(elementScssFilesGlob).on('change', function({path}) {
     compileElementScss(gulp.src(path), gulp);
   });
 });
