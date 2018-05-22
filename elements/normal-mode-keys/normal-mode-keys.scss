@@ -21,7 +21,7 @@
 .command-skin {
   background-color: #F0F3BD;
 }
-.extra-skin {
+.extended-skin {
   background-color: #98FB98;
 }
 .unused-skin {
@@ -51,9 +51,9 @@
   @extend .td-skin;
   @extend .unused-skin;
 }
-.legend__td--extra {
+.legend__td--extended {
   @extend .td-skin;
-  @extend .extra-skin;
+  @extend .extended-skin;
 }
 
 .keys {
@@ -87,9 +87,9 @@
   @extend .keys__td;
   @extend .command-skin;
 }
-.keys__td--extra {
+.keys__td--extended {
   @extend .keys__td;
-  @extend .extra-skin;
+  @extend .extended-skin;
 }
 .keys__td--unused {
   @extend .keys__td;

@@ -256,11 +256,11 @@
         },
         "gShift": {
           "description": "start editing the file whose name is under the cursor and jump to the line number following the filename.",
-          "type": ""
+          "type": "command"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "create a fold for Nmove text",
+          "type": "operator"
         },
         "zShift": {
           "description": "",
@@ -282,8 +282,8 @@
       "shiftKey": "G",
       "variations": {
         "solo": {
-          "description": "commands, see |g| below",
-          "type": "extra"
+          "description": "extended commands starting with 'g'",
+          "type": "extended"
         },
         "shift": {
           "description": "cursor to line N, default last line",
@@ -294,12 +294,11 @@
           "type": "motion"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "mark word as good spelled word",
+          "type": "command"
         },
         "zShift": {
           "description": "",
@@ -333,12 +332,12 @@
           "type": "command"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "start Select line mode",
+          "type": "command"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "when 'wrap' off scroll screen N characters to the right",
+          "type": "command"
         },
         "zShift": {
           "description": "",
@@ -372,12 +371,12 @@
           "type": "command"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "like 'I', but always start in column 1",
+          "type": "command"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "toggle 'foldenable'",
+          "type": "command"
         },
         "zShift": {
           "description": "",
@@ -411,12 +410,12 @@
           "type": "motion"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "join lines without inserting space",
+          "type": "command"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "move to the start of the next fold",
+          "type": "motion"
         },
         "zShift": {
           "description": "",
@@ -442,7 +441,7 @@
           "type": "motion"
         },
         "shift": {
-          "description": "Keyword under the cursor with 'keywordprg'",
+          "description": "lookup Keyword under the cursor with 'keywordprg'",
           "type": "command"
         },
         "g": {
@@ -450,12 +449,11 @@
           "type": "motion"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "move to the end of the previous fold",
+          "type": "motion"
         },
         "zShift": {
           "description": "",
@@ -485,16 +483,14 @@
           "type": "motion"
         },
         "g": {
-          "description": "",
           "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "when 'wrap' off scroll screen N characters to the left",
+          "type": "command"
         },
         "zShift": {
           "description": "",
@@ -528,12 +524,11 @@
           "type": "motion"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "subtract one from 'foldlevel'",
+          "type": "command"
         },
         "zShift": {
           "description": "",
@@ -567,12 +562,12 @@
           "type": "command"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "find the previous match with the last used search pattern and Visually select it",
+          "type": "command"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "reset 'foldenable'",
+          "type": "command"
         },
         "zShift": {
           "description": "",
@@ -606,12 +601,11 @@
           "type": "motion"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "open fold",
+          "type": "command"
         },
         "zShift": {
           "description": "",
@@ -645,12 +639,12 @@
           "type": "command"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "put the text [from register x] before the cursor N times, leave the cursor after it",
+          "type": "command"
         },
         "z": {
           "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
           "description": "",
@@ -672,7 +666,7 @@
       "shiftKey": "Q",
       "variations": {
         "solo": {
-          "description": "typed characters into named register {0-9a-zA-Z}(uppercase to append). There are three special cases (q: q/ q?) which allow you to edit previous commands and searches in command-line window",
+          "description": "record typed characters into named register {0-9a-zA-Z}(uppercase to append). There are three special cases (q: q/ q?)",
           "type": "command"
         },
         "shift": {
@@ -684,12 +678,12 @@
           "type": "operator"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "switch to 'Ex' mode with Vim editing",
+          "type": "command"
         },
         "z": {
           "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
           "description": "",
@@ -724,12 +718,12 @@
           "type": "command"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "enter Virtual Replace mode",
+          "type": "command"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "add one to 'foldlevel'",
+          "type": "command"
         },
         "zShift": {
           "description": "",
@@ -764,12 +758,11 @@
           "type": "command"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "when 'wrap' off scroll horizontally to position the cursor at the start (left side) of the screen",
+          "type": "command"
         },
         "zShift": {
           "description": "",
@@ -804,12 +797,12 @@
           "type": "command"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "go to the previous tab page",
+          "type": "command"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "redraw, cursor line at top of window",
+          "type": "command"
         },
         "zShift": {
           "description": "",
@@ -841,15 +834,15 @@
         },
         "g": {
           "description": "make Nmove text lowercase",
-          "type": "command"
+          "type": "operator"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "make Nmove text uppercase",
+          "type": "operator"
         },
         "z": {
           "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
           "description": "",
@@ -884,12 +877,12 @@
           "type": "command"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "don't reselect the previous Visual area when executing a mapping or menu in Select mode",
+          "type": "command"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "open enough folds to view the cursor line",
+          "type": "command"
         },
         "zShift": {
           "description": "",
@@ -924,12 +917,11 @@
           "type": "operator"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "mark word as wrong (bad) spelled word",
+          "type": "command"
         },
         "zShift": {
           "description": "",
@@ -960,16 +952,14 @@
           "type": "command"
         },
         "g": {
-          "description": "",
           "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "re-apply 'foldlevel' and do 'zv'",
+          "type": "command"
         },
         "zShift": {
           "description": "",
@@ -992,7 +982,7 @@
       "shiftKey": "Y",
       "variations": {
         "solo": {
-          "description": "Nmove text [into register x]",
+          "description": "yank Nmove text [into register x]",
           "type": "command"
         },
         "shift": {
@@ -1000,16 +990,14 @@
           "type": "command"
         },
         "g": {
-          "description": "",
           "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
           "description": "",
@@ -1032,24 +1020,22 @@
       "shiftKey": "Z",
       "variations": {
         "solo": {
-          "description": "commands starting with 'z', see |z| below",
-          "type": "extra"
+          "description": "extended commands starting with 'z'",
+          "type": "extended"
         },
         "shift": {
-          "description": "",
-          "type": "unused"
+          "description": "extended commands starting with 'Z'",
+          "type": "extended"
         },
         "g": {
-          "description": "",
           "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "redraw, cursor line at center of window",
+          "type": "command"
         },
         "zShift": {
           "description": "",

@@ -26,52 +26,54 @@
             <td class="legend__td--operator">Operator</td>
             <td class="legend__td--motion">Motion</td>
             <td class="legend__td--command">Command</td>
-            <td class="legend__td--extra">Extra</td>
+            <td class="legend__td--extended">Extended</td>
             <td class="legend__td--unused">Unused</td>
           </tr>
         </table>
-        <!-- TODO: d, y, c Key and Shift+Key -->
-        <!-- <template is="dom-if" if="[[showDescriptions]]"> -->
-        <!--   <p> -->
-        <!--   <i>CHAR</i> - any non-blank character<br> -->
-        <!--   <i>WORD</i> - a sequence of non-blank characters<br> -->
-        <!--   <i>N</i> - a number entered before the command<br> -->
-        <!--   <i>{motion}</i> - a cursor movement command<br> -->
-        <!--   <i>Nmove</i> - the text that is moved over with a {motion}<br> -->
-        <!--   <i>SECTION</i> - a section that possibly starts with '}' instead of '{'<br> -->
-        <!--   </p> -->
-        <!-- </template> -->
+        <template is="dom-if" if="[[showDescriptions]]">
+          <p>
+          <i>N</i> - a number entered before the key<br>
+          <i>{motion}</i> - a cursor movement command following an operator<br>
+          <i>{char}</i> - a character used with some motions (like f)<br>
+          <i>{filter}</i> - a command-line program following the ! operator<br>
+          <i>{pattern}</i> - a pattern following the / search command<br>
+          <i>Nmove</i> - the text that is moved over with a {motion}<br>
+          <i>SECTION</i> - a section that possibly starts with '}' instead of '{'<br>
+          <i>CHAR</i> - any non-blank character<br>
+          <i>WORD</i> - a sequence of non-blank characters<br>
+          </p>
+        </template>
       </div>
       <div class="keys">
         <table class="keys__table">
           <thead class="keys__table-header">
             <tr>
               <th>
-                Key
+                key
               </th>
               <th>
-                Shift+Key
+                Shift+key
               </th>
               <th>
-                g Key
+                g key
               </th>
               <th>
-                g Shift+Key
+                g Shift+key
               </th>
               <th>
-                z Key
+                z key
               </th>
               <th>
-                z Shift+Key
+                z Shift+key
               </th>
               <th>
-                [ Key
+                [ key
               </th>
               <th>
-                [ Shift+Key
+                [ Shift+key
               </th>
               <th>
-                Ctrl+Key
+                Ctrl+key
               </th>
             </tr>
           </thead>
@@ -90,11 +92,11 @@
                     <template is="dom-if" if="[[showDescriptions]]">
                       <div>
                         <span>[[variation.value.description]]</span>
-                        <template is="dom-if" if="[[isEqual(variation.value.type,'unused')]]">
-                          <div class="free-div">
-                            <i>Free!</i>
-                          </div>
-                        </template>
+                        <!-- <template is="dom-if" if="[[isEqual(variation.value.type,'unused')]]"> -->
+                        <!--   <div class="free-div"> -->
+                        <!--     <i>Free!</i> -->
+                        <!--   </div> -->
+                        <!-- </template> -->
                       </div>
                     </template>
 

@@ -1,11 +1,12 @@
 body {
   margin: 0;
-  font-family: 'Roboto', 'Noto', sans-serif;
+  /* font-family: 'Roboto', 'Noto', sans-serif; */
+  font-family: Barlow, sans-serif;
   line-height: 1.5;
   background-color: #eeeeee;
 }
 .github-ribbon {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   /* transform: rotate(90deg) translateX(70.71068%) rotate(-90deg) rotate(-45deg) translateY(-100%); */
