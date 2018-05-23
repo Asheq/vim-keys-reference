@@ -1,9 +1,3 @@
-// TODO: Add command sub-types!
-// - scroll
-// - insert
-// - search
-// - various
-// - etc.???
 class NormalModeKeys extends Polymer.Element {
   static get is() { return 'normal-mode-keys' }
   static get properties() {
@@ -37,14 +31,14 @@ class NormalModeKeys extends Polymer.Element {
     if (!keysJson) {
       return null
     }
-    var el = this
     var keys = keysJson.keys.map(function(keyObj) {
       var variationObj = keyObj.variations
       for (let variation in variationObj) {
         if (variationObj.hasOwnProperty(variation)) {
           let prettyDisplay = ''
           prettyDisplay += keysJson.variationDescriptions[variation].prefix
-          prettyDisplay += keysJson.variationDescriptions[variation].hasShiftKey === 'true' ? keyObj.shiftKey : keyObj.baseKey
+          prettyDisplay += keysJson.variationDescriptions[variation].hasShiftKey
+            === 'true' ? keyObj.shiftKey : keyObj.baseKey
           variationObj[variation].prettyDisplay = prettyDisplay
         }
       }
