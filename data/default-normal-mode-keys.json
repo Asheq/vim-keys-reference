@@ -263,8 +263,8 @@
           "type": "operator"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "description": "create a fold for N lines",
+          "type": "command"
         },
         "squareBracket": {
           "type": ""
@@ -301,8 +301,8 @@
           "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "description": "mark word as good spelled word",
+          "type": "command"
         },
         "squareBracket": {
           "type": ""
@@ -340,8 +340,8 @@
           "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "description": "when 'wrap' off scroll half a screenwidth to the right",
+          "type": "command"
         },
         "squareBracket": {
           "type": ""
@@ -379,8 +379,7 @@
           "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
           "type": ""
@@ -418,8 +417,7 @@
           "type": "motion"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
           "type": ""
@@ -456,8 +454,7 @@
           "type": "motion"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
           "type": ""
@@ -493,8 +490,8 @@
           "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "description": "when 'wrap' off scroll half a screenwidth to the left",
+          "type": "command"
         },
         "squareBracket": {
           "type": ""
@@ -531,8 +528,8 @@
           "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "description": "set 'foldlevel' to zero",
+          "type": "command"
         },
         "squareBracket": {
           "type": ""
@@ -570,8 +567,8 @@
           "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "description": "set 'foldenable'",
+          "type": "command"
         },
         "squareBracket": {
           "type": ""
@@ -608,8 +605,8 @@
           "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "description": "open folds recursively",
+          "type": "command"
         },
         "squareBracket": {
           "type": ""
@@ -647,8 +644,7 @@
           "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
           "type": ""
@@ -686,8 +682,7 @@
           "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
           "type": ""
@@ -726,8 +721,8 @@
           "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "description": "set 'foldlevel' to the deepest fold",
+          "type": "command"
         },
         "squareBracket": {
           "type": ""
@@ -765,8 +760,7 @@
           "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
           "type": ""
@@ -805,8 +799,7 @@
           "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
           "type": ""
@@ -845,8 +838,7 @@
           "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
           "type": ""
@@ -885,8 +877,7 @@
           "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
           "type": ""
@@ -924,8 +915,8 @@
           "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "description": "mark word as wrong (bad) spelled word",
+          "type": "command"
         },
         "squareBracket": {
           "type": ""
@@ -962,8 +953,8 @@
           "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "description": "re-apply 'foldlevel'",
+          "type": "command"
         },
         "squareBracket": {
           "type": ""
@@ -1000,8 +991,7 @@
           "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
           "type": ""
@@ -1038,8 +1028,7 @@
           "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
           "type": ""
