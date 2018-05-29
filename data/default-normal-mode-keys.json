@@ -268,14 +268,15 @@
         },
         "squareBracket": {
           "description": "same as 'gf'",
-          "type": "command"
+          "type": "command",
+          "duplicates": ["gf"]
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "scroll N screens Forward",
+          "type": "command"
         }
       }
     }, {
@@ -309,11 +310,11 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "display current file name and position",
+          "type": "command"
         }
       }
     }, {
@@ -348,11 +349,12 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "same as 'h'",
+          "type": "motion",
+          "duplicates": ["h"]
         }
       }
     }, {
@@ -387,11 +389,13 @@
           "type": "command"
         },
         "squareBracketShift": {
-          "type": ""
+          "description": "list all lines found in current and included files that contain the word under the cursor, start searching at beginning of current file",
+          "type": "command"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "same as <Tab>",
+          "type": "command",
+          "duplicates": ["Tab"]
         }
       }
     }, {
@@ -425,11 +429,12 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "same as 'j'",
+          "type": "motion",
+          "duplicates": ["j"]
         }
       }
     }, {
@@ -462,11 +467,10 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     }, {
@@ -499,11 +503,11 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "redraw screen",
+          "type": "command"
         }
       }
     }, {
@@ -538,11 +542,12 @@
           "type": "motion"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "same as <CR>",
+          "type": "motion",
+          "duplicates": ["Enter"]
         }
       }
     }, {
@@ -577,11 +582,12 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "same as 'j'",
+          "type": "motion",
+          "duplicates": ["j"]
         }
       }
     }, {
@@ -615,11 +621,11 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "go to N older entry in jump list",
+          "type": "command"
         }
       }
     }, {
@@ -654,11 +660,14 @@
           "type": "command"
         },
         "squareBracketShift": {
-          "type": ""
+          "description": "same as '[p'",
+          "type": "command",
+          "duplicates": ["[p"]
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "same as 'k'",
+          "type": "motion",
+          "duplicates": ["k"]
         }
       }
     }, {
@@ -692,11 +701,10 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -732,11 +740,11 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "redo changes which were undone with 'u'",
+          "type": "command"
         }
       }
     },
@@ -746,11 +754,13 @@
       "variations": {
         "solo": {
           "description": "(substitute) delete N characters [into register x] and start insert",
-          "type": "command"
+          "type": "command",
+          "duplicates": ["cl"]
         },
         "shift": {
           "description": "delete N lines [into register x] and start insert; synonym for 'cc'.",
-          "type": "command"
+          "type": "command",
+          "duplicates": ["cc"]
         },
         "g": {
           "description": "go to sleep for N seconds (default 1)",
@@ -771,11 +781,10 @@
           "type": "motion"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -810,11 +819,11 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "jump to N older Tag in tag list",
+          "type": "command"
         }
       }
     },
@@ -849,11 +858,11 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "scroll N lines Upwards (default: half a screen)",
+          "type": "command"
         }
       }
     },
@@ -888,11 +897,11 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "start blockwise Visual mode",
+          "type": "command"
         }
       }
     },
@@ -927,11 +936,11 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "window commands, see |CTRL-W|",
+          "type": "extended"
         }
       }
     },
@@ -965,11 +974,11 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "subtract N from number at/after cursor",
+          "type": "command"
         }
       }
     },
@@ -1002,11 +1011,11 @@
           "type": "unused"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "scroll N lines downwards",
+          "type": "command"
         }
       }
     },
@@ -1040,11 +1049,11 @@
           "type": "motion"
         },
         "squareBracketShift": {
-          "type": ""
+          "type": "unused"
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "suspend program (or start new shell)",
+          "type": "command"
         }
       }
     }
