@@ -147,8 +147,8 @@
           "type": "command"
         },
         "squareBracket": {
-          "description": "move to start of open fold",
-          "type": "command"
+          "description": "cursor N times backwards to start of change",
+          "type": "motion"
         },
         "squareBracketShift": {
           "type": "unused"
@@ -267,7 +267,8 @@
           "type": "command"
         },
         "squareBracket": {
-          "type": ""
+          "description": "same as 'gf'",
+          "type": "command"
         },
         "squareBracketShift": {
           "type": ""
@@ -305,7 +306,7 @@
           "type": "command"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -344,7 +345,7 @@
           "type": "command"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -382,7 +383,8 @@
           "type": "unused"
         },
         "squareBracket": {
-          "type": ""
+          "description": "show first line found in current and included files that contains the word under the cursor, start searching at beginning of current file",
+          "type": "command"
         },
         "squareBracketShift": {
           "type": ""
@@ -420,7 +422,7 @@
           "type": "unused"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -457,7 +459,7 @@
           "type": "unused"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -494,7 +496,7 @@
           "type": "command"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -532,7 +534,8 @@
           "type": "command"
         },
         "squareBracket": {
-          "type": ""
+          "description": "cursor N times back to start of member function",
+          "type": "motion"
         },
         "squareBracketShift": {
           "type": ""
@@ -571,7 +574,7 @@
           "type": "command"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -609,7 +612,7 @@
           "type": "command"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -647,7 +650,8 @@
           "type": "unused"
         },
         "squareBracket": {
-          "type": ""
+          "description": "like 'P', but adjust indent to current line",
+          "type": "command"
         },
         "squareBracketShift": {
           "type": ""
@@ -685,7 +689,7 @@
           "type": "unused"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -725,7 +729,7 @@
           "type": "command"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -763,7 +767,8 @@
           "type": "unused"
         },
         "squareBracket": {
-          "type": ""
+          "description": "move to the previous misspelled word",
+          "type": "motion"
         },
         "squareBracketShift": {
           "type": ""
@@ -802,7 +807,7 @@
           "type": "unused"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -841,7 +846,7 @@
           "type": "unused"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -880,7 +885,7 @@
           "type": "unused"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -919,7 +924,7 @@
           "type": "command"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -957,7 +962,7 @@
           "type": "command"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -994,7 +999,7 @@
           "type": "unused"
         },
         "squareBracket": {
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
           "type": ""
@@ -1031,7 +1036,8 @@
           "type": "unused"
         },
         "squareBracket": {
-          "type": ""
+          "description": "move to start of open fold",
+          "type": "motion"
         },
         "squareBracketShift": {
           "type": ""
