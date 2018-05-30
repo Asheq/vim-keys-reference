@@ -43,17 +43,6 @@
           <i>WORD</i> - a sequence of non-blank characters<br>
           </p>
           <!-- TODO: Single letter operators: c, y, d, = -->
-
-          <!-- Useless keys -->
-          <!-- **************************** -->
-          <!-- * gs -->
-          <!-- * more? -->
-
-          <!-- Maybe useless keys -->
-          <!-- **************************** -->
-          <!-- * R -->
-          <!-- * Q -->
-          <!-- * more? -->
         </template>
       </div>
       <div class="keys">
@@ -109,12 +98,17 @@
 
                     <!-- Special icons -->
                     <template is="dom-if" if=[[variation.value.duplicates]]>
-                      <div class="duplicate-icon">
-                        <iron-icon icon="content-copy"></iron-icon>
-                        <paper-tooltip>Duplicate with [[variation.value.duplicates]]</paper-tooltip>
+                      <div class="special-icon">
+                        <iron-icon icon="error-outline"></iron-icon>
+                        <paper-tooltip>This key is a duplicate of [[variation.value.duplicates]]</paper-tooltip>
                       </div>
                     </template>
-
+                    <template is="dom-if" if=[[variation.value.useless]]>
+                      <div class="special-icon">
+                        <iron-icon icon="error"></iron-icon>
+                        <paper-tooltip>This key is (probably) useless to you</paper-tooltip>
+                      </div>
+                    </template>
                   </td>
                 </template>
               </tr>

@@ -100,6 +100,13 @@
   font-size: 1.2em;
 }
 
-.duplicate-icon {
-  color: red;
+.special-icon {
+  color: #4285f4;
+  --paper-tooltip: {
+    font-size: 1em;
+  }
+  --paper-tooltip-delay-in: 500;
+  --paper-tooltip-delay-out: 500;
+  --paper-tooltip-duration-in: 500;
+  --paper-tooltip-duration-out: 500;
 }

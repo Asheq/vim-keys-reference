@@ -331,7 +331,8 @@
         },
         "g": {
           "description": "start Select mode",
-          "type": "command"
+          "type": "command",
+          "useless": true
         },
         "gShift": {
           "description": "start Select line mode",
@@ -680,7 +681,8 @@
         },
         "shift": {
           "description": "to 'Ex' mode",
-          "type": "command"
+          "type": "command",
+          "useless": true
         },
         "g": {
           "description": "format Nmove text",
@@ -688,7 +690,8 @@
         },
         "gShift": {
           "description": "switch to 'Ex' mode with Vim editing",
-          "type": "command"
+          "type": "command",
+          "useless": true
         },
         "z": {
           "description": "",
@@ -764,7 +767,8 @@
         },
         "g": {
           "description": "go to sleep for N seconds (default 1)",
-          "type": "command"
+          "type": "command",
+          "useless": true
         },
         "gShift": {
           "type": "unused"
@@ -884,7 +888,8 @@
         },
         "gShift": {
           "description": "don't reselect the previous Visual area when executing a mapping or menu in Select mode",
-          "type": "command"
+          "type": "command",
+          "useless": true
         },
         "z": {
           "description": "open enough folds to view the cursor line",
@@ -988,7 +993,7 @@
       "variations": {
         "solo": {
           "description": "yank Nmove text [into register x]",
-          "type": "command"
+          "type": "operator"
         },
         "shift": {
           "description": "yank N lines [into register x]; synonym for 'yy'",
