@@ -1,21 +1,29 @@
 body {
   margin: 0;
-  /* font-family: 'Roboto', 'Noto', sans-serif; */
   font-family: Barlow, sans-serif;
   line-height: 1.5;
   background-color: #eeeeee;
 }
 .github-ribbon {
-  position: fixed;
-  top: 0;
-  right: 0;
-  /* transform: rotate(90deg) translateX(70.71068%) rotate(-90deg) rotate(-45deg) translateY(-100%); */
-  transform: rotate(45deg) translateY(-85px) translateX(45px);
-  transform-origin: 0 0;
-  padding: .4em 3em;
-  text-decoration: none;
+  /* visuals */
   background: #24292e;
   color: rgba(255,255,255,0.75);
   box-shadow: 0 0.1em 0 0.1em rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+
+  /* structure */
+  padding: .4em 4em;
+
+  /* positioning */
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(29.3%) translateY(-100%) rotate(45deg);
+  transform-origin: bottom left;
 }
 
+.github-logo {
+  width: 1.5em;
+  height: 1.5em;
+  padding-right: 0.5em;
+}
