@@ -396,7 +396,7 @@
         "control": {
           "description": "same as <Tab>",
           "type": "command",
-          "duplicates": ["Tab"]
+          "duplicates": ["⇥"]
         }
       }
     }, {
@@ -548,7 +548,7 @@
         "control": {
           "description": "same as <CR>",
           "type": "motion",
-          "duplicates": ["Enter"]
+          "duplicates": ["⏎"]
         }
       }
     }, {
@@ -1061,6 +1061,1055 @@
           "type": "command"
         }
       }
-    }
-  ]
+    },
+    {
+      "baseKey": "`",
+      "shiftKey": "?",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "1",
+      "shiftKey": "!",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "2",
+      "shiftKey": "@",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "3",
+      "shiftKey": "#",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "4",
+      "shiftKey": "$",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "5",
+      "shiftKey": "%",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "6",
+      "shiftKey": "^",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "7",
+      "shiftKey": "&",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "8",
+      "shiftKey": "*",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "9",
+      "shiftKey": "(",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "0",
+      "shiftKey": ")",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "-",
+      "shiftKey": "_",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "=",
+      "shiftKey": "+",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "⌫",
+      "shiftKey": "⇧⌫",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "⇥",
+      "shiftKey": "⇤",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "[",
+      "shiftKey": "{",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "]",
+      "shiftKey": "}",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "\\",
+      "shiftKey": "|",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": ";",
+      "shiftKey": ":",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "'",
+      "shiftKey": "\"",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "⏎",
+      "shiftKey": "⇧⏎",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": ",",
+      "shiftKey": "<",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": ".",
+      "shiftKey": ">",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "/",
+      "shiftKey": "?",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "baseKey": "␣",
+      "shiftKey": "⇧␣",
+      "variations": {
+        "solo": {
+          "description": "",
+          "type": ""
+        },
+        "shift": {
+          "description": "",
+          "type": ""
+        },
+        "g": {
+          "description": "",
+          "type": ""
+        },
+        "gShift": {
+          "description": "",
+          "type": ""
+        },
+        "z": {
+          "description": "",
+          "type": ""
+        },
+        "zShift": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracket": {
+          "description": "",
+          "type": ""
+        },
+        "squareBracketShift": {
+          "description": "",
+          "type": ""
+        },
+        "control": {
+          "description": "",
+          "type": ""
+        }
+      }
+    }]
 }
