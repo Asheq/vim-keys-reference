@@ -1067,8 +1067,8 @@
       "shiftKey": "?",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "description": "cursor to the mark {a-zA-Z0-9}",
+          "type": "motion"
         },
         "shift": {
           "description": "",
@@ -1099,8 +1099,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1109,7 +1108,7 @@
       "shiftKey": "!",
       "variations": {
         "solo": {
-          "description": "",
+          "description": "count",
           "type": ""
         },
         "shift": {
@@ -1141,8 +1140,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1151,7 +1149,7 @@
       "shiftKey": "@",
       "variations": {
         "solo": {
-          "description": "",
+          "description": "count",
           "type": ""
         },
         "shift": {
@@ -1183,8 +1181,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1193,7 +1190,7 @@
       "shiftKey": "#",
       "variations": {
         "solo": {
-          "description": "",
+          "description": "count",
           "type": ""
         },
         "shift": {
@@ -1225,8 +1222,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1235,7 +1231,7 @@
       "shiftKey": "$",
       "variations": {
         "solo": {
-          "description": "",
+          "description": "count",
           "type": ""
         },
         "shift": {
@@ -1267,8 +1263,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1277,7 +1272,7 @@
       "shiftKey": "%",
       "variations": {
         "solo": {
-          "description": "",
+          "description": "count",
           "type": ""
         },
         "shift": {
@@ -1309,8 +1304,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1319,7 +1313,7 @@
       "shiftKey": "^",
       "variations": {
         "solo": {
-          "description": "",
+          "description": "count",
           "type": ""
         },
         "shift": {
@@ -1351,8 +1345,8 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "edit Nth alternate file (equivalent to ':e #N')",
+          "type": "command"
         }
       }
     },
@@ -1361,7 +1355,7 @@
       "shiftKey": "&",
       "variations": {
         "solo": {
-          "description": "",
+          "description": "count",
           "type": ""
         },
         "shift": {
@@ -1393,8 +1387,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1403,7 +1396,7 @@
       "shiftKey": "*",
       "variations": {
         "solo": {
-          "description": "",
+          "description": "count",
           "type": ""
         },
         "shift": {
@@ -1435,8 +1428,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1445,7 +1437,7 @@
       "shiftKey": "(",
       "variations": {
         "solo": {
-          "description": "",
+          "description": "count",
           "type": ""
         },
         "shift": {
@@ -1477,8 +1469,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1487,7 +1478,7 @@
       "shiftKey": ")",
       "variations": {
         "solo": {
-          "description": "",
+          "description": "count",
           "type": ""
         },
         "shift": {
@@ -1519,8 +1510,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1529,8 +1519,8 @@
       "shiftKey": "_",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "description": "cursor to the first CHAR N lines higher",
+          "type": "motion"
         },
         "shift": {
           "description": "",
@@ -1561,8 +1551,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1571,8 +1560,8 @@
       "shiftKey": "+",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "description": "filter Nmove lines through 'indent'",
+          "type": "operator"
         },
         "shift": {
           "description": "",
@@ -1603,8 +1592,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1613,8 +1601,9 @@
       "shiftKey": "⇧⌫",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "description": "same as 'h'",
+          "type": "motion",
+          "duplicates": ["h"]
         },
         "shift": {
           "description": "",
@@ -1645,8 +1634,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1655,8 +1643,8 @@
       "shiftKey": "⇤",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "description": "go to N newer entry in jump list",
+          "type": "motion"
         },
         "shift": {
           "description": "",
@@ -1687,8 +1675,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1697,8 +1684,8 @@
       "shiftKey": "{",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "description": "square bracket command",
+          "type": "extended"
         },
         "shift": {
           "description": "",
@@ -1729,8 +1716,9 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "Same as <Esc>",
+          "type": "command",
+          "duplicates": ["⎋"]
         }
       }
     },
@@ -1739,8 +1727,8 @@
       "shiftKey": "}",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "description": "square bracket command",
+          "type": "extended"
         },
         "shift": {
           "description": "",
@@ -1771,8 +1759,8 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": ":ta to ident under cursor",
+          "type": "command"
         }
       }
     },
@@ -1781,8 +1769,7 @@
       "shiftKey": "|",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "shift": {
           "description": "",
@@ -1813,8 +1800,8 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "description": "Extended commands",
+          "type": "extended"
         }
       }
     },
@@ -1823,8 +1810,8 @@
       "shiftKey": ":",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "description": "repeat latest f, t, F or T N times",
+          "type": "motion"
         },
         "shift": {
           "description": "",
@@ -1855,8 +1842,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1865,8 +1851,8 @@
       "shiftKey": "\"",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}",
+          "type": "motion"
         },
         "shift": {
           "description": "",
@@ -1897,8 +1883,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1907,8 +1892,8 @@
       "shiftKey": "⇧⏎",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "description": "cursor to the first CHAR N lines lower",
+          "type": "motion"
         },
         "shift": {
           "description": "",
@@ -1939,8 +1924,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1949,8 +1933,8 @@
       "shiftKey": "<",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "description": "repeat latest f, t, F or T in opposite direction N times",
+          "type": "motion"
         },
         "shift": {
           "description": "",
@@ -1981,8 +1965,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1991,8 +1974,8 @@
       "shiftKey": ">",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "description": "repeat last change with count replaced with N",
+          "type": "command"
         },
         "shift": {
           "description": "",
@@ -2023,8 +2006,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -2033,8 +2015,8 @@
       "shiftKey": "?",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "description": "search forward for the Nth occurrence of {pattern}",
+          "type": "motion"
         },
         "shift": {
           "description": "",
@@ -2065,8 +2047,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -2075,8 +2056,9 @@
       "shiftKey": "⇧␣",
       "variations": {
         "solo": {
-          "description": "",
-          "type": ""
+          "description": "same as 'l'",
+          "type": "motion",
+          "duplicates": ["l"]
         },
         "shift": {
           "description": "",
@@ -2107,8 +2089,7 @@
           "type": ""
         },
         "control": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     }]
