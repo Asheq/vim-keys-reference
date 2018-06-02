@@ -36,9 +36,26 @@ class NormalModeKeys extends Polymer.Element {
       for (let variation in variationObj) {
         if (variationObj.hasOwnProperty(variation)) {
           let prettyDisplay = ''
-          prettyDisplay += keysJson.variationDescriptions[variation].prefix
-          prettyDisplay += keysJson.variationDescriptions[variation].hasShiftKey
-            === 'true' ? keyObj.shiftKey : keyObj.baseKey
+
+          switch (variation) {
+            case 'control':
+              if (!keyObj.special) {
+                prettyDisplay = '<C-' + keyObj.baseKey + '>'
+              } else {
+                prettyDisplay = '<C-' + keyObj.baseKey.slice(1, -1) + '>'
+              }
+              break
+            default:
+              prettyDisplay += keysJson.variationDescriptions[variation].prefix || '' // add prefix like g or z
+              if (keysJson.variationDescriptions[variation].hasShiftKey) { // determine whether to use pretty shiftKey
+                prettyDisplay += keyObj.shiftKey
+              }
+              else {
+                prettyDisplay += keyObj.baseKey
+              }
+              break
+          }
+
           variationObj[variation].prettyDisplay = prettyDisplay
         }
       }

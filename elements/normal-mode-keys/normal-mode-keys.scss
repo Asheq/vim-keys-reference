@@ -25,6 +25,9 @@
 .extended-skin {
   background-color: #98FB98;
 }
+.other-skin {
+  background-color: pink;
+}
 .unused-skin {
   background-color: #eeeeee;
 }
@@ -48,13 +51,17 @@
   @extend .td-skin;
   @extend .command-skin;
 }
-.legend__td--unused {
-  @extend .td-skin;
-  @extend .unused-skin;
-}
 .legend__td--extended {
   @extend .td-skin;
   @extend .extended-skin;
+}
+.legend__td--other {
+  @extend .td-skin;
+  @extend .other-skin;
+}
+.legend__td--unused {
+  @extend .td-skin;
+  @extend .unused-skin;
 }
 
 .keys {
@@ -91,6 +98,10 @@
 .keys__td--extended {
   @extend .keys__td;
   @extend .extended-skin;
+}
+.keys__td--other {
+  @extend .keys__td;
+  @extend .other-skin;
 }
 .keys__td--unused {
   @extend .keys__td;

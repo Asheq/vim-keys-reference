@@ -27,6 +27,7 @@
             <td class="legend__td--motion">Motion</td>
             <td class="legend__td--command">Command</td>
             <td class="legend__td--extended">Extended</td>
+            <td class="legend__td--other">Other</td>
             <td class="legend__td--unused">Unused</td>
           </tr>
         </table>
@@ -45,7 +46,8 @@
           <!-- TODO: Single letter operators: c, y, d, = -->
           <!-- TODO: Document keys that cannot be distinguished in terminals: Ctrl+m
             and <CR>, Ctrl-[ and <Esc>, <S-CR> an <CR>?, and more? -->
-          <!-- TODO: Extended commands: Z -->
+              <!-- TODO: Document keys that cannot be mapped in gui and in terminal -->
+              <!-- TODO: Extended commands: Z, <C-w> -->
           <!-- TODO: Arrow keys, Function keys, Home keys -->
           <!-- TODO: Mouse interactions -->
         </template>
@@ -58,28 +60,28 @@
                 <i>key</i>
               </th>
               <th>
-                ⇧<i>key</i>
+                &lt;S-<i>key</i>&gt;
               </th>
               <th>
-                g <i>key</i>
+                g<i>key</i>
               </th>
               <th>
-                g ⇧<i>key</i>
+                g&lt;S-<i>key</i>&gt;
               </th>
               <th>
-                z <i>key</i>
+                z<i>key</i>
               </th>
               <th>
-                z ⇧<i>key</i>
+                z&lt;S-<i>key</i>&gt;
               </th>
               <th>
-                [ <i>key</i>
+                [<i>key</i>
               </th>
               <th>
-                [ ⇧<i>key</i>
+                [ &lt;S-<i>key</i>&gt;
               </th>
               <th>
-                ⌃<i>key</i>
+                &lt;C-<i>key</i>&gt;
               </th>
             </tr>
           </thead>
