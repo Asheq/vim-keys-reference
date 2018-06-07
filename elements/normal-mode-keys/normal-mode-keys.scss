@@ -110,6 +110,11 @@
 .keys__td-pretty-display {
   font-weight: bold;
   font-size: 1.2em;
+  padding: 0 0.5em;
+  background-color: rgba(128, 128, 128, 0.3);
+  display: inline-block;
+}
+.keys__td-description {
 }
 
 .special-icon {

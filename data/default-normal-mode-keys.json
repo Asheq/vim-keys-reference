@@ -352,7 +352,7 @@
           "type": "command"
         },
         "g": {
-          "description": "like 'i', but first move to the |'^| mark",
+          "description": "like 'i', but first move to the '^ mark",
           "type": "command"
         },
         "gShift": {
@@ -925,7 +925,7 @@
           "type": "unused"
         },
         "control": {
-          "description": "window commands, see |CTRL-W|",
+          "description": "window commands, see CTRL-W",
           "type": "extended"
         }
       }
@@ -1056,12 +1056,12 @@
           "type": "command"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "description": "like ` but without changing the jumplist",
+          "type": "motion"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "swap case for Nmove text",
+          "type": "operator"
         },
         "z": {
           "description": "",
@@ -1097,12 +1097,10 @@
           "type": "operator"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
@@ -1138,12 +1136,11 @@
           "type": "command"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "call 'operatorfunc'",
+          "type": "operator"
         },
         "z": {
           "description": "",
@@ -1179,12 +1176,11 @@
           "type": "motion"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "like '#', but without using '\\<' and '\\>'",
+          "type": "command"
         },
         "z": {
           "description": "",
@@ -1220,12 +1216,11 @@
           "type": "motion"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "when 'wrap' off go to rightmost character of the current line that is on the screen; when 'wrap' on go to the rightmost character of the current screen line",
+          "type": "motion"
         },
         "z": {
           "description": "",
@@ -1261,12 +1256,10 @@
           "type": "motion"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
@@ -1302,12 +1295,11 @@
           "type": "motion"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "when 'wrap' off go to leftmost non-white character of the current line that is on the screen; when 'wrap' on go to the leftmost non-white character of the current screen line",
+          "type": "motion"
         },
         "z": {
           "description": "",
@@ -1344,12 +1336,11 @@
           "type": "command"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "repeat last ':s' on all lines",
+          "type": "command"
         },
         "z": {
           "description": "",
@@ -1385,12 +1376,12 @@
           "type": "motion"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "description": "print hex value of bytes used in UTF-8 character under the cursor",
+          "type": "command"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "like '*', but without using '\\<' and '\\>'",
+          "type": "command"
         },
         "z": {
           "description": "",
@@ -1426,12 +1417,10 @@
           "type": "motion"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
@@ -1467,12 +1456,11 @@
           "type": "motion"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "description": "when 'wrap' off go to leftmost character of the current line that is on the screen; when 'wrap' on go to the leftmost character of the current screen line",
+          "type": "motion"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
@@ -1508,12 +1496,12 @@
           "type": "motion"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "description": "go to older text state N times",
+          "type": "command"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "cursor to the last CHAR N - 1 lines lower",
+          "type": "motion"
         },
         "z": {
           "description": "",
@@ -1550,12 +1538,11 @@
           "duplicates": ["<CR>"]
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "go to newer text state N times",
+          "type": "command"
         },
         "z": {
           "description": "",
@@ -1592,12 +1579,10 @@
           "type": "unused"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
@@ -1633,12 +1618,10 @@
           "type": "unused"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
@@ -1674,12 +1657,10 @@
           "type": "motion"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
@@ -1717,12 +1698,11 @@
           "type": "motion"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "description": ":tselect on the tag under the cursor",
+          "type": "command"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
@@ -1758,12 +1738,10 @@
           "type": "motion"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
@@ -1800,12 +1778,11 @@
           "type": "command"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "description": "go to N older position in change list",
+          "type": "command"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
@@ -1841,12 +1818,11 @@
           "type": "other"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "description": "like ' but without changing the jumplist",
+          "type": "motion"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
@@ -1882,12 +1858,10 @@
           "type": "unused"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
@@ -1923,12 +1897,12 @@
           "type": "operator"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "description": "go to N newer position in change list",
+          "type": "command"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "display previous command output",
+          "type": "command"
         },
         "z": {
           "description": "",
@@ -1964,12 +1938,10 @@
           "type": "operator"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
@@ -2005,12 +1977,11 @@
           "type": "motion"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "description": "Rot13 encoding operator",
+          "type": "operator"
         },
         "z": {
           "description": "",
@@ -2047,12 +2018,10 @@
           "type": "unused"
         },
         "g": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "gShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "z": {
           "description": "",
