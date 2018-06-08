@@ -12,11 +12,11 @@
     <style include="normal-mode-keys-styles"></style>
     <div class="card">
       <iron-ajax
-        auto
-        url="data/default-normal-mode-keys.json"
-        handle-as="json"
-        loading="{{dataLoading}}"
-        last-response="{{keysJson}}">
+         auto
+         url="data/default-normal-mode-keys.json"
+         handle-as="json"
+         loading="{{dataLoading}}"
+         last-response="{{keysJson}}">
       </iron-ajax>
       <paper-checkbox label="Show Descriptions" checked="{{showDescriptions}}"></paper-checkbox> Show Descriptions
       <div class="legend">
@@ -48,8 +48,8 @@
             and <CR>, Ctrl-[ and <Esc>, <S-CR> an <CR>?, and more? -->
               <!-- TODO: Document keys that cannot be mapped in gui and in terminal -->
               <!-- TODO: Extended commands: Z, <C-w> -->
-          <!-- TODO: Arrow keys, Function keys, Home keys -->
-          <!-- TODO: Mouse interactions -->
+              <!-- TODO: Arrow keys, Function keys, Home keys -->
+              <!-- TODO: Mouse interactions -->
         </template>
       </div>
       <div class="keys">
@@ -107,13 +107,19 @@
                     <template is="dom-if" if=[[variation.value.duplicates]]>
                       <div class="special-icon">
                         <iron-icon icon="error-outline"></iron-icon>
-                        <paper-tooltip>This key is a duplicate of [[variation.value.duplicates]]</paper-tooltip>
+                        <paper-tooltip>
+                          <p>This key is a duplicate of [[variation.value.duplicates]].</p>
+                          <p>Feel free to map either this key or its duplicate.</p>
+                        </paper-tooltip>
                       </div>
                     </template>
                     <template is="dom-if" if=[[variation.value.useless]]>
                       <div class="special-icon">
                         <iron-icon icon="error"></iron-icon>
-                        <paper-tooltip>This key is (probably) useless to you</paper-tooltip>
+                        <paper-tooltip>
+                          <p>This key is useless; it makes no sense for a user to to use it manually.</p>
+                          <p>Feel free to map it.</p>
+                        </paper-tooltip>
                       </div>
                     </template>
                   </td>

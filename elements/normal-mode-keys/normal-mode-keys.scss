@@ -111,14 +111,14 @@
   font-weight: bold;
   font-size: 1.2em;
   padding: 0 0.5em;
-  background-color: rgba(0, 40, 60, 0.2);
+  background-color: rgba(0, 40, 60, 0.1);
   display: inline-block;
 }
 .keys__td-description {
 }
 
 .special-icon {
-  color: #4285f4;
+  color: red;
   --paper-tooltip: {
     font-size: 1em;
   }

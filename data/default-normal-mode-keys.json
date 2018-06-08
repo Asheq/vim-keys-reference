@@ -662,8 +662,7 @@
         },
         "shift": {
           "description": "to 'Ex' mode",
-          "type": "command",
-          "useless": true
+          "type": "command"
         },
         "g": {
           "description": "format Nmove text",
@@ -671,8 +670,7 @@
         },
         "gShift": {
           "description": "switch to 'Ex' mode with Vim editing",
-          "type": "command",
-          "useless": true
+          "type": "command"
         },
         "z": {
           "description": "",
@@ -1064,20 +1062,17 @@
           "type": "operator"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "description": "cursor to previous lowercase mark",
+          "type": "motion"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1103,20 +1098,16 @@
           "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1143,20 +1134,16 @@
           "type": "operator"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1183,20 +1170,17 @@
           "type": "command"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "description": "cursor to N previous unmatched #if, #else or #ifdef",
+          "type": "motion"
         },
         "control": {
           "type": "unused"
@@ -1223,20 +1207,16 @@
           "type": "motion"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1262,20 +1242,16 @@
           "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1302,20 +1278,17 @@
           "type": "motion"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "description": "cursor on line N (default line above window), otherwise like 'z-'",
+          "type": "command"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "description": "edit Nth alternate file (equivalent to ':e #N')",
@@ -1343,20 +1316,16 @@
           "type": "command"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1384,20 +1353,18 @@
           "type": "command"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "description": "same as '[/'",
+          "duplicates": "[/",
+          "type": "motion"
         },
         "control": {
           "type": "unused"
@@ -1423,20 +1390,17 @@
           "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "description": "cursor N times back to unmatched '('",
+          "type": "motion"
         },
         "control": {
           "type": "unused"
@@ -1463,20 +1427,16 @@
           "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1504,20 +1464,17 @@
           "type": "motion"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "redraw, cursor line at bottom of window, cursor on first non-blank",
+          "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1534,7 +1491,7 @@
         },
         "shift": {
           "description": "same as <CR>",
-          "type": "operator",
+          "type": "motion",
           "duplicates": ["<CR>"]
         },
         "g": {
@@ -1545,20 +1502,18 @@
           "type": "command"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "give spelling suggestions",
+          "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "description": "cursor on line N (default line below window), otherwise like 'z<CR>'",
+          "type": "command"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1585,20 +1540,16 @@
           "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1624,20 +1575,16 @@
           "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1663,20 +1610,18 @@
           "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "description": "cursor N sections backward",
+          "type": "motion"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "description": "cursor N times back to unmatched '{'",
+          "type": "motion"
         },
         "control": {
           "description": "Same as <Esc>",
@@ -1705,20 +1650,17 @@
           "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "description": "cursor N SECTIONS backward",
+          "type": "motion"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "description": ":ta to ident under cursor",
@@ -1744,20 +1686,16 @@
           "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "description": "Extended commands",
@@ -1785,20 +1723,16 @@
           "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1825,20 +1759,17 @@
           "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "description": "cursor to previous lowercase mark, on first non-blank",
+          "type": "motion"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1864,20 +1795,17 @@
           "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "redraw, cursor line to top of window, cursor on first non-blank",
+          "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1905,20 +1833,16 @@
           "type": "command"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1944,20 +1868,17 @@
           "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "description": "redraw, cursor line to center of window, cursor on first non-blank",
+          "type": "command"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1984,20 +1905,17 @@
           "type": "operator"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "description": "cursor to N previous start of a C comment",
+          "type": "motion"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -2024,20 +1942,16 @@
           "type": "unused"
         },
         "z": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "zShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracket": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "squareBracketShift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "control": {
           "type": "unused"
