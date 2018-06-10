@@ -3,6 +3,8 @@
 <link rel="import" href="../../bower_components/paper-tooltip/paper-tooltip.html">
 <link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
 <link rel="import" href="../../shared-styles.html">
 <link rel="import" href="normal-mode-keys-styles.html">
 
@@ -18,116 +20,124 @@
          loading="{{dataLoading}}"
          last-response="{{keysJson}}">
       </iron-ajax>
-      <paper-checkbox label="Show Descriptions" checked="{{showDescriptions}}"></paper-checkbox> Show Descriptions
-      <div class="legend">
-        <h3 class="legend__label">Legend</h3>
-        <table class="legend__table">
-          <tr>
-            <td class="legend__td--operator">Operator</td>
-            <td class="legend__td--motion">Motion</td>
-            <td class="legend__td--command">Command</td>
-            <td class="legend__td--extended">Extended</td>
-            <td class="legend__td--other">Other</td>
-            <td class="legend__td--unused">Unused</td>
-          </tr>
-        </table>
-        <template is="dom-if" if="[[showDescriptions]]">
-          <p>
-          <i>N</i> - a number entered before the key<br>
-          <i>{motion}</i> - a cursor movement command following an operator<br>
-          <i>{char}</i> - a character used with some motions (like f)<br>
-          <i>{filter}</i> - a command-line program following the ! operator<br>
-          <i>{pattern}</i> - a pattern following the / search command<br>
-          <i>Nmove</i> - the text that is moved over with a {motion}<br>
-          <i>SECTION</i> - a section that possibly starts with '}' instead of '{'<br>
-          <i>CHAR</i> - any non-blank character<br>
-          <i>WORD</i> - a sequence of non-blank characters<br>
-          </p>
-          <!-- TODO: Single letter operators: c, y, d, = -->
-          <!-- TODO: Document keys that cannot be distinguished in terminals: Ctrl+m
-            and <CR>, Ctrl-[ and <Esc>, <S-CR> an <CR>?, and more? -->
-              <!-- TODO: Document keys that cannot be mapped in gui and in terminal -->
-              <!-- TODO: Extended commands: Z, <C-w> -->
-              <!-- TODO: Arrow keys, Function keys, Home keys -->
-              <!-- TODO: Mouse interactions -->
-        </template>
+      <div class="show-descriptions">
+        <paper-checkbox id="show-descriptions" label="Show Descriptions"
+                                               checked="{{showDescriptions}}">
+          Show Descriptions
+        </paper-checkbox>
       </div>
-      <div class="keys">
-        <table class="keys__table">
-          <thead class="keys__table-header">
-            <tr>
-              <th>
-                ...
-              </th>
-              <th>
-                &lt;S-...&gt;
-              </th>
-              <th>
-                g...
-              </th>
-              <th>
-                g&lt;S-...&gt;
-              </th>
-              <th>
-                z...
-              </th>
-              <th>
-                z&lt;S-...&gt;
-              </th>
-              <th>
-                [...
-              </th>
-              <th>
-                [ &lt;S-...&gt;
-              </th>
-              <th>
-                &lt;C-...&gt;
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <template is="dom-repeat" items="[[keys]]" as="keyObj">
-              <tr>
-                <template is="dom-repeat" items="[[_toArray(keyObj.variations)]]" as="variation">
-                  <td class$="keys__td--[[variation.value.type]]">
+      <div class="tabs-container">
+        <paper-tabs class="tabs" selected="{{selectedTab}}" scrollable>
+          <paper-tab>Basic Keys</paper-tab>
+          <paper-tab>Keys Starting with Operator</paper-tab>
+        </paper-tabs>
+        <iron-pages class="tab-panes" selected="{{selectedTab}}">
+          <div>
+            <div class="legend">
+              <table class="legend__table">
+                <tr>
+                  <td class="legend__td--operator">Operator</td>
+                  <td class="legend__td--motion">Motion</td>
+                  <td class="legend__td--command">Command</td>
+                  <td class="legend__td--extended">Extended</td>
+                  <td class="legend__td--other">Other</td>
+                  <td class="legend__td--unused">Unused</td>
+                </tr>
+              </table>
+              <template is="dom-if" if="[[showDescriptions]]">
+                <!-- <p> -->
+                <!-- <i>N</i> - a number entered before the key<br> -->
+                <!-- <i>{motion}</i> - a cursor movement command following an operator<br> -->
+                <!-- <i>{char}</i> - a character used with some motions (like f)<br> -->
+                <!-- <i>{filter}</i> - a command-line program following the ! operator<br> -->
+                <!-- <i>{pattern}</i> - a pattern following the / search command<br> -->
+                <!-- <i>Nmove</i> - the text that is moved over with a {motion}<br> -->
+                <!-- <i>SECTION</i> - a section that possibly starts with '}' instead of '{'<br> -->
+                <!-- <i>CHAR</i> - any non-blank character<br> -->
+                <!-- <i>WORD</i> - a sequence of non-blank characters<br> -->
+                <!-- </p> -->
+              </template>
+            </div>
+            <div class="keys">
+              <table class="keys__table">
+                <thead class="keys__table-header">
+                  <tr>
+                    <th>
+                      ...
+                    </th>
+                    <th>
+                      &lt;S-...&gt;
+                    </th>
+                    <th>
+                      g...
+                    </th>
+                    <th>
+                      g&lt;S-...&gt;
+                    </th>
+                    <th>
+                      z...
+                    </th>
+                    <th>
+                      z&lt;S-...&gt;
+                    </th>
+                    <th>
+                      [...
+                    </th>
+                    <th>
+                      [ &lt;S-...&gt;
+                    </th>
+                    <th>
+                      &lt;C-...&gt;
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <template is="dom-repeat" items="[[keys]]" as="keyObj">
+                    <tr>
+                      <template is="dom-repeat" items="[[_toArray(keyObj.variations)]]" as="variation">
+                        <td class$="keys__td--[[variation.value.type]]">
 
-                    <!-- Pretty display -->
-                    <div class="keys__td-pretty-display">
-                      [[variation.value.prettyDisplay]]
-                    </div>
+                          <!-- Pretty display -->
+                          <div class="keys__td-pretty-display">
+                            [[variation.value.prettyDisplay]]
+                          </div>
 
-                    <!-- Description -->
-                    <template is="dom-if" if="[[showDescriptions]]">
-                      <div class="keys__td-description">
-                        <span>[[variation.value.description]]</span>
-                      </div>
-                    </template>
+                          <!-- Description -->
+                          <template is="dom-if" if="[[showDescriptions]]">
+                            <div class="keys__td-description">
+                              <span>[[variation.value.description]]</span>
+                            </div>
+                          </template>
 
-                    <!-- Special icons -->
-                    <template is="dom-if" if=[[variation.value.duplicates]]>
-                      <div class="special-icon">
-                        <iron-icon icon="error-outline"></iron-icon>
-                        <paper-tooltip>
-                          <p>This key is a duplicate of [[variation.value.duplicates]].</p>
-                          <p>Feel free to map either this key or its duplicate.</p>
-                        </paper-tooltip>
-                      </div>
-                    </template>
-                    <template is="dom-if" if=[[variation.value.useless]]>
-                      <div class="special-icon">
-                        <iron-icon icon="error"></iron-icon>
-                        <paper-tooltip>
-                          <p>This key is useless; it makes no sense for a user to to use it manually.</p>
-                          <p>Feel free to map it.</p>
-                        </paper-tooltip>
-                      </div>
-                    </template>
-                  </td>
-                </template>
-              </tr>
-            </template>
-          </tbody>
-        </table>
+                          <!-- Special icons -->
+                          <template is="dom-if" if=[[variation.value.duplicates]]>
+                            <div class="special-icon">
+                              <iron-icon icon="error-outline"></iron-icon>
+                              <paper-tooltip>
+                                <p>This key is a duplicate of [[variation.value.duplicates]].</p>
+                                <p>Feel free to map either this key or its duplicate.</p>
+                              </paper-tooltip>
+                            </div>
+                          </template>
+                          <template is="dom-if" if=[[variation.value.useless]]>
+                            <div class="special-icon">
+                              <iron-icon icon="error"></iron-icon>
+                              <paper-tooltip>
+                                <p>This key is useless; it makes no sense for a user to to use it manually.</p>
+                                <p>Feel free to map it.</p>
+                              </paper-tooltip>
+                            </div>
+                          </template>
+                        </td>
+                      </template>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div>TODO</div>
+        </iron-pages>
       </div>
     </div>
   </template>

@@ -15,14 +15,13 @@
   <template>
     <style include="app-root-styles"></style>
     <app-location route="{{route}}" use-hash-as-path></app-location>
-    <app-route
-                  route="{{route}}"
-                  pattern=":page"
-                  data="{{routeData}}">
+    <app-route route="{{route}}"
+               pattern=":page"
+               data="{{routeData}}">
     </app-route>
     <div class="title">
       <img class="title__img" src="images/vim-logo.svg">
-      Keys Reference
+      Key Bindings
     </div>
     <iron-selector selected="[[page]]" attr-for-selected="name" class="modes-list" role="navigation">
       <a name="normal-mode-keys" href="[[rootPath]]#normal-mode-keys">Normal Mode</a>

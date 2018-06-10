@@ -2,6 +2,10 @@ class NormalModeKeys extends Polymer.Element {
   static get is() { return 'normal-mode-keys' }
   static get properties() {
     return {
+      selectedTab: {
+        type: Number,
+        value: 0
+      },
       keys: {
         type: Object,
         computed: '_computeKeys(keysJson)',
