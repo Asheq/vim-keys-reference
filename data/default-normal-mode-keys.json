@@ -1,6 +1,6 @@
 {
   "variationDescriptions": {
-    "solo": {},
+    "base": {},
     "shift": {
       "hasShiftKey": "true"
     },
@@ -18,6 +18,10 @@
       "hasShiftKey": "true",
       "prefix": "z"
     },
+    "d": {
+    },
+    "dShift": {
+    },
     "squareBracket": {
       "prefix": "["
     },
@@ -31,7 +35,7 @@
       "baseKey": "a",
       "shiftKey": "A",
       "variations": {
-        "solo": {
+        "base": {
           "description": "append text after the cursor N times",
           "type": "command"
         },
@@ -69,7 +73,7 @@
       "baseKey": "b",
       "shiftKey": "B",
       "variations": {
-        "solo": {
+        "base": {
           "description": "cursor N words backward",
           "type": "motion"
         },
@@ -105,7 +109,7 @@
       "baseKey": "c",
       "shiftKey": "C",
       "variations": {
-        "solo": {
+        "base": {
           "description": "delete Nmove text [into register x] and start insert",
           "type": "operator"
         },
@@ -143,7 +147,7 @@
       "baseKey": "d",
       "shiftKey": "D",
       "variations": {
-        "solo": {
+        "base": {
           "description": "delete Nmove text [into register x]",
           "type": "operator"
         },
@@ -184,7 +188,7 @@
       "baseKey": "e",
       "shiftKey": "E",
       "variations": {
-        "solo": {
+        "base": {
           "description": "cursor forward to the end of word N",
           "type": "motion"
         },
@@ -223,7 +227,7 @@
       "baseKey": "f",
       "shiftKey": "F",
       "variations": {
-        "solo": {
+        "base": {
           "description": "cursor to Nth occurrence of {char} to the right",
           "type": "motion"
         },
@@ -264,7 +268,7 @@
       "baseKey": "g",
       "shiftKey": "G",
       "variations": {
-        "solo": {
+        "base": {
           "description": "extended commands starting with 'g'",
           "type": "extended"
         },
@@ -302,7 +306,7 @@
       "baseKey": "h",
       "shiftKey": "H",
       "variations": {
-        "solo": {
+        "base": {
           "description": "cursor N chars to the left",
           "type": "motion"
         },
@@ -343,7 +347,7 @@
       "baseKey": "i",
       "shiftKey": "I",
       "variations": {
-        "solo": {
+        "base": {
           "description": "insert text before the cursor N times",
           "type": "command"
         },
@@ -384,7 +388,7 @@
       "baseKey": "j",
       "shiftKey": "J",
       "variations": {
-        "solo": {
+        "base": {
           "description": "cursor N lines downward",
           "type": "motion"
         },
@@ -423,7 +427,7 @@
       "baseKey": "k",
       "shiftKey": "K",
       "variations": {
-        "solo": {
+        "base": {
           "description": "cursor N lines upward",
           "type": "motion"
         },
@@ -459,7 +463,7 @@
       "baseKey": "l",
       "shiftKey": "L",
       "variations": {
-        "solo": {
+        "base": {
           "description": "cursor N chars to the right",
           "type": "motion"
         },
@@ -496,7 +500,7 @@
       "baseKey": "m",
       "shiftKey": "M",
       "variations": {
-        "solo": {
+        "base": {
           "description": "mark {A-Za-z} at cursor position",
           "type": "command"
         },
@@ -536,7 +540,7 @@
       "baseKey": "n",
       "shiftKey": "N",
       "variations": {
-        "solo": {
+        "base": {
           "description": "repeat the latest '/' or '?' N times",
           "type": "motion"
         },
@@ -576,7 +580,7 @@
       "baseKey": "o",
       "shiftKey": "O",
       "variations": {
-        "solo": {
+        "base": {
           "description": "begin a new line below the cursor and insert text, repeat N times",
           "type": "command"
         },
@@ -614,7 +618,7 @@
       "baseKey": "p",
       "shiftKey": "P",
       "variations": {
-        "solo": {
+        "base": {
           "description": "put the text [from register x] after the cursor N times",
           "type": "command"
         },
@@ -656,7 +660,7 @@
       "baseKey": "q",
       "shiftKey": "Q",
       "variations": {
-        "solo": {
+        "base": {
           "description": "record typed characters into named register {0-9a-zA-Z}(uppercase to append). There are three special cases (q: q/ q?)",
           "type": "command"
         },
@@ -694,7 +698,7 @@
       "baseKey": "r",
       "shiftKey": "R",
       "variations": {
-        "solo": {
+        "base": {
           "description": "replace N chars with {char}",
           "type": "command"
         },
@@ -734,7 +738,7 @@
       "baseKey": "s",
       "shiftKey": "S",
       "variations": {
-        "solo": {
+        "base": {
           "description": "(substitute) delete N characters [into register x] and start insert",
           "type": "command",
           "duplicates": ["cl"]
@@ -775,7 +779,7 @@
       "baseKey": "t",
       "shiftKey": "T",
       "variations": {
-        "solo": {
+        "base": {
           "description": "cursor till before Nth occurrence of {char} to the right",
           "type": "motion"
         },
@@ -814,7 +818,7 @@
       "baseKey": "u",
       "shiftKey": "U",
       "variations": {
-        "solo": {
+        "base": {
           "description": "undo changes",
           "type": "command"
         },
@@ -853,7 +857,7 @@
       "baseKey": "v",
       "shiftKey": "V",
       "variations": {
-        "solo": {
+        "base": {
           "description": "characterwise Visual mode",
           "type": "command"
         },
@@ -893,7 +897,7 @@
       "baseKey": "w",
       "shiftKey": "W",
       "variations": {
-        "solo": {
+        "base": {
           "description": "cursor N words forward",
           "type": "motion"
         },
@@ -932,7 +936,7 @@
       "baseKey": "x",
       "shiftKey": "X",
       "variations": {
-        "solo": {
+        "base": {
           "description": "delete N characters under and after the cursor [into register x]",
           "type": "command"
         },
@@ -970,7 +974,7 @@
       "baseKey": "y",
       "shiftKey": "Y",
       "variations": {
-        "solo": {
+        "base": {
           "description": "yank Nmove text [into register x]",
           "type": "operator"
         },
@@ -1007,7 +1011,7 @@
       "baseKey": "z",
       "shiftKey": "Z",
       "variations": {
-        "solo": {
+        "base": {
           "description": "extended commands starting with 'z'",
           "type": "extended"
         },
@@ -1045,7 +1049,7 @@
       "baseKey": "`",
       "shiftKey": "~",
       "variations": {
-        "solo": {
+        "base": {
           "description": "cursor to the mark {a-zA-Z0-9}",
           "type": "motion"
         },
@@ -1083,7 +1087,7 @@
       "baseKey": "1",
       "shiftKey": "!",
       "variations": {
-        "solo": {
+        "base": {
           "description": "count",
           "type": "other"
         },
@@ -1118,7 +1122,7 @@
       "baseKey": "2",
       "shiftKey": "@",
       "variations": {
-        "solo": {
+        "base": {
           "description": "count",
           "type": "other"
         },
@@ -1154,7 +1158,7 @@
       "baseKey": "3",
       "shiftKey": "#",
       "variations": {
-        "solo": {
+        "base": {
           "description": "count",
           "type": "other"
         },
@@ -1191,7 +1195,7 @@
       "baseKey": "4",
       "shiftKey": "$",
       "variations": {
-        "solo": {
+        "base": {
           "description": "count",
           "type": "other"
         },
@@ -1227,7 +1231,7 @@
       "baseKey": "5",
       "shiftKey": "%",
       "variations": {
-        "solo": {
+        "base": {
           "description": "count",
           "type": "other"
         },
@@ -1262,7 +1266,7 @@
       "baseKey": "6",
       "shiftKey": "^",
       "variations": {
-        "solo": {
+        "base": {
           "description": "count",
           "type": "other"
         },
@@ -1300,7 +1304,7 @@
       "baseKey": "7",
       "shiftKey": "&",
       "variations": {
-        "solo": {
+        "base": {
           "description": "count",
           "type": "other"
         },
@@ -1336,7 +1340,7 @@
       "baseKey": "8",
       "shiftKey": "*",
       "variations": {
-        "solo": {
+        "base": {
           "description": "count",
           "type": "other"
         },
@@ -1375,7 +1379,7 @@
       "baseKey": "9",
       "shiftKey": "(",
       "variations": {
-        "solo": {
+        "base": {
           "description": "count",
           "type": "other"
         },
@@ -1411,7 +1415,7 @@
       "baseKey": "0",
       "shiftKey": ")",
       "variations": {
-        "solo": {
+        "base": {
           "description": "cursor to the first char of the line",
           "type": "motion"
         },
@@ -1447,7 +1451,7 @@
       "baseKey": "-",
       "shiftKey": "_",
       "variations": {
-        "solo": {
+        "base": {
           "description": "cursor to the first CHAR N lines higher",
           "type": "motion"
         },
@@ -1485,7 +1489,7 @@
       "baseKey": "=",
       "shiftKey": "+",
       "variations": {
-        "solo": {
+        "base": {
           "description": "filter Nmove lines through 'indent'",
           "type": "operator"
         },
@@ -1523,9 +1527,9 @@
     {
       "baseKey": "<BS>",
       "shiftKey": "<S-BS>",
-      "special": "true",
+      "isSpecial": "true",
       "variations": {
-        "solo": {
+        "base": {
           "description": "same as 'h'",
           "type": "motion",
           "duplicates": ["h"]
@@ -1559,9 +1563,9 @@
     {
       "baseKey": "<Tab>",
       "shiftKey": "<S-Tab>",
-      "special": "true",
+      "isSpecial": "true",
       "variations": {
-        "solo": {
+        "base": {
           "description": "go to N newer entry in jump list",
           "type": "motion"
         },
@@ -1595,7 +1599,7 @@
       "baseKey": "[",
       "shiftKey": "{",
       "variations": {
-        "solo": {
+        "base": {
           "description": "square bracket command",
           "type": "extended"
         },
@@ -1634,7 +1638,7 @@
       "baseKey": "]",
       "shiftKey": "}",
       "variations": {
-        "solo": {
+        "base": {
           "description": "square bracket command",
           "type": "extended"
         },
@@ -1672,7 +1676,7 @@
       "baseKey": "\\",
       "shiftKey": "|",
       "variations": {
-        "solo": {
+        "base": {
           "type": "unused"
         },
         "shift": {
@@ -1707,7 +1711,7 @@
       "baseKey": ";",
       "shiftKey": ":",
       "variations": {
-        "solo": {
+        "base": {
           "description": "repeat latest f, t, F or T N times",
           "type": "motion"
         },
@@ -1743,7 +1747,7 @@
       "baseKey": "'",
       "shiftKey": "\"",
       "variations": {
-        "solo": {
+        "base": {
           "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}",
           "type": "motion"
         },
@@ -1779,9 +1783,9 @@
     {
       "baseKey": "<CR>",
       "shiftKey": "<S-CR>",
-      "special": "true",
+      "isSpecial": "true",
       "variations": {
-        "solo": {
+        "base": {
           "description": "cursor to the first CHAR N lines lower",
           "type": "motion"
         },
@@ -1816,7 +1820,7 @@
       "baseKey": ",",
       "shiftKey": "<",
       "variations": {
-        "solo": {
+        "base": {
           "description": "repeat latest f, t, F or T in opposite direction N times",
           "type": "motion"
         },
@@ -1853,7 +1857,7 @@
       "baseKey": ".",
       "shiftKey": ">",
       "variations": {
-        "solo": {
+        "base": {
           "description": "repeat last change with count replaced with N",
           "type": "command"
         },
@@ -1889,7 +1893,7 @@
       "baseKey": "/",
       "shiftKey": "?",
       "variations": {
-        "solo": {
+        "base": {
           "description": "search forward for the Nth occurrence of {pattern}",
           "type": "motion"
         },
@@ -1925,9 +1929,9 @@
     {
       "baseKey": "<Space>",
       "shiftKey": "<S-Space>",
-      "special": "true",
+      "isSpecial": "true",
       "variations": {
-        "solo": {
+        "base": {
           "description": "same as 'l'",
           "type": "motion",
           "duplicates": ["l"]

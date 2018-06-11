@@ -28,8 +28,8 @@
       </div>
       <div class="tabs-container">
         <paper-tabs class="tabs" selected="{{selectedTab}}" scrollable>
-          <paper-tab>Basic Keys</paper-tab>
-          <paper-tab>Keys Starting with Operator</paper-tab>
+          <paper-tab>Basic</paper-tab>
+          <paper-tab>Starting with Operator</paper-tab>
         </paper-tabs>
         <iron-pages class="tab-panes" selected="{{selectedTab}}">
           <div>
@@ -61,6 +61,7 @@
             <div class="keys">
               <table class="keys__table">
                 <thead class="keys__table-header">
+                  <!-- TODO: Always display in correct order -->
                   <tr>
                     <th>
                       ...
@@ -94,32 +95,32 @@
                 <tbody>
                   <template is="dom-repeat" items="[[keys]]" as="keyObj">
                     <tr>
-                      <template is="dom-repeat" items="[[_toArray(keyObj.variations)]]" as="variation">
-                        <td class$="keys__td--[[variation.value.type]]">
+                      <template is="dom-repeat" items="[[keyObj.basicVariations]]" as="variation">
+                        <td class$="keys__td--[[variation.type]]">
 
                           <!-- Pretty display -->
                           <div class="keys__td-pretty-display">
-                            [[variation.value.prettyDisplay]]
+                            [[variation.prettyDisplay]]
                           </div>
 
                           <!-- Description -->
                           <template is="dom-if" if="[[showDescriptions]]">
                             <div class="keys__td-description">
-                              <span>[[variation.value.description]]</span>
+                              <span>[[variation.description]]</span>
                             </div>
                           </template>
 
                           <!-- Special icons -->
-                          <template is="dom-if" if=[[variation.value.duplicates]]>
+                          <template is="dom-if" if=[[variation.duplicates]]>
                             <div class="special-icon">
                               <iron-icon icon="error-outline"></iron-icon>
                               <paper-tooltip>
-                                <p>This key is a duplicate of [[variation.value.duplicates]].</p>
+                                <p>This key is a duplicate of [[variation.duplicates]].</p>
                                 <p>Feel free to map either this key or its duplicate.</p>
                               </paper-tooltip>
                             </div>
                           </template>
-                          <template is="dom-if" if=[[variation.value.useless]]>
+                          <template is="dom-if" if=[[variation.useless]]>
                             <div class="special-icon">
                               <iron-icon icon="error"></iron-icon>
                               <paper-tooltip>

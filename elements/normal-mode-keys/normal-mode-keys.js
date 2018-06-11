@@ -10,10 +10,11 @@ class NormalModeKeys extends Polymer.Element {
         type: Object,
         computed: '_computeKeys(keysJson)',
       },
-      descriptionDisplayOrder: {
+      basicVariations: {
         type: Array,
         value: function() {
           return [
+            'base',
             'shift',
             'g',
             'gShift',
@@ -25,62 +26,61 @@ class NormalModeKeys extends Polymer.Element {
           ]
         },
       },
+      operatorVariations: {
+        type: Array,
+        value: function() {
+          return [
+            'd',
+            'dShift',
+          ]
+        },
+      },
       showDescriptions: {
         type: Boolean,
         value: true,
       },
     }
   }
+  _getPrettyDisplay(variationName, baseKey, shiftKey, isSpecial, variationDescription) {
+    let prettyDisplay = ''
+
+    switch (variationName) {
+      case 'control':
+        if (!isSpecial) {
+          prettyDisplay = '<C-' + baseKey + '>'
+        } else {
+          prettyDisplay = '<C-' + baseKey.slice(1, -1) + '>'
+        }
+        break
+      default:
+        prettyDisplay += variationDescription.prefix || ''
+        if (variationDescription.hasShiftKey) {
+          prettyDisplay += shiftKey
+        }
+        else {
+          prettyDisplay += baseKey
+        }
+        break
+    }
+    return prettyDisplay
+  }
   _computeKeys(keysJson) {
     if (!keysJson) {
       return null
     }
-    var keys = keysJson.keys.map(function(keyObj) {
+    const self = this
+
+    keysJson.keys.forEach(function(keyObj) {
       var variationObj = keyObj.variations
-      for (let variation in variationObj) {
-        if (variationObj.hasOwnProperty(variation)) {
-          let prettyDisplay = ''
+      Object.keys(variationObj).forEach(function(variation) {
+        variationObj[variation].prettyDisplay =
+          self._getPrettyDisplay(variation, keyObj.baseKey, keyObj.shiftKey, keyObj.isSpecial, keysJson.variationDescriptions[variation])
+      })
 
-          switch (variation) {
-            case 'control':
-              if (!keyObj.special) {
-                prettyDisplay = '<C-' + keyObj.baseKey + '>'
-              } else {
-                prettyDisplay = '<C-' + keyObj.baseKey.slice(1, -1) + '>'
-              }
-              break
-            default:
-              prettyDisplay += keysJson.variationDescriptions[variation].prefix || '' // add prefix like g or z
-              if (keysJson.variationDescriptions[variation].hasShiftKey) { // determine whether to use pretty shiftKey
-                prettyDisplay += keyObj.shiftKey
-              }
-              else {
-                prettyDisplay += keyObj.baseKey
-              }
-              break
-          }
-
-          variationObj[variation].prettyDisplay = prettyDisplay
-        }
-      }
-      return keyObj
+      keyObj.basicVariations = self.basicVariations.map(x => variationObj[x])
     })
 
-    return keys
-  }
-  _toArray(obj) {
-    var arr = Object.keys(obj).map(function(key) {
-      return {
-        name: key,
-        value: obj[key],
-      }
-    })
-    arr.sort((a, b) => this.descriptionDisplayOrder.indexOf(a.name) >
-      this.descriptionDisplayOrder.indexOf(b.name))
-    return arr
-  }
-  isEqual(one, two) {
-    return one === two
+    return keysJson.keys
   }
 }
 
