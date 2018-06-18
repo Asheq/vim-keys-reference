@@ -2,7 +2,7 @@
   "name": "vim-keys-reference",
   "license": "BSD-3-Clause",
   "devDependencies": {
-    "autoprefixer": "^8.5.0",
+    "autoprefixer": "^8.6.3",
     "eslint": "^4.19.1",
     "eslint-config-google": "^0.9.1",
     "eslint-plugin-html": "^4.0.3",
@@ -11,6 +11,7 @@
     "gulp-nodemon": "^2.2.1",
     "gulp-sass": "^4.0.1",
     "gulp-style-modules": "^0.1.0",
+    "hoek": "4.2.1",
     "node-sass": "^4.9.0",
     "node-sass-import-once": "^1.2.0",
     "path": "^0.12.7"
