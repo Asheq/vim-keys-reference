@@ -927,7 +927,7 @@
           "type": "unused"
         },
         "control": {
-          "description": "window commands, see CTRL-W",
+          "description": "window commands",
           "type": "extended"
         }
       }
@@ -1089,7 +1089,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "other"
+          "type": "extended"
         },
         "shift": {
           "description": "filter Nmove text through the {filter} command",
@@ -1124,7 +1124,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "other"
+          "type": "extended"
         },
         "shift": {
           "description": "execute the contents of register {a-z} N times",
@@ -1160,7 +1160,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "other"
+          "type": "extended"
         },
         "shift": {
           "description": "search backward for the Nth occurrence of the ident under the cursor",
@@ -1197,7 +1197,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "other"
+          "type": "extended"
         },
         "shift": {
           "description": "cursor to the end of Nth next line",
@@ -1233,7 +1233,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "other"
+          "type": "extended"
         },
         "shift": {
           "description": "find the next (curly/square) bracket on this line and go to its match, or go to matching comment bracket, or go to matching preprocessor directive.",
@@ -1268,7 +1268,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "other"
+          "type": "extended"
         },
         "shift": {
           "description": "cursor to the first CHAR of the line",
@@ -1306,7 +1306,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "other"
+          "type": "extended"
         },
         "shift": {
           "description": "repeat last :s",
@@ -1342,7 +1342,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "other"
+          "type": "extended"
         },
         "shift": {
           "description": "search forward for the Nth occurrence of the ident under the cursor",
@@ -1381,7 +1381,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "other"
+          "type": "extended"
         },
         "shift": {
           "description": "cursor N sentences backward",
@@ -1600,7 +1600,7 @@
       "shiftKey": "{",
       "variations": {
         "base": {
-          "description": "square bracket command",
+          "description": "square bracket commands",
           "type": "extended"
         },
         "shift": {
@@ -1639,7 +1639,7 @@
       "shiftKey": "}",
       "variations": {
         "base": {
-          "description": "square bracket command",
+          "description": "square bracket commands",
           "type": "extended"
         },
         "shift": {
@@ -1753,7 +1753,7 @@
         },
         "shift": {
           "description": "use register {a-zA-Z0-9.%#:-\"} for next delete, yank or put (uppercase to append) ({.%#:} only work with put)",
-          "type": "other"
+          "type": "extended"
         },
         "g": {
           "description": "like ' but without changing the jumplist",

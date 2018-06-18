@@ -1,1 +1,1 @@
-# Vim Keys Reference - All Modes
+# Vim Keys Reference
