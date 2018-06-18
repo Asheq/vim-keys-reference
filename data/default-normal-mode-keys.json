@@ -393,7 +393,7 @@
           "type": "motion"
         },
         "shift": {
-          "description": "Join N lines; default is 2",
+          "description": "join N lines; default is 2",
           "type": "command"
         },
         "g": {
@@ -1628,7 +1628,7 @@
           "type": "motion"
         },
         "control": {
-          "description": "Same as <Esc>",
+          "description": "same as <Esc>",
           "type": "command",
           "duplicates": ["<Esc>"]
         }
@@ -1702,7 +1702,7 @@
           "type": "unused"
         },
         "control": {
-          "description": "Extended commands",
+          "description": "reserved for extensions",
           "type": "extended"
         }
       }
@@ -1905,7 +1905,7 @@
           "type": "unused"
         },
         "gShift": {
-          "description": "Rot13 encoding operator",
+          "description": "rot13 encoding operator",
           "type": "operator"
         },
         "z": {
