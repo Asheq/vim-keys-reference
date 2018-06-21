@@ -122,9 +122,9 @@
     font-size: 0.8rem;
   }
   --paper-tooltip-delay-in: 500;
-  --paper-tooltip-delay-out: 500;
+  --paper-tooltip-delay-out: 0;
   --paper-tooltip-duration-in: 500;
-  --paper-tooltip-duration-out: 500;
+  --paper-tooltip-duration-out: 0;
 }
 
 .show-descriptions {

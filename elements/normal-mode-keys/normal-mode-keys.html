@@ -97,9 +97,28 @@
                       <template is="dom-repeat" items="[[keyObj.basicVariations]]" as="variation">
                         <td class$="keys__td--[[variation.type]]">
 
-                          <!-- Pretty display -->
-                          <div class="keys__td-pretty-display">
-                            [[variation.prettyDisplay]]
+                          <div>
+                            <!-- Pretty display -->
+                            <div class="keys__td-pretty-display">
+                              [[variation.prettyDisplay]]
+                            </div>
+                            <!-- Special icons -->
+                            <template is="dom-if" if=[[variation.duplicates]]>
+                              <span class="special-icon">
+                                <iron-icon icon="error-outline"></iron-icon>
+                                <paper-tooltip position="top">
+                                  <p>Duplicate of [[variation.duplicates]]</p>
+                                </paper-tooltip>
+                              </span>
+                            </template>
+                            <template is="dom-if" if=[[variation.useless]]>
+                              <span class="special-icon">
+                                <iron-icon icon="error"></iron-icon>
+                                <paper-tooltip position="top">
+                                  <p>Useless to invoke manually</p>
+                                </paper-tooltip>
+                              </span>
+                            </template>
                           </div>
 
                           <!-- Description -->
@@ -109,25 +128,6 @@
                             </div>
                           </template>
 
-                          <!-- Special icons -->
-                          <template is="dom-if" if=[[variation.duplicates]]>
-                            <div class="special-icon">
-                              <iron-icon icon="error-outline"></iron-icon>
-                              <paper-tooltip>
-                                <p>This key is a duplicate of [[variation.duplicates]].</p>
-                                <p>Feel free to map either this key or its duplicate.</p>
-                              </paper-tooltip>
-                            </div>
-                          </template>
-                          <template is="dom-if" if=[[variation.useless]]>
-                            <div class="special-icon">
-                              <iron-icon icon="error"></iron-icon>
-                              <paper-tooltip>
-                                <p>This key is useless; it makes no sense for a user to to use it manually.</p>
-                                <p>Feel free to map it.</p>
-                              </paper-tooltip>
-                            </div>
-                          </template>
                         </td>
                       </template>
                     </tr>
