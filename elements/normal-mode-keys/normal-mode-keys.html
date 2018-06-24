@@ -29,66 +29,46 @@
       <div class="tabs-container">
         <paper-tabs class="tabs" selected="{{selectedTab}}" scrollable>
           <paper-tab>Basic</paper-tab>
+          <paper-tab>Other</paper-tab>
           <paper-tab>Starting with Operator</paper-tab>
         </paper-tabs>
+        <div class="legend">
+          <table class="legend__table">
+            <tr>
+              <td class="legend__td--operator">Operator</td>
+              <td class="legend__td--motion">Motion</td>
+              <td class="legend__td--command">Command</td>
+              <td class="legend__td--extended">Extended</td>
+              <td class="legend__td--unused">Unused</td>
+            </tr>
+          </table>
+          <template is="dom-if" if="[[showDescriptions]]">
+            <!-- <p> -->
+            <!-- <i>N</i> - a number entered before the key<br> -->
+            <!-- <i>{motion}</i> - a cursor movement command following an operator<br> -->
+            <!-- <i>{char}</i> - a character used with some motions (like f)<br> -->
+            <!-- <i>{filter}</i> - a command-line program following the ! operator<br> -->
+            <!-- <i>{pattern}</i> - a pattern following the / search command<br> -->
+            <!-- <i>Nmove</i> - the text that is moved over with a {motion}<br> -->
+            <!-- <i>SECTION</i> - a section that possibly starts with '}' instead of '{'<br> -->
+            <!-- <i>CHAR</i> - any non-blank character<br> -->
+            <!-- <i>WORD</i> - a sequence of non-blank characters<br> -->
+            <!-- </p> -->
+          </template>
+        </div>
         <iron-pages class="tab-panes" selected="{{selectedTab}}">
+
+          <!-- Remove duplication by creating another element -->
           <div>
-            <div class="legend">
-              <table class="legend__table">
-                <tr>
-                  <td class="legend__td--operator">Operator</td>
-                  <td class="legend__td--motion">Motion</td>
-                  <td class="legend__td--command">Command</td>
-                  <td class="legend__td--extended">Extended</td>
-                  <td class="legend__td--unused">Unused</td>
-                </tr>
-              </table>
-              <template is="dom-if" if="[[showDescriptions]]">
-                <!-- <p> -->
-                <!-- <i>N</i> - a number entered before the key<br> -->
-                <!-- <i>{motion}</i> - a cursor movement command following an operator<br> -->
-                <!-- <i>{char}</i> - a character used with some motions (like f)<br> -->
-                <!-- <i>{filter}</i> - a command-line program following the ! operator<br> -->
-                <!-- <i>{pattern}</i> - a pattern following the / search command<br> -->
-                <!-- <i>Nmove</i> - the text that is moved over with a {motion}<br> -->
-                <!-- <i>SECTION</i> - a section that possibly starts with '}' instead of '{'<br> -->
-                <!-- <i>CHAR</i> - any non-blank character<br> -->
-                <!-- <i>WORD</i> - a sequence of non-blank characters<br> -->
-                <!-- </p> -->
-              </template>
-            </div>
             <div class="keys">
               <table class="keys__table">
                 <thead class="keys__table-header">
-                  <!-- TODO: Always display in correct order -->
                   <tr>
-                    <th>
-                      ...
-                    </th>
-                    <th>
-                      &lt;S-...&gt;
-                    </th>
-                    <th>
-                      g...
-                    </th>
-                    <th>
-                      g&lt;S-...&gt;
-                    </th>
-                    <th>
-                      z...
-                    </th>
-                    <th>
-                      z&lt;S-...&gt;
-                    </th>
-                    <th>
-                      [...
-                    </th>
-                    <th>
-                      [ &lt;S-...&gt;
-                    </th>
-                    <th>
-                      &lt;C-...&gt;
-                    </th>
+                    <template is="dom-repeat" items="[[basicVariationsDisplay]]">
+                      <th>
+                        [[item]]
+                      </th>
+                    </template>
                   </tr>
                 </thead>
                 <tbody>
@@ -96,7 +76,6 @@
                     <tr>
                       <template is="dom-repeat" items="[[keyObj.basicVariations]]" as="variation">
                         <td class$="keys__td--[[variation.type]]">
-
                           <div>
                             <!-- Pretty display -->
                             <div class="keys__td-pretty-display">
@@ -136,7 +115,120 @@
               </table>
             </div>
           </div>
-          <div>TODO</div>
+
+          <!-- TODO: -->
+          <!-- ] keys (shift and lowercase) -->
+          <!-- Z keys (shift and lowercase) -->
+
+          <!-- <C-w> keys (shift and lowercase) -->
+          <!-- " keys (shift and lowercase) -->
+
+          <div>
+            <div class="keys">
+              <table class="keys__table">
+                <thead class="keys__table-header">
+                  <tr>
+                    <template is="dom-repeat" items="[[otherVariationsDisplay]]">
+                      <th>
+                        [[item]]
+                      </th>
+                    </template>
+                  </tr>
+                </thead>
+                <tbody>
+                  <template is="dom-repeat" items="[[keys]]" as="keyObj">
+                    <tr>
+                      <template is="dom-repeat" items="[[keyObj.otherVariations]]" as="variation">
+                        <td class$="keys__td--[[variation.type]]">
+                          <div>
+                            <!-- Pretty display -->
+                            <div class="keys__td-pretty-display">
+                              [[variation.prettyDisplay]]
+                            </div>
+                            <!-- Special icons -->
+                            <template is="dom-if" if=[[variation.duplicates]]>
+                              <span class="special-icon">
+                                <iron-icon icon="error-outline"></iron-icon>
+                                <paper-tooltip position="top">
+                                  <p>Duplicate of [[variation.duplicates]]</p>
+                                </paper-tooltip>
+                              </span>
+                            </template>
+                            <template is="dom-if" if=[[variation.useless]]>
+                              <span class="special-icon">
+                                <iron-icon icon="error"></iron-icon>
+                                <paper-tooltip position="top">
+                                  <p>Useless to invoke manually</p>
+                                </paper-tooltip>
+                              </span>
+                            </template>
+                          </div>
+
+                          <!-- Description -->
+                          <template is="dom-if" if="[[showDescriptions]]">
+                            <div class="keys__td-description">
+                              <span>[[variation.description]]</span>
+                            </div>
+                          </template>
+
+                        </td>
+                      </template>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div>
+            <div class="keys">
+              <table class="keys__table">
+                <thead class="keys__table-header">
+                </thead>
+                <tbody>
+                  <template is="dom-repeat" items="[[keys]]" as="keyObj">
+                    <tr>
+                      <template is="dom-repeat" items="[[keyObj.operatorVariations]]" as="variation">
+                        <td class$="keys__td--[[variation.type]]">
+                          <div>
+                            <!-- Pretty display -->
+                            <div class="keys__td-pretty-display">
+                              [[variation.prettyDisplay]]
+                            </div>
+                            <!-- Special icons -->
+                            <template is="dom-if" if=[[variation.duplicates]]>
+                              <span class="special-icon">
+                                <iron-icon icon="error-outline"></iron-icon>
+                                <paper-tooltip position="top">
+                                  <p>Duplicate of [[variation.duplicates]]</p>
+                                </paper-tooltip>
+                              </span>
+                            </template>
+                            <template is="dom-if" if=[[variation.useless]]>
+                              <span class="special-icon">
+                                <iron-icon icon="error"></iron-icon>
+                                <paper-tooltip position="top">
+                                  <p>Useless to invoke manually</p>
+                                </paper-tooltip>
+                              </span>
+                            </template>
+                          </div>
+
+                          <!-- Description -->
+                          <template is="dom-if" if="[[showDescriptions]]">
+                            <div class="keys__td-description">
+                              <span>[[variation.description]]</span>
+                            </div>
+                          </template>
+
+                        </td>
+                      </template>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </iron-pages>
       </div>
     </div>

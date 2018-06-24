@@ -18,11 +18,18 @@ class NormalModeKeys extends Polymer.Element {
             'shift',
             'g',
             'gShift',
+            'control',
+          ]
+        },
+      },
+      otherVariations: {
+        type: Array,
+        value: function() {
+          return [
             'z',
             'zShift',
             'squareBracket',
             'squareBracketShift',
-            'control',
           ]
         },
       },
@@ -31,7 +38,13 @@ class NormalModeKeys extends Polymer.Element {
         value: function() {
           return [
             'd',
-            'dShift',
+            // 'dShift',
+            // 'y',
+            // 'yShift',
+            // 'c',
+            // 'cShift',
+            // '=',
+            // '=Shift',
           ]
         },
       },
@@ -42,33 +55,19 @@ class NormalModeKeys extends Polymer.Element {
     }
   }
   _getPrettyDisplay(variationName, baseKey, shiftKey, isSpecial, variationDescription) {
-    let prettyDisplay = ''
-
-    switch (variationName) {
-      case 'control':
-        if (!isSpecial) {
-          prettyDisplay = '<C-' + baseKey + '>'
-        } else {
-          prettyDisplay = '<C-' + baseKey.slice(1, -1) + '>'
-        }
-        break
-      default:
-        prettyDisplay += variationDescription.prefix || ''
-        if (variationDescription.hasShiftKey) {
-          prettyDisplay += shiftKey
-        }
-        else {
-          prettyDisplay += baseKey
-        }
-        break
-    }
-    return prettyDisplay
+    return variationDescription.displayTemplate
+      .replace(/{{baseKey}}/, baseKey)
+      .replace(/{{shiftKey}}/, shiftKey)
   }
   _computeKeys(keysJson) {
     if (!keysJson) {
       return null
     }
     const self = this
+
+    self.basicVariationsDisplay = self.basicVariations.map(x => keysJson.variationDescriptions[x].header)
+    self.otherVariationsDisplay = self.otherVariations.map(x => keysJson.variationDescriptions[x].header)
+    self.operatorVariationsDisplay = self.operatorVariations.map(x => keysJson.variationDescriptions[x].header)
 
     keysJson.keys.forEach(function(keyObj) {
       var variationObj = keyObj.variations
@@ -78,6 +77,8 @@ class NormalModeKeys extends Polymer.Element {
       })
 
       keyObj.basicVariations = self.basicVariations.map(x => variationObj[x])
+      keyObj.otherVariations = self.otherVariations.map(x => variationObj[x])
+      keyObj.operatorVariations = self.operatorVariations.map(x => variationObj[x])
     })
 
     return keysJson.keys

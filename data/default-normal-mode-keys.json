@@ -1,35 +1,45 @@
 {
   "variationDescriptions": {
-    "base": {},
+    "base": {
+      "displayTemplate": "{{baseKey}}",
+      "header": "..."
+    },
     "shift": {
-      "hasShiftKey": "true"
+      "displayTemplate": "{{shiftKey}}",
+      "header": "<S-...>"
     },
     "g": {
-      "prefix": "g"
+      "displayTemplate": "g{{baseKey}}",
+      "header": "g..."
     },
     "gShift": {
-      "hasShiftKey": "true",
-      "prefix": "g"
+      "displayTemplate": "g{{shiftKey}}",
+      "header": "g<S-...>"
     },
     "z": {
-      "prefix": "z"
+      "displayTemplate": "z{{baseKey}}",
+      "header": "z..."
     },
     "zShift": {
-      "hasShiftKey": "true",
-      "prefix": "z"
+      "displayTemplate": "z{{shiftKey}}",
+      "header": "z<S-...>"
     },
     "d": {
-    },
-    "dShift": {
+      "displayTemplate": "d{{baseKey}}",
+      "header": "d..."
     },
     "squareBracket": {
-      "prefix": "["
+      "displayTemplate": "[{{baseKey}}",
+      "header": "[..."
     },
     "squareBracketShift": {
-      "hasShiftKey": "true",
-      "prefix": "["
+      "displayTemplate": "[{{shiftKey}}",
+      "header": "[<S-...>"
     },
-    "control": {}
+    "control": {
+      "displayTemplate": "<C-{{baseKey}}>",
+      "header": "<C-...>"
+    }
   },
   "keys": [{
       "baseKey": "a",
@@ -67,6 +77,10 @@
         "control": {
           "description": "add N to number at/after cursor",
           "type": "command"
+        },
+        "d": {
+          "description": "start valid operation",
+          "type": "startOperation"
         }
       }
     }, {
@@ -103,7 +117,12 @@
         "control": {
           "description": "scroll N screens Backwards",
           "type": "command"
+        },
+        "d": {
+          "description": "valid operation",
+          "type": "operation"
         }
+
       }
     }, {
       "baseKey": "c",
