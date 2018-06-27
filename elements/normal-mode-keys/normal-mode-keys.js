@@ -10,48 +10,64 @@ class NormalModeKeys extends Polymer.Element {
         type: Object,
         computed: '_computeKeys(keysJson)',
       },
-      basicVariations: {
-        type: Array,
-        value: function() {
-          return [
-            'base',
-            'shift',
-            'g',
-            'gShift',
-            'control',
-          ]
-        },
-      },
-      otherVariations: {
-        type: Array,
-        value: function() {
-          return [
-            'z',
-            'zShift',
-            'squareBracket',
-            'squareBracketShift',
-          ]
-        },
-      },
-      operatorVariations: {
-        type: Array,
-        value: function() {
-          return [
-            'd',
-            // 'dShift',
-            // 'y',
-            // 'yShift',
-            // 'c',
-            // 'cShift',
-            // '=',
-            // '=Shift',
-          ]
-        },
-      },
       showDescriptions: {
         type: Boolean,
-        value: true,
+        value: true
       },
+      variationCategories: {
+        type: Array,
+        value: function() {
+          return [{
+            name: 'Basic',
+            id: 'basic',
+            variations: [
+              'base',
+              'shift',
+              'g',
+              'gShift',
+              'control',
+            ],
+          }, {
+            name: 'Z and z',
+            id: 'z',
+            variations: [
+              'z',
+              'zShift',
+              'Z',
+              'ZShift'
+            ],
+          }, {
+            name: 'Square Bracket',
+            id: 'square',
+            variations: [
+              'squareBracket',
+              'squareBracketShift',
+              'squareBracketRight',
+              'squareBracketRightShift',
+            ],
+          }, {
+            name: 'Starting with Operator',
+            id: 'operator',
+            variations: [
+              'd',
+              'dShift',
+              'y',
+              'yShift',
+              'c',
+              'cShift',
+              '=',
+              '=Shift',
+            ]
+          }, {
+            name: 'Other',
+            id: 'other',
+            variations: [
+              '<C-w>',
+              '"',
+            ]
+          }]
+        }
+      }
     }
   }
   _getPrettyDisplay(variationName, baseKey, shiftKey, isSpecial, variationDescription) {
@@ -65,20 +81,15 @@ class NormalModeKeys extends Polymer.Element {
     }
     const self = this
 
-    self.basicVariationsDisplay = self.basicVariations.map(x => keysJson.variationDescriptions[x].header)
-    self.otherVariationsDisplay = self.otherVariations.map(x => keysJson.variationDescriptions[x].header)
-    self.operatorVariationsDisplay = self.operatorVariations.map(x => keysJson.variationDescriptions[x].header)
-
     keysJson.keys.forEach(function(keyObj) {
       var variationObj = keyObj.variations
       Object.keys(variationObj).forEach(function(variation) {
         variationObj[variation].prettyDisplay =
           self._getPrettyDisplay(variation, keyObj.baseKey, keyObj.shiftKey, keyObj.isSpecial, keysJson.variationDescriptions[variation])
       })
-
-      keyObj.basicVariations = self.basicVariations.map(x => variationObj[x])
-      keyObj.otherVariations = self.otherVariations.map(x => variationObj[x])
-      keyObj.operatorVariations = self.operatorVariations.map(x => variationObj[x])
+      for (const variationCategory of self.variationCategories) {
+        keyObj[variationCategory.id + 'Variations'] = variationCategory.variations.map(x => variationObj[x])
+      }
     })
 
     return keysJson.keys

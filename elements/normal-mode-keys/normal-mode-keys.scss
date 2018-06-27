@@ -1,37 +1,15 @@
-// Re-usable skins
+@import "skins.scss";
 
-.table-skin {
-  border-collapse: collapse;
-}
-
-.td-skin {
-  border: 1px solid #999999;
-  color: #333333;
-  padding: 0.5rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
+.tabs {
+  --paper-tabs-selection-bar-color: var(--app-primary-color);
 }
 
-.operator-skin {
-  background-color: #b19cd9;
-}
-.motion-skin {
-  background-color: #56CBF9;
-}
-.command-skin {
-  background-color: #F0F3BD;
-}
-.extended-skin {
-  background-color: #98FB98;
-}
-.other-skin {
-  background-color: pink;
-}
-.unused-skin {
-  background-color: #f2f2f2;
+.show-descriptions {
+  float: right;
+  margin: 0.5rem;
 }
 
-// Components
+// TODO: Move legend to separate component
 .legend {
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -62,80 +40,4 @@
 .legend__td--unused {
   @extend .td-skin;
   @extend .unused-skin;
-}
-
-.keys {
-}
-.keys__table {
-  @extend .table-skin;
-  table-layout: fixed;
-  width: 100%;
-  min-width: 900px;
-}
-.keys__table-header {
-  & th {
-    @extend .td-skin;
-  }
-}
-.keys__td {
-  @extend .td-skin;
-  vertical-align: top;
-}
-.keys__td--operator {
-  @extend .keys__td;
-  @extend .operator-skin;
-}
-.keys__td--motion {
-  @extend .keys__td;
-  @extend .motion-skin;
-}
-.keys__td--command {
-  @extend .keys__td;
-  @extend .command-skin;
-}
-.keys__td--extended {
-  @extend .keys__td;
-  @extend .extended-skin;
-}
-.keys__td--other {
-  @extend .keys__td;
-  @extend .other-skin;
-}
-.keys__td--unused {
-  @extend .keys__td;
-  @extend .unused-skin;
-}
-.keys__td-pretty-display {
-  font-weight: bold;
-  font-family: monospace;
-  white-space: nowrap;
-  padding: 0 0.5rem;
-  background-color: rgba(0, 40, 60, 0.1);
-  display: inline-block;
-}
-.keys__td-description {
-}
-
-.special-icon {
-  color: red;
-  --paper-tooltip: {
-    font-size: 0.8rem;
-  }
-  --paper-tooltip-delay-in: 500;
-  --paper-tooltip-delay-out: 0;
-  --paper-tooltip-duration-in: 500;
-  --paper-tooltip-duration-out: 0;
-}
-
-.show-descriptions {
-  float: right;
-  margin: 0.5rem;
-}
-
-.tabs-container {
-}
-.tabs {
---paper-tabs-selection-bar-color: var(--app-primary-color);
-}
-.tab-panes {
 }

@@ -1,0 +1,32 @@
+// Re-usable skins
+
+.table-skin {
+  border-collapse: collapse;
+}
+
+.td-skin {
+  border: 1px solid #999999;
+  color: #333333;
+  padding: 0.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.operator-skin {
+  background-color: #b19cd9;
+}
+.motion-skin {
+  background-color: #56CBF9;
+}
+.command-skin {
+  background-color: #F0F3BD;
+}
+.extended-skin {
+  background-color: #98FB98;
+}
+.other-skin {
+  background-color: pink;
+}
+.unused-skin {
+  background-color: #f2f2f2;
+}

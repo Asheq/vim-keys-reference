@@ -1,70 +1,44 @@
 <dom-module id="normal-mode-keys-styles">
 <template>
 <style>
-.table-skin, .legend__table, .keys__table {
+.table-skin, .legend__table {
   border-collapse: collapse; }
 
-.td-skin, .legend__td--operator, .legend__td--motion, .legend__td--command, .legend__td--extended, .legend__td--other, .legend__td--unused, .keys__table-header th, .keys__td, .keys__td--operator, .keys__td--motion, .keys__td--command, .keys__td--extended, .keys__td--other, .keys__td--unused {
+.td-skin, .legend__td--operator, .legend__td--motion, .legend__td--command, .legend__td--extended, .legend__td--other, .legend__td--unused {
   border: 1px solid #999999;
   color: #333333;
   padding: 0.5rem;
   text-overflow: ellipsis;
   overflow: hidden; }
 
-.operator-skin, .legend__td--operator, .keys__td--operator {
+.operator-skin, .legend__td--operator {
   background-color: #b19cd9; }
 
-.motion-skin, .legend__td--motion, .keys__td--motion {
+.motion-skin, .legend__td--motion {
   background-color: #56CBF9; }
 
-.command-skin, .legend__td--command, .keys__td--command {
+.command-skin, .legend__td--command {
   background-color: #F0F3BD; }
 
-.extended-skin, .legend__td--extended, .keys__td--extended {
+.extended-skin, .legend__td--extended {
   background-color: #98FB98; }
 
-.other-skin, .legend__td--other, .keys__td--other {
+.other-skin, .legend__td--other {
   background-color: pink; }
 
-.unused-skin, .legend__td--unused, .keys__td--unused {
+.unused-skin, .legend__td--unused {
   background-color: #f2f2f2; }
 
-.legend {
-  margin-bottom: 1rem;
-  margin-top: 1rem; }
-
-.keys__table {
-  table-layout: fixed;
-  width: 100%;
-  min-width: 900px; }
-
-.keys__td, .keys__td--operator, .keys__td--motion, .keys__td--command, .keys__td--extended, .keys__td--other, .keys__td--unused {
-  vertical-align: top; }
-
-.keys__td-pretty-display {
-  font-weight: bold;
-  font-family: monospace;
-  white-space: nowrap;
-  padding: 0 0.5rem;
-  background-color: rgba(0, 40, 60, 0.1);
-  display: inline-block; }
-
-.special-icon {
-  color: red;
-  --paper-tooltip: {
-    font-size: 0.8rem;
-  }
-  --paper-tooltip-delay-in: 500;
-  --paper-tooltip-delay-out: 0;
-  --paper-tooltip-duration-in: 500;
-  --paper-tooltip-duration-out: 0; }
+.tabs {
+  --paper-tabs-selection-bar-color: var(--app-primary-color); }
 
 .show-descriptions {
   float: right;
   margin: 0.5rem; }
 
-.tabs {
-  --paper-tabs-selection-bar-color: var(--app-primary-color); }
+.legend {
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
 
 </style>
 </template>

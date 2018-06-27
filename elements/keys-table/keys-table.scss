@@ -1,0 +1,64 @@
+@import "skins.scss";
+
+.keys {
+}
+.keys__table {
+  @extend .table-skin;
+  table-layout: fixed;
+  width: 100%;
+  min-width: 900px;
+}
+.keys__table-header {
+  & th {
+    @extend .td-skin;
+  }
+}
+.keys__td {
+  @extend .td-skin;
+  vertical-align: top;
+}
+.keys__td--operator {
+  @extend .keys__td;
+  @extend .operator-skin;
+}
+.keys__td--motion {
+  @extend .keys__td;
+  @extend .motion-skin;
+}
+.keys__td--command {
+  @extend .keys__td;
+  @extend .command-skin;
+}
+.keys__td--extended {
+  @extend .keys__td;
+  @extend .extended-skin;
+}
+.keys__td--other {
+  @extend .keys__td;
+  @extend .other-skin;
+}
+.keys__td--unused {
+  @extend .keys__td;
+  @extend .unused-skin;
+}
+.keys__td-pretty-display {
+  font-weight: bold;
+  font-family: monospace;
+  white-space: nowrap;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 40, 60, 0.1);
+  display: inline-block;
+}
+.keys__td-description {
+}
+
+.keys__special-icon {
+  color: red;
+  --paper-tooltip: {
+    font-size: 0.8rem;
+  }
+  --paper-tooltip-delay-in: 500;
+  --paper-tooltip-delay-out: 0;
+  --paper-tooltip-duration-in: 500;
+  --paper-tooltip-duration-out: 0;
+}

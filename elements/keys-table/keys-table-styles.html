@@ -1,0 +1,60 @@
+<dom-module id="keys-table-styles">
+<template>
+<style>
+.table-skin, .keys__table {
+  border-collapse: collapse; }
+
+.td-skin, .keys__table-header th, .keys__td, .keys__td--operator, .keys__td--motion, .keys__td--command, .keys__td--extended, .keys__td--other, .keys__td--unused {
+  border: 1px solid #999999;
+  color: #333333;
+  padding: 0.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.operator-skin, .keys__td--operator {
+  background-color: #b19cd9; }
+
+.motion-skin, .keys__td--motion {
+  background-color: #56CBF9; }
+
+.command-skin, .keys__td--command {
+  background-color: #F0F3BD; }
+
+.extended-skin, .keys__td--extended {
+  background-color: #98FB98; }
+
+.other-skin, .keys__td--other {
+  background-color: pink; }
+
+.unused-skin, .keys__td--unused {
+  background-color: #f2f2f2; }
+
+.keys__table {
+  table-layout: fixed;
+  width: 100%;
+  min-width: 900px; }
+
+.keys__td, .keys__td--operator, .keys__td--motion, .keys__td--command, .keys__td--extended, .keys__td--other, .keys__td--unused {
+  vertical-align: top; }
+
+.keys__td-pretty-display {
+  font-weight: bold;
+  font-family: monospace;
+  white-space: nowrap;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 40, 60, 0.1);
+  display: inline-block; }
+
+.keys__special-icon {
+  color: red;
+  --paper-tooltip: {
+    font-size: 0.8rem;
+  }
+  --paper-tooltip-delay-in: 500;
+  --paper-tooltip-delay-out: 0;
+  --paper-tooltip-duration-in: 500;
+  --paper-tooltip-duration-out: 0; }
+
+</style>
+</template>
+</dom-module>

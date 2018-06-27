@@ -12,7 +12,7 @@ const getName = function(file) {
 
 module.exports = function(src, gulp) {
   return src.pipe(sass({
-      includePaths: './public/bower_components/',
+      includePaths: ['./scss-modules', './public/bower_components/'],
       importer: importOnce,
       importOnce: {
         index: true,

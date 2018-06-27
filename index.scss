@@ -3,23 +3,23 @@ body {
   font-family: Barlow, sans-serif;
   line-height: 1.5;
   background-color: #eeeeee;
-  font-size: 15px; }
+  font-size: 15px;
+}
 
 .github-ribbon {
   background: #24292e;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255,255,255,0.75);
   box-shadow: 0 0.1em 0 0.1em rgba(0, 0, 0, 0.15);
   text-decoration: none;
   padding: .4em 4em;
   position: fixed;
   top: 0;
   right: 0;
-  -webkit-transform: translateX(29.3%) translateY(-100%) rotate(45deg);
-          transform: translateX(29.3%) translateY(-100%) rotate(45deg);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left; }
-
+  transform: translateX(29.3%) translateY(-100%) rotate(45deg);
+  transform-origin: bottom left;
+}
 .github-logo {
   width: 1.5em;
   height: 1.5em;
-  padding-right: 0.5em; }
+  padding-right: 0.5em;
+}
