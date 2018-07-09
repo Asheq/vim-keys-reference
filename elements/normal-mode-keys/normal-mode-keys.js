@@ -33,8 +33,8 @@ class NormalModeKeys extends Polymer.Element {
             variations: [
               'z',
               'zShift',
-              'Z',
-              'ZShift'
+              // 'Z',
+              // 'ZShift'
             ],
           }, {
             name: 'Square Bracket',
@@ -42,38 +42,71 @@ class NormalModeKeys extends Polymer.Element {
             variations: [
               'squareBracket',
               'squareBracketShift',
-              'squareBracketRight',
-              'squareBracketRightShift',
+              // 'squareBracketRight',
+              // 'squareBracketRightShift',
             ],
           }, {
             name: 'Starting with Operator',
             id: 'operator',
             variations: [
-              'd',
-              'dShift',
-              'y',
-              'yShift',
-              'c',
-              'cShift',
-              '=',
-              '=Shift',
+              // 'd',
+              // 'dShift',
+              // 'y',
+              // 'yShift',
+              // 'c',
+              // 'cShift',
+              // '=',
+              // '=Shift',
             ]
           }, {
             name: 'Other',
             id: 'other',
             variations: [
-              '<C-w>',
-              '"',
+              // '<C-w>',
+              // '"',
             ]
           }]
         }
       }
     }
   }
-  _getPrettyDisplay(variationName, baseKey, shiftKey, isSpecial, variationDescription) {
-    return variationDescription.displayTemplate
-      .replace(/{{baseKey}}/, baseKey)
-      .replace(/{{shiftKey}}/, shiftKey)
+  _getPrettyDisplay(variationName, {baseKey, shiftKey, controlKey}) {
+    let prettyDisplay
+    switch (variationName) {
+      case 'base':
+        prettyDisplay = baseKey
+        break
+      case 'shift':
+        prettyDisplay = shiftKey
+        break
+      case 'g':
+        prettyDisplay = 'g' + baseKey
+        break
+      case 'gShift':
+        prettyDisplay = 'g' + shiftKey
+        break
+      case 'z':
+        prettyDisplay = 'z' + baseKey
+        break
+      case 'zShift':
+        prettyDisplay = 'z' + shiftKey
+        break
+      case 'd':
+        prettyDisplay = 'd' + baseKey
+        break
+      case 'squareBracket':
+        prettyDisplay = '[' + baseKey
+        break
+      case 'squareBracketShift':
+        prettyDisplay = '[' + shiftKey
+        break
+      case 'control':
+        prettyDisplay = controlKey || '<C-' + baseKey + '>'
+        break
+      default:
+        prettyDisplay = ''
+    }
+    return prettyDisplay
   }
   _computeKeys(keysJson) {
     if (!keysJson) {
@@ -84,8 +117,7 @@ class NormalModeKeys extends Polymer.Element {
     keysJson.keys.forEach(function(keyObj) {
       var variationObj = keyObj.variations
       Object.keys(variationObj).forEach(function(variation) {
-        variationObj[variation].prettyDisplay =
-          self._getPrettyDisplay(variation, keyObj.baseKey, keyObj.shiftKey, keyObj.isSpecial, keysJson.variationDescriptions[variation])
+        variationObj[variation].prettyDisplay = self._getPrettyDisplay(variation, keyObj)
       })
       for (const variationCategory of self.variationCategories) {
         keyObj[variationCategory.id + 'Variations'] = variationCategory.variations.map(x => variationObj[x])

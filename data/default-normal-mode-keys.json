@@ -1,46 +1,4 @@
 {
-  "variationDescriptions": {
-    "base": {
-      "displayTemplate": "{{baseKey}}",
-      "header": "..."
-    },
-    "shift": {
-      "displayTemplate": "{{shiftKey}}",
-      "header": "<S-...>"
-    },
-    "g": {
-      "displayTemplate": "g{{baseKey}}",
-      "header": "g..."
-    },
-    "gShift": {
-      "displayTemplate": "g{{shiftKey}}",
-      "header": "g<S-...>"
-    },
-    "z": {
-      "displayTemplate": "z{{baseKey}}",
-      "header": "z..."
-    },
-    "zShift": {
-      "displayTemplate": "z{{shiftKey}}",
-      "header": "z<S-...>"
-    },
-    "d": {
-      "displayTemplate": "d{{baseKey}}",
-      "header": "d..."
-    },
-    "squareBracket": {
-      "displayTemplate": "[{{baseKey}}",
-      "header": "[..."
-    },
-    "squareBracketShift": {
-      "displayTemplate": "[{{shiftKey}}",
-      "header": "[<S-...>"
-    },
-    "control": {
-      "displayTemplate": "<C-{{baseKey}}>",
-      "header": "<C-...>"
-    }
-  },
   "keys": [{
       "baseKey": "a",
       "shiftKey": "A",
@@ -1546,6 +1504,7 @@
     {
       "baseKey": "<BS>",
       "shiftKey": "<S-BS>",
+      "controlKey": "<C-BS>",
       "isSpecial": "true",
       "variations": {
         "base": {
@@ -1582,6 +1541,7 @@
     {
       "baseKey": "<Tab>",
       "shiftKey": "<S-Tab>",
+      "controlKey": "<C-Tab>",
       "isSpecial": "true",
       "variations": {
         "base": {
@@ -1802,6 +1762,7 @@
     {
       "baseKey": "<CR>",
       "shiftKey": "<S-CR>",
+      "controlKey": "<C-CR>",
       "isSpecial": "true",
       "variations": {
         "base": {
@@ -1948,6 +1909,7 @@
     {
       "baseKey": "<Space>",
       "shiftKey": "<S-Space>",
+      "controlKey": "<C-Space>",
       "isSpecial": "true",
       "variations": {
         "base": {
