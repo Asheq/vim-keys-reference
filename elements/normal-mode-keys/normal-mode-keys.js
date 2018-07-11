@@ -33,8 +33,8 @@ class NormalModeKeys extends Polymer.Element {
             variations: [
               'z',
               'zShift',
-              // 'Z',
-              // 'ZShift'
+              'Z',
+              'ZShift'
             ],
           }, {
             name: 'Square Bracket',
@@ -63,7 +63,12 @@ class NormalModeKeys extends Polymer.Element {
             id: 'other',
             variations: [
               // '<C-w>',
+              // '<C-\>',
               // '"',
+              // "'",
+              // '`',
+              // 'q',
+              // '@',
             ]
           }]
         }
@@ -90,6 +95,12 @@ class NormalModeKeys extends Polymer.Element {
         break
       case 'zShift':
         prettyDisplay = 'z' + shiftKey
+        break
+      case 'Z':
+        prettyDisplay = 'Z' + baseKey
+        break
+      case 'ZShift':
+        prettyDisplay = 'Z' + shiftKey
         break
       case 'd':
         prettyDisplay = 'd' + baseKey

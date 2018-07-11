@@ -26,6 +26,12 @@
           "description": "open a closed fold or close an open fold recursively",
           "type": "command"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -64,6 +70,12 @@
           "type": "command"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -108,6 +120,12 @@
           "description": "close folds recursively",
           "type": "command"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "description": "cursor N times backwards to start of change",
           "type": "motion"
@@ -147,6 +165,12 @@
         "zShift": {
           "description": "delete folds recursively",
           "type": "command"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
         },
         "squareBracket": {
           "description": "show first #define found in current and included files matching the word under the cursor, start searching at beginning of current file",
@@ -189,6 +213,12 @@
           "description": "eliminate all folds",
           "type": "command"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -227,6 +257,12 @@
         "zShift": {
           "description": "create a fold for N lines",
           "type": "command"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
         },
         "squareBracket": {
           "description": "same as 'gf'",
@@ -268,6 +304,12 @@
           "description": "mark word as good spelled word",
           "type": "command"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -308,6 +350,12 @@
           "description": "when 'wrap' off scroll half a screenwidth to the right",
           "type": "command"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -345,6 +393,12 @@
           "type": "command"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -388,6 +442,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -426,6 +486,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -461,6 +527,12 @@
         "zShift": {
           "description": "when 'wrap' off scroll half a screenwidth to the left",
           "type": "command"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
         },
         "squareBracket": {
           "type": "unused"
@@ -499,6 +571,12 @@
         "zShift": {
           "description": "set 'foldlevel' to zero",
           "type": "command"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
         },
         "squareBracket": {
           "description": "cursor N times back to start of member function",
@@ -541,6 +619,12 @@
           "description": "set 'foldenable'",
           "type": "command"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -580,6 +664,12 @@
           "description": "open folds recursively",
           "type": "command"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -616,6 +706,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -660,6 +756,13 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "description": "exit current file always",
+          "type": "command"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -698,6 +801,12 @@
         "zShift": {
           "description": "set 'foldlevel' to the deepest fold",
           "type": "command"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
         },
         "squareBracket": {
           "type": "unused"
@@ -740,6 +849,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "description": "move to the previous misspelled word",
           "type": "motion"
@@ -779,6 +894,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -816,6 +937,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -858,6 +985,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -897,6 +1030,12 @@
           "description": "mark word as wrong (bad) spelled word",
           "type": "command"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -935,6 +1074,12 @@
           "description": "re-apply 'foldlevel'",
           "type": "command"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -970,6 +1115,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -1008,6 +1159,13 @@
         },
         "zShift": {
           "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "description": "store current file if modified, and exit",
+          "type": "command"
         },
         "squareBracket": {
           "description": "move to start of open fold",
@@ -1048,6 +1206,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "description": "cursor to previous lowercase mark",
           "type": "motion"
@@ -1082,6 +1246,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -1120,6 +1290,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -1154,6 +1330,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -1193,6 +1375,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -1226,6 +1414,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -1265,6 +1459,12 @@
           "description": "cursor on line N (default line above window), otherwise like 'z-'",
           "type": "command"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -1300,6 +1500,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -1339,6 +1545,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -1374,6 +1586,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -1413,6 +1631,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -1449,6 +1673,12 @@
           "type": "command"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -1490,6 +1720,12 @@
           "description": "cursor on line N (default line below window), otherwise like 'z<CR>'",
           "type": "command"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -1525,6 +1761,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -1563,6 +1805,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -1596,6 +1844,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -1638,6 +1892,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "description": "cursor N SECTIONS backward",
           "type": "motion"
@@ -1672,6 +1932,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -1711,6 +1977,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -1745,6 +2017,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -1785,6 +2063,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -1820,6 +2104,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -1858,6 +2148,12 @@
         "zShift": {
           "type": "unused"
         },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
+          "type": "unused"
+        },
         "squareBracket": {
           "type": "unused"
         },
@@ -1892,6 +2188,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
@@ -1930,6 +2232,12 @@
           "type": "unused"
         },
         "zShift": {
+          "type": "unused"
+        },
+        "Z": {
+          "type": "unused"
+        },
+        "ZShift": {
           "type": "unused"
         },
         "squareBracket": {
