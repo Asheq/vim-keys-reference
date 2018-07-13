@@ -49,8 +49,8 @@
           "type": "command"
         },
         "d": {
-          "description": "start valid operation",
-          "type": "startOperation"
+          "description": "start operation",
+          "type": "extended"
         }
       }
     }, {
@@ -101,10 +101,9 @@
           "type": "command"
         },
         "d": {
-          "description": "valid operation",
-          "type": "operation"
+          "description": "perform valid operation",
+          "type": "command"
         }
-
       }
     }, {
       "baseKey": "c",
@@ -155,6 +154,9 @@
         "control": {
           "description": "interrupt current (search) command",
           "type": "command"
+        },
+        "d": {
+          "type": "unused"
         }
       }
     }, {
@@ -210,6 +212,10 @@
         "control": {
           "description": "scroll Down N lines (default: half a screen)",
           "type": "command"
+        },
+        "d": {
+          "description": "perform valid operation",
+          "type": "command"
         }
       }
     }, {
@@ -261,6 +267,10 @@
         },
         "control": {
           "description": "scroll N lines upwards (N lines Extra)",
+          "type": "command"
+        },
+        "d": {
+          "description": "perform valid operation",
           "type": "command"
         }
       }
@@ -317,6 +327,10 @@
         "control": {
           "description": "scroll N screens Forward",
           "type": "command"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "extended"
         }
       }
     }, {
@@ -367,6 +381,10 @@
         "control": {
           "description": "display current file name and position",
           "type": "command"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "extended"
         }
       }
     }, {
@@ -420,6 +438,10 @@
           "description": "same as 'h'",
           "type": "motion",
           "duplicates": ["h"]
+        },
+        "d": {
+          "description": "perform valid operation",
+          "type": "command"
         }
       }
     }, {
@@ -475,6 +497,10 @@
           "description": "same as <Tab>",
           "type": "command",
           "duplicates": ["<Tab>"]
+        },
+        "d": {
+          "description": "start operation",
+          "type": "extended"
         }
       }
     }, {
@@ -526,6 +552,10 @@
           "description": "same as 'j'",
           "type": "motion",
           "duplicates": ["j"]
+        },
+        "d": {
+          "description": "perform valid operation",
+          "type": "command"
         }
       }
     }, {
@@ -574,6 +604,10 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "description": "perform valid operation",
+          "type": "command"
         }
       }
     }, {
@@ -622,6 +656,10 @@
         },
         "control": {
           "description": "redraw screen",
+          "type": "command"
+        },
+        "d": {
+          "description": "perform valid operation",
           "type": "command"
         }
       }
@@ -676,6 +714,9 @@
           "description": "same as <CR>",
           "type": "motion",
           "duplicates": ["<CR>"]
+        },
+        "d": {
+          "type": "unused"
         }
       }
     }, {
@@ -728,6 +769,10 @@
           "description": "same as 'j'",
           "type": "motion",
           "duplicates": ["j"]
+        },
+        "d": {
+          "description": "perform valid operation",
+          "type": "command"
         }
       }
     }, {
@@ -777,6 +822,10 @@
         },
         "control": {
           "description": "go to N older entry in jump list",
+          "type": "command"
+        },
+        "d": {
+          "description": "same as ':diffget'",
           "type": "command"
         }
       }
@@ -835,6 +884,10 @@
           "description": "same as 'k'",
           "type": "motion",
           "duplicates": ["k"]
+        },
+        "d": {
+          "description": "same as ':diffput'",
+          "type": "command"
         }
       }
     }, {
@@ -885,7 +938,11 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "type": "unused"
         }
+
       }
     },
     {
@@ -937,6 +994,9 @@
         "control": {
           "description": "redo changes which were undone with 'u'",
           "type": "command"
+        },
+        "d": {
+          "type": "unused"
         }
       }
     },
@@ -991,6 +1051,9 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "type": "unused"
         }
       }
     },
@@ -1042,6 +1105,10 @@
         "control": {
           "description": "jump to N older Tag in tag list",
           "type": "command"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "extended"
         }
       }
     },
@@ -1093,6 +1160,9 @@
         "control": {
           "description": "scroll N lines Upwards (default: half a screen)",
           "type": "command"
+        },
+        "d": {
+          "type": "unused"
         }
       }
     },
@@ -1145,6 +1215,10 @@
         "control": {
           "description": "start blockwise Visual mode",
           "type": "command"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "extended"
         }
       }
     },
@@ -1196,6 +1270,10 @@
         "control": {
           "description": "window commands",
           "type": "extended"
+        },
+        "d": {
+          "description": "perform valid operation",
+          "type": "command"
         }
       }
     },
@@ -1246,6 +1324,9 @@
         "control": {
           "description": "subtract N from number at/after cursor",
           "type": "command"
+        },
+        "d": {
+          "type": "unused"
         }
       }
     },
@@ -1295,6 +1376,9 @@
         "control": {
           "description": "scroll N lines downwards",
           "type": "command"
+        },
+        "d": {
+          "type": "unused"
         }
       }
     },
@@ -1347,6 +1431,10 @@
         "control": {
           "description": "suspend program (or start new shell)",
           "type": "command"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "extended"
         }
       }
     },

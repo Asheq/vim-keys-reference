@@ -49,7 +49,7 @@ class NormalModeKeys extends Polymer.Element {
             name: 'Starting with Operator',
             id: 'operator',
             variations: [
-              // 'd',
+              'd',
               // 'dShift',
               // 'y',
               // 'yShift',
