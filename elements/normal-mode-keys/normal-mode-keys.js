@@ -40,10 +40,10 @@ class NormalModeKeys extends Polymer.Element {
             name: 'Square Bracket',
             id: 'square',
             variations: [
-              'squareBracket',
-              'squareBracketShift',
-              // 'squareBracketRight',
-              // 'squareBracketRightShift',
+              'leftSquareBracket',
+              'leftSquareBracketShift',
+              'rightSquareBracket',
+              'rightSquareBracketShift',
             ],
           }, {
             name: 'Starting with Operator',
@@ -105,11 +105,17 @@ class NormalModeKeys extends Polymer.Element {
       case 'd':
         prettyDisplay = 'd' + baseKey
         break
-      case 'squareBracket':
+      case 'leftSquareBracket':
         prettyDisplay = '[' + baseKey
         break
-      case 'squareBracketShift':
+      case 'leftSquareBracketShift':
         prettyDisplay = '[' + shiftKey
+        break
+      case 'rightSquareBracket':
+        prettyDisplay = ']' + baseKey
+        break
+      case 'rightSquareBracketShift':
+        prettyDisplay = ']' + shiftKey
         break
       case 'control':
         prettyDisplay = controlKey || '<C-' + baseKey + '>'

@@ -32,10 +32,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -78,10 +84,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -126,11 +138,18 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "description": "cursor N times backwards to start of change",
           "type": "motion"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "description": "cursor N times forward to start of change",
+          "type": "motion"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -172,11 +191,19 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "description": "show first #define found in current and included files matching the word under the cursor, start searching at beginning of current file",
           "type": "command"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "description": "list all #defines found in current and included files matching the word under the cursor, start searching at beginning of current file",
+          "type": "command"
+        },
+        "rightSquareBracket": {
+          "description": "show first #define found in current and included files matching the word under the cursor, start searching at cursor position",
+          "type": "command"
+        },
+        "rightSquareBracketShift": {
           "description": "list all #defines found in current and included files matching the word under the cursor, start searching at cursor position",
           "type": "command"
         },
@@ -219,10 +246,17 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "description": "same as 'gf'",
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -264,12 +298,20 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "description": "same as 'gf'",
           "type": "command",
           "duplicates": ["gf"]
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "description": "same as 'gf'",
+          "type": "command",
+          "duplicates": ["gf"]
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -310,10 +352,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -356,10 +404,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -401,12 +455,20 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "description": "show first line found in current and included files that contains the word under the cursor, start searching at beginning of current file",
           "type": "command"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
           "description": "list all lines found in current and included files that contain the word under the cursor, start searching at beginning of current file",
+          "type": "command"
+        },
+        "rightSquareBracket": {
+          "description": "show first line found in current and included files that contains the word under the cursor, start searching at cursor position",
+          "type": "command"
+        },
+        "rightSquareBracketShift": {
+          "description": "list all lines found in current and included files that contain the word under the cursor, start searching at cursor position",
           "type": "command"
         },
         "control": {
@@ -448,10 +510,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -492,10 +560,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -534,10 +608,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -578,11 +658,18 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "description": "cursor N times back to start of member function",
           "type": "motion"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "description": "cursor N times forward to end of member function",
+          "type": "motion"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -625,10 +712,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -670,10 +763,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -714,11 +813,20 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "description": "like 'P', but adjust indent to current line",
           "type": "command"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "description": "same as '[p'",
+          "type": "command",
+          "duplicates": ["[p"]
+        },
+        "rightSquareBracket": {
+          "description": "like 'p', but adjust indent to current line",
+          "type": "command"
+        },
+        "rightSquareBracketShift": {
           "description": "same as '[p'",
           "type": "command",
           "duplicates": ["[p"]
@@ -763,10 +871,16 @@
           "description": "exit current file always",
           "type": "command"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -808,10 +922,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -855,11 +975,18 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "description": "move to the previous misspelled word",
           "type": "motion"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "description": "move to next misspelled word",
+          "type": "motion"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -900,10 +1027,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -945,10 +1078,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -991,10 +1130,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1036,10 +1181,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1080,10 +1231,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1123,10 +1280,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1167,11 +1330,18 @@
           "description": "store current file if modified, and exit",
           "type": "command"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "description": "move to start of open fold",
           "type": "motion"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "description": "move to end of open fold",
+          "type": "motion"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1212,11 +1382,18 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "description": "cursor to previous lowercase mark",
           "type": "motion"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "description": "cursor to next lowercase mark",
+          "type": "motion"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1254,10 +1431,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1296,10 +1479,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1338,11 +1527,18 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
           "description": "cursor to N previous unmatched #if, #else or #ifdef",
+          "type": "motion"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
+          "description": "cursor to N next unmatched #endif or #else",
           "type": "motion"
         },
         "control": {
@@ -1381,10 +1577,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1422,10 +1624,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1465,10 +1673,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1508,10 +1722,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1551,12 +1771,20 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
           "description": "same as '[/'",
           "duplicates": "[/",
+          "type": "motion"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
+          "description": "same as ']/'",
+          "duplicates": "]/",
           "type": "motion"
         },
         "control": {
@@ -1594,12 +1822,18 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
           "description": "cursor N times back to unmatched '('",
           "type": "motion"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
+          "type": "unused"
         },
         "control": {
           "type": "unused"
@@ -1637,11 +1871,18 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
           "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
+          "description": "cursor N times forward to unmatched ')'",
+          "type": "motion"
         },
         "control": {
           "type": "unused"
@@ -1681,10 +1922,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1726,10 +1973,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1769,10 +2022,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1811,10 +2070,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1852,13 +2117,20 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "description": "cursor N sections backward",
           "type": "motion"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
           "description": "cursor N times back to unmatched '{'",
           "type": "motion"
+        },
+        "rightSquareBracket": {
+          "description": "cursor N SECTIONS forward",
+          "type": "motion"
+        },
+        "rightSquareBracketShift": {
+          "type": "unused"
         },
         "control": {
           "description": "same as <Esc>",
@@ -1898,12 +2170,20 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "description": "cursor N SECTIONS backward",
           "type": "motion"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
           "type": "unused"
+        },
+        "rightSquareBracket": {
+          "description": "cursor N sections forward",
+          "type": "motion"
+        },
+        "rightSquareBracketShift": {
+          "description": "cursor N times forward to unmatched '}'",
+          "type": "motion"
         },
         "control": {
           "description": ":ta to ident under cursor",
@@ -1940,10 +2220,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -1983,10 +2269,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -2025,11 +2317,18 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "description": "cursor to previous lowercase mark, on first non-blank",
           "type": "motion"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "description": "cursor to next lowercase mark, on first non-blank",
+          "type": "motion"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -2069,10 +2368,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -2112,10 +2417,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -2154,10 +2465,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -2196,11 +2513,18 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "description": "cursor to N previous start of a C comment",
           "type": "motion"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "description": "cursor to N next end of a C comment",
+          "type": "motion"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
@@ -2240,10 +2564,16 @@
         "ZShift": {
           "type": "unused"
         },
-        "squareBracket": {
+        "leftSquareBracket": {
           "type": "unused"
         },
-        "squareBracketShift": {
+        "leftSquareBracketShift": {
+          "type": "unused"
+        },
+        "rightSquareBracket": {
+          "type": "unused"
+        },
+        "rightSquareBracketShift": {
           "type": "unused"
         },
         "control": {
