@@ -50,7 +50,7 @@
         },
         "d": {
           "description": "start operation",
-          "type": "extended"
+          "type": "command"
         }
       }
     }, {
@@ -330,7 +330,7 @@
         },
         "d": {
           "description": "start operation",
-          "type": "extended"
+          "type": "command"
         }
       }
     }, {
@@ -384,7 +384,7 @@
         },
         "d": {
           "description": "start operation",
-          "type": "extended"
+          "type": "command"
         }
       }
     }, {
@@ -500,7 +500,7 @@
         },
         "d": {
           "description": "start operation",
-          "type": "extended"
+          "type": "command"
         }
       }
     }, {
@@ -1108,7 +1108,7 @@
         },
         "d": {
           "description": "start operation",
-          "type": "extended"
+          "type": "command"
         }
       }
     },
@@ -1218,7 +1218,7 @@
         },
         "d": {
           "description": "start operation",
-          "type": "extended"
+          "type": "command"
         }
       }
     },
@@ -1434,7 +1434,7 @@
         },
         "d": {
           "description": "start operation",
-          "type": "extended"
+          "type": "command"
         }
       }
     },
@@ -1486,6 +1486,10 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "command"
         }
       }
     },
@@ -1495,7 +1499,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "extended"
+          "type": "command"
         },
         "shift": {
           "description": "filter Nmove text through the {filter} command",
@@ -1533,6 +1537,10 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "command"
         }
       }
     },
@@ -1542,7 +1550,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "extended"
+          "type": "command"
         },
         "shift": {
           "description": "execute the contents of register {a-z} N times",
@@ -1581,6 +1589,10 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "command"
         }
       }
     },
@@ -1590,7 +1602,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "extended"
+          "type": "command"
         },
         "shift": {
           "description": "search backward for the Nth occurrence of the ident under the cursor",
@@ -1631,6 +1643,10 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "command"
         }
       }
     },
@@ -1640,7 +1656,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "extended"
+          "type": "command"
         },
         "shift": {
           "description": "cursor to the end of Nth next line",
@@ -1679,6 +1695,10 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "command"
         }
       }
     },
@@ -1688,7 +1708,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "extended"
+          "type": "command"
         },
         "shift": {
           "description": "find the next (curly/square) bracket on this line and go to its match, or go to matching comment bracket, or go to matching preprocessor directive.",
@@ -1726,6 +1746,10 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "command"
         }
       }
     },
@@ -1735,7 +1759,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "extended"
+          "type": "command"
         },
         "shift": {
           "description": "cursor to the first CHAR of the line",
@@ -1776,6 +1800,10 @@
         "control": {
           "description": "edit Nth alternate file (equivalent to ':e #N')",
           "type": "command"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "command"
         }
       }
     },
@@ -1785,7 +1813,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "extended"
+          "type": "command"
         },
         "shift": {
           "description": "repeat last :s",
@@ -1824,6 +1852,10 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "command"
         }
       }
     },
@@ -1833,7 +1865,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "extended"
+          "type": "command"
         },
         "shift": {
           "description": "search forward for the Nth occurrence of the ident under the cursor",
@@ -1877,6 +1909,10 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "command"
         }
       }
     },
@@ -1886,7 +1922,7 @@
       "variations": {
         "base": {
           "description": "count",
-          "type": "extended"
+          "type": "command"
         },
         "shift": {
           "description": "cursor N sentences backward",
@@ -1925,6 +1961,10 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "command"
         }
       }
     },
@@ -1974,6 +2014,10 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "description": "perform valid operation",
+          "type": "command"
         }
       }
     },
@@ -2384,7 +2428,7 @@
         },
         "shift": {
           "description": "use register {a-zA-Z0-9.%#:-\"} for next delete, yank or put (uppercase to append) ({.%#:} only work with put)",
-          "type": "extended"
+          "type": "command"
         },
         "g": {
           "description": "like ' but without changing the jumplist",

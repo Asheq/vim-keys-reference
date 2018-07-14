@@ -64,11 +64,16 @@ class NormalModeKeys extends Polymer.Element {
             variations: [
               // '<C-w>',
               // '<C-\>',
-              // '"',
-              // "'",
-              // '`',
+              // 'f',
+              // 'm',
               // 'q',
+              // 't',
+              // '`',
+              // "'",
+              // "F",
+              // "T",
               // '@',
+              // '"',
             ]
           }]
         }
