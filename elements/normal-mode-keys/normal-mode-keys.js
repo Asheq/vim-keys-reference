@@ -4,7 +4,7 @@ class NormalModeKeys extends Polymer.Element {
     return {
       selectedTab: {
         type: Number,
-        value: 0
+        value: 3
       },
       keys: {
         type: Object,
@@ -50,13 +50,13 @@ class NormalModeKeys extends Polymer.Element {
             id: 'operator',
             variations: [
               'd',
-              // 'dShift',
-              // 'y',
-              // 'yShift',
-              // 'c',
-              // 'cShift',
-              // '=',
-              // '=Shift',
+              'y',
+              'c',
+              '=',
+              'dShift',
+              'yShift',
+              'cShift',
+              '=Shift',
             ]
           }, {
             name: 'Other',
@@ -79,6 +79,34 @@ class NormalModeKeys extends Polymer.Element {
         }
       }
     }
+  }
+  _getDescription(variationName, {variations, baseKey, shiftKey, controlKey}) {
+    let description = variations[variationName].description
+
+    if (description === undefined || description == '') {
+      if (['d', 'y', 'c', '='].includes(variationName) && variations.base.type === 'motion') {
+        description = 'operate over motion: ' + variations.base.description
+      } else if (['dShift', 'yShift', 'cShift', '=Shift'].includes(variationName) && variations.shift.type === 'motion') {
+        description = 'operate over motion: ' + variations.shift.description
+      }
+    }
+
+    return description
+  }
+  _getType(variationName, {variations, baseKey, shiftKey, controlKey}) {
+    let type = variations[variationName].type
+    if (type === undefined || type == '') {
+      if (['d', 'y', 'c', '='].includes(variationName) && variations.base.type === 'motion') {
+        type = 'operation'
+      } else if (['dShift', 'yShift', 'cShift', '=Shift'].includes(variationName) && variations.shift.type === 'motion') {
+        type = 'operation'
+      }
+    }
+    return type
+  }
+  _getDuplicates(variationName, {variations, baseKey, shiftKey, controlKey}) {
+    let duplicates = variations[variationName].duplicates
+    return duplicates
   }
   _getPrettyDisplay(variationName, {baseKey, shiftKey, controlKey}) {
     let prettyDisplay
@@ -110,6 +138,27 @@ class NormalModeKeys extends Polymer.Element {
       case 'd':
         prettyDisplay = 'd' + baseKey
         break
+      case 'dShift':
+        prettyDisplay = 'd' + shiftKey
+        break
+      case 'y':
+        prettyDisplay = 'y' + baseKey
+        break
+      case 'yShift':
+        prettyDisplay = 'y' + shiftKey
+        break
+      case 'c':
+        prettyDisplay = 'c' + baseKey
+        break
+      case 'cShift':
+        prettyDisplay = 'c' + shiftKey
+        break
+      case '=':
+        prettyDisplay = '=' + baseKey
+        break
+      case '=Shift':
+        prettyDisplay = '=' + shiftKey
+        break
       case 'leftSquareBracket':
         prettyDisplay = '[' + baseKey
         break
@@ -139,7 +188,10 @@ class NormalModeKeys extends Polymer.Element {
     keysJson.keys.forEach(function(keyObj) {
       var variationObj = keyObj.variations
       Object.keys(variationObj).forEach(function(variation) {
+        variationObj[variation].description = self._getDescription(variation, keyObj)
         variationObj[variation].prettyDisplay = self._getPrettyDisplay(variation, keyObj)
+        variationObj[variation].duplicates = self._getDuplicates(variation, keyObj)
+        variationObj[variation].type = self._getType(variation, keyObj)
       })
       for (const variationCategory of self.variationCategories) {
         keyObj[variationCategory.id + 'Variations'] = variationCategory.variations.map(x => variationObj[x])

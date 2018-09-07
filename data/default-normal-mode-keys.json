@@ -49,8 +49,23 @@
           "type": "command"
         },
         "d": {
-          "description": "start operation",
-          "type": "command"
+          "description": "start operating over a text object",
+          "type": "extended"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -101,8 +116,20 @@
           "type": "command"
         },
         "d": {
-          "description": "perform valid operation",
-          "type": "command"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -156,7 +183,23 @@
           "type": "command"
         },
         "d": {
+          "description": "",
           "type": "unused"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -214,8 +257,23 @@
           "type": "command"
         },
         "d": {
-          "description": "perform valid operation",
-          "type": "command"
+          "description": "operate over N lines",
+          "type": "operation"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -270,8 +328,20 @@
           "type": "command"
         },
         "d": {
-          "description": "perform valid operation",
-          "type": "command"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -329,8 +399,20 @@
           "type": "command"
         },
         "d": {
-          "description": "start operation",
-          "type": "command"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -384,7 +466,21 @@
         },
         "d": {
           "description": "start operation",
-          "type": "command"
+          "type": "extended"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -440,8 +536,20 @@
           "duplicates": ["h"]
         },
         "d": {
-          "description": "perform valid operation",
-          "type": "command"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -499,8 +607,23 @@
           "duplicates": ["<Tab>"]
         },
         "d": {
-          "description": "start operation",
-          "type": "command"
+          "description": "start operating inside a text object",
+          "type": "extended"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -554,8 +677,21 @@
           "duplicates": ["j"]
         },
         "d": {
-          "description": "perform valid operation",
-          "type": "command"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -606,8 +742,21 @@
           "type": "unused"
         },
         "d": {
-          "description": "perform valid operation",
-          "type": "command"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -659,8 +808,20 @@
           "type": "command"
         },
         "d": {
-          "description": "perform valid operation",
-          "type": "command"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -717,6 +878,20 @@
         },
         "d": {
           "type": "unused"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -771,8 +946,20 @@
           "duplicates": ["j"]
         },
         "d": {
-          "description": "perform valid operation",
-          "type": "command"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -827,6 +1014,21 @@
         "d": {
           "description": "same as ':diffget'",
           "type": "command"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -888,6 +1090,21 @@
         "d": {
           "description": "same as ':diffput'",
           "type": "command"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }, {
@@ -941,6 +1158,21 @@
         },
         "d": {
           "type": "unused"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
 
       }
@@ -997,6 +1229,21 @@
         },
         "d": {
           "type": "unused"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1054,6 +1301,21 @@
         },
         "d": {
           "type": "unused"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1107,8 +1369,20 @@
           "type": "command"
         },
         "d": {
-          "description": "start operation",
-          "type": "command"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1163,6 +1437,21 @@
         },
         "d": {
           "type": "unused"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1218,7 +1507,23 @@
         },
         "d": {
           "description": "start operation",
-          "type": "command"
+          "type": "extended"
+        },
+        "dShift": {
+          "description": "start operation",
+          "type": "extended"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1272,8 +1577,20 @@
           "type": "extended"
         },
         "d": {
-          "description": "perform valid operation",
-          "type": "command"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1327,6 +1644,21 @@
         },
         "d": {
           "type": "unused"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1379,6 +1711,21 @@
         },
         "d": {
           "type": "unused"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1434,7 +1781,22 @@
         },
         "d": {
           "description": "start operation",
-          "type": "command"
+          "type": "extended"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1488,8 +1850,21 @@
           "type": "unused"
         },
         "d": {
-          "description": "start operation",
-          "type": "command"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1540,7 +1915,22 @@
         },
         "d": {
           "description": "start operation",
-          "type": "command"
+          "type": "extended"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1592,7 +1982,22 @@
         },
         "d": {
           "description": "start operation",
-          "type": "command"
+          "type": "extended"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1646,7 +2051,21 @@
         },
         "d": {
           "description": "start operation",
-          "type": "command"
+          "type": "extended"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1698,7 +2117,21 @@
         },
         "d": {
           "description": "start operation",
-          "type": "command"
+          "type": "extended"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1749,7 +2182,21 @@
         },
         "d": {
           "description": "start operation",
-          "type": "command"
+          "type": "extended"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1803,7 +2250,21 @@
         },
         "d": {
           "description": "start operation",
-          "type": "command"
+          "type": "extended"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1855,7 +2316,22 @@
         },
         "d": {
           "description": "start operation",
-          "type": "command"
+          "type": "extended"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1912,7 +2388,21 @@
         },
         "d": {
           "description": "start operation",
-          "type": "command"
+          "type": "extended"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -1964,7 +2454,21 @@
         },
         "d": {
           "description": "start operation",
-          "type": "command"
+          "type": "extended"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2016,8 +2520,20 @@
           "type": "unused"
         },
         "d": {
-          "description": "perform valid operation",
-          "type": "command"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2068,6 +2584,22 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2119,6 +2651,23 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "type": "unused"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2168,6 +2717,23 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2216,6 +2782,23 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2268,6 +2851,24 @@
           "description": "same as <Esc>",
           "type": "command",
           "duplicates": ["<Esc>"]
+        },
+        "d": {
+          "description": "start operation",
+          "type": "extended"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2320,6 +2921,24 @@
         "control": {
           "description": ":ta to ident under cursor",
           "type": "command"
+        },
+        "d": {
+          "description": "start operation",
+          "type": "extended"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2367,6 +2986,23 @@
         "control": {
           "description": "reserved for extensions",
           "type": "extended"
+        },
+        "d": {
+          "type": "unused"
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2415,6 +3051,23 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2465,6 +3118,23 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2514,6 +3184,23 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2563,6 +3250,23 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2611,6 +3315,24 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+          "type": "unused"
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2661,6 +3383,22 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+        },
+        "dShift": {
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     },
@@ -2710,6 +3448,23 @@
         },
         "control": {
           "type": "unused"
+        },
+        "d": {
+        },
+        "dShift": {
+          "type": "unused"
+        },
+        "y": {
+        },
+        "yShift": {
+        },
+        "c": {
+        },
+        "cShift": {
+        },
+        "=": {
+        },
+        "=Shift": {
         }
       }
     }

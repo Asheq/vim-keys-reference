@@ -37,6 +37,10 @@
   @extend .keys__td;
   @extend .other-skin;
 }
+.keys__td--operation {
+  @extend .keys__td;
+  @extend .operation-skin;
+}
 .keys__td--unused {
   @extend .keys__td;
   @extend .unused-skin;
