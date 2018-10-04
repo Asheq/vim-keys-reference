@@ -56,14 +56,20 @@
           "type": "unused"
         },
         "y": {
+          "description": "start operating over a text object",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operating over a text object",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operating over a text object",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -190,14 +196,20 @@
           "type": "unused"
         },
         "y": {
+          "description": "",
+          "type": "unused"
         },
         "yShift": {
         },
         "c": {
+          "description": "operate over N lines",
+          "type": "operation"
         },
         "cShift": {
         },
         "=": {
+          "description": "",
+          "type": "unused"
         },
         "=Shift": {
         }
@@ -264,14 +276,17 @@
           "type": "unused"
         },
         "y": {
+          "type": "unused"
         },
         "yShift": {
         },
         "c": {
+          "type": "unused"
         },
         "cShift": {
         },
         "=": {
+          "type": "unused"
         },
         "=Shift": {
         }
@@ -471,14 +486,20 @@
         "dShift": {
         },
         "y": {
+          "description": "start operation",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operation",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operation",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -614,14 +635,20 @@
           "type": "unused"
         },
         "y": {
+          "description": "start operating inside a text object",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operating inside a text object",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operating inside a text object",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -882,14 +909,17 @@
         "dShift": {
         },
         "y": {
+          "type": "unused"
         },
         "yShift": {
         },
         "c": {
+          "type": "unused"
         },
         "cShift": {
         },
         "=": {
+          "type": "unused"
         },
         "=Shift": {
         }
@@ -1019,14 +1049,17 @@
           "type": "unused"
         },
         "y": {
+          "type": "unused"
         },
         "yShift": {
         },
         "c": {
+          "type": "unused"
         },
         "cShift": {
         },
         "=": {
+          "type": "unused"
         },
         "=Shift": {
         }
@@ -1095,14 +1128,17 @@
           "type": "unused"
         },
         "y": {
+          "type": "unused"
         },
         "yShift": {
         },
         "c": {
+          "type": "unused"
         },
         "cShift": {
         },
         "=": {
+          "type": "unused"
         },
         "=Shift": {
         }
@@ -1163,14 +1199,17 @@
           "type": "unused"
         },
         "y": {
+          "type": "unused"
         },
         "yShift": {
         },
         "c": {
+          "type": "unused"
         },
         "cShift": {
         },
         "=": {
+          "type": "unused"
         },
         "=Shift": {
         }
@@ -1234,14 +1273,17 @@
           "type": "unused"
         },
         "y": {
+          "type": "unused"
         },
         "yShift": {
         },
         "c": {
+          "type": "unused"
         },
         "cShift": {
         },
         "=": {
+          "type": "unused"
         },
         "=Shift": {
         }
@@ -1306,14 +1348,17 @@
           "type": "unused"
         },
         "y": {
+          "type": "unused"
         },
         "yShift": {
         },
         "c": {
+          "type": "unused"
         },
         "cShift": {
         },
         "=": {
+          "type": "unused"
         },
         "=Shift": {
         }
@@ -1442,14 +1487,17 @@
           "type": "unused"
         },
         "y": {
+          "type": "unused"
         },
         "yShift": {
         },
         "c": {
+          "type": "unused"
         },
         "cShift": {
         },
         "=": {
+          "type": "unused"
         },
         "=Shift": {
         }
@@ -1514,14 +1562,20 @@
           "type": "extended"
         },
         "y": {
+          "description": "start operation",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operation",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operation",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -1649,14 +1703,17 @@
           "type": "unused"
         },
         "y": {
+          "type": "unused"
         },
         "yShift": {
         },
         "c": {
+          "type": "unused"
         },
         "cShift": {
         },
         "=": {
+          "type": "unused"
         },
         "=Shift": {
         }
@@ -1716,14 +1773,18 @@
           "type": "unused"
         },
         "y": {
+          "description": "operate over N lines",
+          "type": "operation"
         },
         "yShift": {
         },
         "c": {
+          "type": "unused"
         },
         "cShift": {
         },
         "=": {
+          "type": "unused"
         },
         "=Shift": {
         }
@@ -1787,14 +1848,20 @@
           "type": "unused"
         },
         "y": {
+          "description": "start operation",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operation",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operation",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -1921,14 +1988,20 @@
           "type": "unused"
         },
         "y": {
+          "description": "start operation",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operation",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operation",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -1988,14 +2061,20 @@
           "type": "unused"
         },
         "y": {
+          "description": "start operation",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operation",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operation",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -2056,14 +2135,20 @@
         "dShift": {
         },
         "y": {
+          "description": "start operation",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operation",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operation",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -2122,14 +2207,20 @@
         "dShift": {
         },
         "y": {
+          "description": "start operation",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operation",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operation",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -2187,14 +2278,20 @@
         "dShift": {
         },
         "y": {
+          "description": "start operation",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operation",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operation",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -2255,14 +2352,20 @@
         "dShift": {
         },
         "y": {
+          "description": "start operation",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operation",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operation",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -2322,14 +2425,20 @@
           "type": "unused"
         },
         "y": {
+          "description": "start operation",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operation",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operation",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -2393,14 +2502,20 @@
         "dShift": {
         },
         "y": {
+          "description": "start operation",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operation",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operation",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -2459,14 +2574,20 @@
         "dShift": {
         },
         "y": {
+          "description": "start operation",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operation",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operation",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -2658,14 +2779,18 @@
         "dShift": {
         },
         "y": {
+          "type": "unused"
         },
         "yShift": {
         },
         "c": {
+          "type": "unused"
         },
         "cShift": {
         },
         "=": {
+          "description": "operate over N lines",
+          "type": "operation"
         },
         "=Shift": {
         }
@@ -2859,14 +2984,20 @@
         "dShift": {
         },
         "y": {
+          "description": "start operation",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operation",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operation",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -2929,14 +3060,20 @@
         "dShift": {
         },
         "y": {
+          "description": "start operation",
+          "type": "extended"
         },
         "yShift": {
         },
         "c": {
+          "description": "start operation",
+          "type": "extended"
         },
         "cShift": {
         },
         "=": {
+          "description": "start operation",
+          "type": "extended"
         },
         "=Shift": {
         }
@@ -2993,14 +3130,17 @@
         "dShift": {
         },
         "y": {
+          "type": "unused"
         },
         "yShift": {
         },
         "c": {
+          "type": "unused"
         },
         "cShift": {
         },
         "=": {
+          "type": "unused"
         },
         "=Shift": {
         }
@@ -3323,14 +3463,17 @@
           "type": "unused"
         },
         "y": {
+          "type": "unused"
         },
         "yShift": {
         },
         "c": {
+          "type": "unused"
         },
         "cShift": {
         },
         "=": {
+          "type": "unused"
         },
         "=Shift": {
         }
