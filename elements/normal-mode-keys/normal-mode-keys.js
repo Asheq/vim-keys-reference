@@ -28,7 +28,7 @@ class NormalModeKeys extends Polymer.Element {
               'control',
             ],
           }, {
-            name: 'Z and z',
+            name: 'z and Z',
             id: 'z',
             variations: [
               'z',
