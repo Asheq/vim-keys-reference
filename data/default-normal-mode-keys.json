@@ -77,12 +77,10 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     }, {
@@ -153,8 +151,7 @@
           "type": "command"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     }, {
@@ -237,8 +234,7 @@
           "type": "command"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     }, {
@@ -325,8 +321,7 @@
           "type": "command"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     }, {
@@ -397,12 +392,10 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     }, {
@@ -489,7 +482,7 @@
       "shiftKey": "G",
       "variations": {
         "base": {
-          "description": "extended commands starting with 'g'",
+          "description": "commands starting with 'g'",
           "type": "extended"
         },
         "shift": {
@@ -558,12 +551,11 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "description": "commands starting with '<C-w>g'",
+          "type": "extended"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     }, {
@@ -730,8 +722,7 @@
           "type": "command"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     }, {
@@ -1035,12 +1026,10 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     }, {
@@ -1115,8 +1104,7 @@
           "type": "command"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     }, {
@@ -1198,8 +1186,7 @@
           "type": "command"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     }, {
@@ -1296,7 +1283,7 @@
       "shiftKey": "Q",
       "variations": {
         "base": {
-          "description": "record typed characters into named register {0-9a-zA-Z}(uppercase to append). There are three special cases (q: q/ q?)",
+          "description": "record typed characters into named register {0-9a-zA-Z}(uppercase to append)",
           "type": "command"
         },
         "shift": {
@@ -1368,8 +1355,7 @@
           "type": "command"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
 
       }
@@ -1692,12 +1678,10 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1788,8 +1772,7 @@
           "type": "command"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -1839,7 +1822,7 @@
           "type": "unused"
         },
         "control": {
-          "description": "window commands",
+          "description": "commands starting with 'C-w>' (window-related)",
           "type": "extended"
         },
         "d": {
@@ -1945,8 +1928,7 @@
           "type": "command"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -2022,12 +2004,10 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -2036,11 +2016,11 @@
       "shiftKey": "Z",
       "variations": {
         "base": {
-          "description": "extended commands starting with 'z'",
+          "description": "commands starting with 'z'",
           "type": "extended"
         },
         "shift": {
-          "description": "extended commands starting with 'Z'",
+          "description": "commands starting with 'Z'",
           "type": "extended"
         },
         "g": {
@@ -2114,8 +2094,7 @@
           "type": "command"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -2189,12 +2168,10 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -2272,12 +2249,10 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -2356,12 +2331,10 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -2438,12 +2411,10 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -2518,12 +2489,10 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -2597,12 +2566,10 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -2679,12 +2646,11 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "description": "split current window and edit alternate file N",
+          "type": "command"
         }
       }
     },
@@ -2763,12 +2729,10 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -2848,12 +2812,10 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -2928,12 +2890,10 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -3001,12 +2961,10 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -3075,12 +3033,12 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "description": "decrease current window height N lines",
+          "type": "command"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "description": "set current window height to N (default: very high)",
+          "type": "command"
         }
       }
     },
@@ -3155,12 +3113,12 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "description": "make all windows the same height & width",
+          "type": "command"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "description": "increase current window height N lines",
+          "type": "command"
         }
       }
     },
@@ -3232,12 +3190,10 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -3308,12 +3264,10 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -3322,7 +3276,7 @@
       "shiftKey": "{",
       "variations": {
         "base": {
-          "description": "square bracket commands",
+          "description": "commands starting with '['",
           "type": "extended"
         },
         "shift": {
@@ -3392,12 +3346,10 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -3406,7 +3358,7 @@
       "shiftKey": "}",
       "variations": {
         "base": {
-          "description": "square bracket commands",
+          "description": "commands starting with ']'",
           "type": "extended"
         },
         "shift": {
@@ -3476,12 +3428,12 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "description": "split window and jump to tag under cursor",
+          "type": "command"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "description": "show tag under cursor in preview window",
+          "type": "command"
         }
       }
     },
@@ -3527,7 +3479,7 @@
           "type": "unused"
         },
         "control": {
-          "description": "reserved for extensions",
+          "description": "commands starting with '<C-\\>' (reserved for extensions)",
           "type": "extended"
         },
         "d": {
@@ -3551,12 +3503,11 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "description": "set window width to N columns",
+          "type": "command"
         }
       }
     },
@@ -3627,12 +3578,10 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -3705,12 +3654,10 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -3782,12 +3729,10 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -3859,12 +3804,11 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "description": "decrease current window width N columns",
+          "type": "command"
         }
       }
     },
@@ -3939,12 +3883,11 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "description": "increase current window width N columns",
+          "type": "command"
         }
       }
     },
@@ -4013,12 +3956,10 @@
         "=Shift": {
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     },
@@ -4090,12 +4031,10 @@
           "type": "unused"
         },
         "<C-w>": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         },
         "<C-w>Shift": {
-          "description": "",
-          "type": ""
+          "type": "unused"
         }
       }
     }

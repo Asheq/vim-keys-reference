@@ -28,7 +28,7 @@ class NormalModeKeys extends Polymer.Element {
               'control',
             ],
           }, {
-            name: 'z and Z',
+            name: 'Starting with z or Z',
             id: 'z',
             variations: [
               'z',
@@ -37,7 +37,7 @@ class NormalModeKeys extends Polymer.Element {
               'ZShift'
             ],
           }, {
-            name: 'Square Bracket',
+            name: 'Starting with ] or [',
             id: 'square',
             variations: [
               'leftSquareBracket',
@@ -46,26 +46,16 @@ class NormalModeKeys extends Polymer.Element {
               'rightSquareBracketShift',
             ],
           }, {
-            name: 'Starting with Operator',
-            id: 'operator',
-            variations: [
-              'd',
-              'y',
-              'c',
-              '=',
-              'dShift',
-              'yShift',
-              'cShift',
-              '=Shift',
-            ]
-          }, {
-            name: 'Other',
+            name: 'Starting with <C-w>, <C-\\>, or q',
             id: 'other',
             variations: [
               '<C-w>',
               '<C-w>Shift'
               // '<C-\>',
               // 'q',
+              // '<C-w>g',
+
+              // STRETCH:
               // '@',
               // '"',
 
@@ -79,6 +69,19 @@ class NormalModeKeys extends Polymer.Element {
               // 't',
               // "F",
               // "T",
+            ]
+          }, {
+            name: 'Starting with d, y, c, or =',
+            id: 'operator',
+            variations: [
+              'd',
+              'y',
+              'c',
+              '=',
+              'dShift',
+              'yShift',
+              'cShift',
+              '=Shift',
             ]
           }]
         }
