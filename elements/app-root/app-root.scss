@@ -25,9 +25,12 @@
   padding-top: 1rem;
   text-decoration: none;
   color: black;
+  font-size: 1.5em;
+  font-weight: normal;
 }
 
 .modes-list a.iron-selected {
   font-weight: bold;
   text-decoration: underline;
+  color: var(--app-primary-color);
 }

@@ -46,13 +46,13 @@ class NormalModeKeys extends Polymer.Element {
               'rightSquareBracketShift',
             ],
           }, {
-            name: 'Starting with <C-w>, <C-\\>, or q',
+            name: 'Starting with <C-w> or q',
             id: 'other',
             variations: [
               '<C-w>',
               '<C-w>Shift'
-              // '<C-\>',
               // 'q',
+              // '<C-\>',
               // '<C-w>g',
 
               // STRETCH:
