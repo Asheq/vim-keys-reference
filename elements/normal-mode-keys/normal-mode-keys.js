@@ -4,7 +4,7 @@ class NormalModeKeys extends Polymer.Element {
     return {
       selectedTab: {
         type: Number,
-        value: 4
+        value: 3
       },
       keys: {
         type: Object,
@@ -46,29 +46,22 @@ class NormalModeKeys extends Polymer.Element {
               'rightSquareBracketShift',
             ],
           }, {
-            name: 'Starting with <C-w> or q',
-            id: 'other',
+            name: 'Starting with <C-w>',
+            id: 'window',
             variations: [
               '<C-w>',
-              '<C-w>Shift'
-              // 'q',
-              // '<C-\>',
-              // '<C-w>g',
-
-              // STRETCH:
-              // '@',
-              // '"',
-
-              // STRETCH:
-              // 'm',
-              // '`',
-              // "'",
-
-              // STRETCH:
-              // 'f',
-              // 't',
-              // "F",
-              // "T",
+              '<C-w>Shift',
+              // <C-w>g
+            ]
+          }, {
+            name: 'Starting with q, @, or "',
+            id: 'register',
+            variations: [
+              'q',
+              'qShift',
+              // @
+              // @Shift
+              // "
             ]
           }, {
             name: 'Starting with d, y, c, or =',
@@ -84,6 +77,20 @@ class NormalModeKeys extends Polymer.Element {
               '=Shift',
             ]
           }]
+
+          // MARKS:
+          // m
+          // `
+          // '
+
+          // RESERVED (don't):
+          // <C-\>
+
+          // FORWARD/BACKWARDS (don't):
+          // f
+          // t
+          // F
+          // T
         }
       }
     }
@@ -187,6 +194,12 @@ class NormalModeKeys extends Polymer.Element {
         break
       case '<C-w>Shift':
         prettyDisplay = '<C-w>' + shiftKey
+        break
+      case 'q':
+        prettyDisplay = 'q' + baseKey
+        break
+      case 'qShift':
+        prettyDisplay = 'q' + shiftKey
         break
       default:
         prettyDisplay = ''
