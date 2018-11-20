@@ -61,7 +61,8 @@ class NormalModeKeys extends Polymer.Element {
               'qShift',
               '@',
               '@Shift',
-              '"'
+              '"',
+              '"Shift'
             ]
           }, {
             name: 'Starting with d, y, c, or =',

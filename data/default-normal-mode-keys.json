@@ -100,6 +100,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -190,6 +193,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -292,6 +298,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -398,6 +407,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -490,6 +502,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -588,6 +603,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -688,6 +706,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -784,6 +805,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -893,6 +917,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -991,6 +1018,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -1086,6 +1116,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -1178,6 +1211,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -1276,6 +1312,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -1370,6 +1409,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -1471,6 +1513,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -1579,6 +1624,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     }, {
@@ -1678,6 +1726,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
 
       }
@@ -1782,6 +1833,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -1887,6 +1941,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -1981,6 +2038,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -2080,6 +2140,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -2190,6 +2253,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -2284,6 +2350,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -2384,6 +2453,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -2482,6 +2554,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -2588,6 +2663,9 @@
         "\"": {
           "type": "command",
           "description": "use register for next delete, yank or put"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -2677,6 +2755,13 @@
         },
         "@Shift": {
           "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
+          "type": "command",
+          "description": "selection and drop register"
         }
       }
     },
@@ -2771,6 +2856,12 @@
           "description": "execute the contents of register N times"
         },
         "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
           "type": "unused"
         }
       }
@@ -2869,6 +2960,12 @@
         "@Shift": {
           "type": "command",
           "description": "repeat the previous @{a-z} N times"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -2963,6 +3060,13 @@
         },
         "@Shift": {
           "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
+          "type": "command",
+          "description": "alternate buffer register"
         }
       }
     },
@@ -3055,6 +3159,12 @@
         },
         "@Shift": {
           "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -3146,6 +3256,13 @@
         },
         "@Shift": {
           "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
+          "type": "command",
+          "description": "current file name register (read-only)"
         }
       }
     },
@@ -3240,6 +3357,12 @@
           "description": "execute the contents of register N times"
         },
         "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
           "type": "unused"
         }
       }
@@ -3336,6 +3459,12 @@
           "description": "execute the contents of register N times"
         },
         "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
           "type": "unused"
         }
       }
@@ -3434,6 +3563,13 @@
         },
         "@Shift": {
           "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
+          "type": "command",
+          "description": "selection and drop register"
         }
       }
     },
@@ -3526,6 +3662,12 @@
         },
         "@Shift": {
           "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -3610,6 +3752,12 @@
           "description": "execute the contents of register N times"
         },
         "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
           "type": "unused"
         }
       }
@@ -3697,6 +3845,14 @@
         },
         "@Shift": {
           "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "small delete register"
+        },
+        "\"Shift": {
+          "type": "command",
+          "description": "black hole register"
         }
       }
     },
@@ -3789,6 +3945,14 @@
         },
         "@Shift": {
           "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "expression register"
+        },
+        "\"Shift": {
+          "type": "command",
+          "description": "selection and drop register"
         }
       }
     },
@@ -3876,6 +4040,12 @@
         },
         "@Shift": {
           "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -3961,6 +4131,12 @@
           "type": "unused"
         },
         "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
           "type": "unused"
         }
       }
@@ -4055,6 +4231,12 @@
           "type": "unused"
         },
         "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
           "type": "unused"
         }
       }
@@ -4152,6 +4334,12 @@
         },
         "@Shift": {
           "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -4237,6 +4425,12 @@
           "type": "unused"
         },
         "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
           "type": "unused"
         }
       }
@@ -4326,6 +4520,13 @@
         "@Shift": {
           "type": "command",
           "description": "repeat the previous ':' command N times"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
+          "type": "command",
+          "description": "most recent executed command-line register (read-only)"
         }
       }
     },
@@ -4415,6 +4616,13 @@
         },
         "@Shift": {
           "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
+          "type": "command",
+          "description": "unnamed register"
         }
       }
     },
@@ -4501,6 +4709,12 @@
           "type": "unused"
         },
         "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
           "type": "unused"
         }
       }
@@ -4589,6 +4803,12 @@
           "type": "unused"
         },
         "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
           "type": "unused"
         }
       }
@@ -4681,6 +4901,13 @@
         },
         "@Shift": {
           "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "most recent inserted text register (read-only)"
+        },
+        "\"Shift": {
+          "type": "unused"
         }
       }
     },
@@ -4766,6 +4993,13 @@
           "type": "unused"
         },
         "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "last search pattern register"
+        },
+        "\"Shift": {
           "type": "unused"
         }
       }
@@ -4853,6 +5087,12 @@
           "type": "unused"
         },
         "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "unused"
+        },
+        "\"Shift": {
           "type": "unused"
         }
       }

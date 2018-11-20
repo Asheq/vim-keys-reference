@@ -8,9 +8,6 @@
 '{		cursor to the first CHAR on the line of the start of the current paragraph
 '}		cursor to the first CHAR on the line of the end of the current paragraph
 
-@:		repeat the previous ':' command N times
-@@		repeat the previous @{a-z} N times
-
 `(		cursor to the start of the current sentence
 `)		cursor to the end of the current sentence
 `<		cursor to the start of the highlighted area
