@@ -89,6 +89,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -168,6 +179,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -259,6 +281,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -354,6 +387,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -435,6 +479,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -522,6 +577,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -611,6 +677,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -696,6 +773,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -794,6 +882,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -881,6 +980,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -965,6 +1075,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -1046,6 +1167,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -1133,6 +1265,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -1216,6 +1359,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -1306,6 +1460,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -1403,6 +1568,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     }, {
@@ -1491,6 +1667,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
 
       }
@@ -1584,6 +1771,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     },
@@ -1678,6 +1876,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     },
@@ -1761,6 +1970,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     },
@@ -1849,6 +2069,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     },
@@ -1948,6 +2179,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     },
@@ -2031,6 +2273,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     },
@@ -2120,6 +2373,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     },
@@ -2207,6 +2471,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     },
@@ -2302,6 +2577,17 @@
         "qShift": {
           "type": "command",
           "description": "append typed characters into named register"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register {a-z} N times"
+        },
+        "@Shift": {
+          "type": "unused"
+        },
+        "\"": {
+          "type": "command",
+          "description": "use register for next delete, yank or put"
         }
       }
     },
@@ -2384,6 +2670,12 @@
           "type": "unused"
         },
         "qShift": {
+          "type": "unused"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
           "type": "unused"
         }
       }
@@ -2472,6 +2764,13 @@
           "description": "record typed characters into named register"
         },
         "qShift": {
+          "type": "unused"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
           "type": "unused"
         }
       }
@@ -2562,6 +2861,14 @@
         },
         "qShift": {
           "type": "unused"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "command",
+          "description": "repeat the previous @{a-z} N times"
         }
       }
     },
@@ -2649,6 +2956,13 @@
         },
         "qShift": {
           "type": "unused"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
         }
       }
     },
@@ -2734,6 +3048,13 @@
         },
         "qShift": {
           "type": "unused"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
         }
       }
     },
@@ -2817,6 +3138,13 @@
           "description": "record typed characters into named register"
         },
         "qShift": {
+          "type": "unused"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
           "type": "unused"
         }
       }
@@ -2906,6 +3234,13 @@
         },
         "qShift": {
           "type": "unused"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
         }
       }
     },
@@ -2994,6 +3329,13 @@
           "description": "record typed characters into named register"
         },
         "qShift": {
+          "type": "unused"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
           "type": "unused"
         }
       }
@@ -3085,6 +3427,13 @@
         },
         "qShift": {
           "type": "unused"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
         }
       }
     },
@@ -3170,6 +3519,13 @@
         },
         "qShift": {
           "type": "unused"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
+          "type": "unused"
         }
       }
     },
@@ -3247,6 +3603,13 @@
           "description": "record typed characters into named register"
         },
         "qShift": {
+          "type": "unused"
+        },
+        "@": {
+          "type": "command",
+          "description": "execute the contents of register N times"
+        },
+        "@Shift": {
           "type": "unused"
         }
       }
@@ -3327,6 +3690,12 @@
           "type": "unused"
         },
         "qShift": {
+          "type": "unused"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
           "type": "unused"
         }
       }
@@ -3414,6 +3783,12 @@
         },
         "qShift": {
           "type": "unused"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
+          "type": "unused"
         }
       }
     },
@@ -3495,6 +3870,12 @@
         },
         "qShift": {
           "type": "unused"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
+          "type": "unused"
         }
       }
     },
@@ -3574,6 +3955,12 @@
           "type": "unused"
         },
         "qShift": {
+          "type": "unused"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
           "type": "unused"
         }
       }
@@ -3662,6 +4049,12 @@
           "type": "unused"
         },
         "qShift": {
+          "type": "unused"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
           "type": "unused"
         }
       }
@@ -3753,6 +4146,12 @@
         },
         "qShift": {
           "type": "unused"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
+          "type": "unused"
         }
       }
     },
@@ -3832,6 +4231,12 @@
           "type": "unused"
         },
         "qShift": {
+          "type": "unused"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
           "type": "unused"
         }
       }
@@ -3914,6 +4319,13 @@
         "qShift": {
           "type": "command",
           "description": "edit : command-line in command-line window"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
+          "type": "command",
+          "description": "repeat the previous ':' command N times"
         }
       }
     },
@@ -3997,6 +4409,12 @@
         "qShift": {
           "type": "command",
           "description": "record typed characters into named register"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
+          "type": "unused"
         }
       }
     },
@@ -4077,6 +4495,12 @@
           "type": "unused"
         },
         "qShift": {
+          "type": "unused"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
           "type": "unused"
         }
       }
@@ -4159,6 +4583,12 @@
           "type": "unused"
         },
         "qShift": {
+          "type": "unused"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
           "type": "unused"
         }
       }
@@ -4245,6 +4675,12 @@
         },
         "qShift": {
           "type": "unused"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
+          "type": "unused"
         }
       }
     },
@@ -4325,6 +4761,12 @@
         "qShift": {
           "type": "command",
           "description": "edit ? command-line in command-line window"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
+          "type": "unused"
         }
       }
     },
@@ -4405,6 +4847,12 @@
           "type": "unused"
         },
         "qShift": {
+          "type": "unused"
+        },
+        "@": {
+          "type": "unused"
+        },
+        "@Shift": {
           "type": "unused"
         }
       }

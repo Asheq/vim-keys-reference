@@ -1,0 +1,12 @@
+" unnamed register
+- small delete register
+: most recent executed command-line register (read-only)
+. most recent inserted text register (read-only)
+% current file name register (read-only)
+# alternate buffer register
+= expression register
+* selection and drop register
++ selection and drop register
+~ selection and drop register
+_ black hole register
+/ last search pattern register

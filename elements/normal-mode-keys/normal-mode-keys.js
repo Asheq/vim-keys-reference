@@ -4,7 +4,7 @@ class NormalModeKeys extends Polymer.Element {
     return {
       selectedTab: {
         type: Number,
-        value: 3
+        value: 4
       },
       keys: {
         type: Object,
@@ -59,9 +59,9 @@ class NormalModeKeys extends Polymer.Element {
             variations: [
               'q',
               'qShift',
-              // @
-              // @Shift
-              // "
+              '@',
+              '@Shift',
+              '"'
             ]
           }, {
             name: 'Starting with d, y, c, or =',
@@ -200,6 +200,18 @@ class NormalModeKeys extends Polymer.Element {
         break
       case 'qShift':
         prettyDisplay = 'q' + shiftKey
+        break
+      case '@':
+        prettyDisplay = '@' + baseKey
+        break
+      case '@Shift':
+        prettyDisplay = '@' + shiftKey
+        break
+      case '"':
+        prettyDisplay = '"' + baseKey
+        break
+      case '"Shift':
+        prettyDisplay = '"' + shiftKey
         break
       default:
         prettyDisplay = ''

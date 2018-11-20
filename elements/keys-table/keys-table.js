@@ -1,7 +1,7 @@
 class KeysTable extends Polymer.Element {
   static get is() { return 'keys-table' }
   static get properties() {
-    return {
+      return {
       keys: {
         type: Array
       },
