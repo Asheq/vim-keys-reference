@@ -103,6 +103,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -196,6 +220,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -301,6 +349,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -410,6 +482,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -505,6 +601,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -606,6 +726,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -709,6 +853,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -808,6 +976,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -920,6 +1112,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -1021,6 +1237,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -1119,6 +1359,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -1214,6 +1478,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -1221,7 +1509,7 @@
       "shiftKey": "M",
       "variations": {
         "base": {
-          "description": "mark {A-Za-z} at cursor position",
+          "description": "set mark {A-Za-z} at cursor position",
           "type": "command"
         },
         "shift": {
@@ -1315,6 +1603,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -1412,6 +1724,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -1516,6 +1852,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -1627,6 +1987,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     }, {
@@ -1729,8 +2113,31 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
-
       }
     },
     {
@@ -1836,6 +2243,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -1944,6 +2375,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -2041,6 +2496,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -2143,6 +2622,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -2256,6 +2759,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -2353,6 +2880,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -2456,6 +3007,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -2557,6 +3132,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -2666,6 +3265,30 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "m": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "mShift": {
+          "type": "command",
+          "description": "set mark {A-Za-z} at cursor position"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "'Shift": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
+        },
+        "`Shift": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -2863,6 +3486,14 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -2966,6 +3597,14 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -3067,6 +3706,14 @@
         "\"Shift": {
           "type": "command",
           "description": "alternate buffer register"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -3165,6 +3812,14 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -3263,6 +3918,14 @@
         "\"Shift": {
           "type": "command",
           "description": "current file name register (read-only)"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -3364,6 +4027,14 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -3466,6 +4137,14 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -3570,6 +4249,14 @@
         "\"Shift": {
           "type": "command",
           "description": "selection and drop register"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -3668,6 +4355,14 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },
@@ -3759,6 +4454,14 @@
         },
         "\"Shift": {
           "type": "unused"
+        },
+        "'": {
+          "type": "motion",
+          "description": "cursor to the first CHAR on the line with mark {a-zA-Z0-9}"
+        },
+        "`": {
+          "type": "motion",
+          "description": "cursor to the mark {a-zA-Z0-9}"
         }
       }
     },

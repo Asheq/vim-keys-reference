@@ -18,6 +18,9 @@
 `{		cursor to the start of the current paragraph
 `}		cursor to the end of the current paragraph
 
+
+
+
 [ CTRL-D	jump to first #define found in current and included files matching the word under the cursor, start searching at beginning of current file
 [ CTRL-I	jump to first line in current and included files that contains the word under the cursor, start searching at beginning of current file
 ]_CTRL-D	jump to first #define found in current and included files matching the word under the cursor, start searching at cursor position
