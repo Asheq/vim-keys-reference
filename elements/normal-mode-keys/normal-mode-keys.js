@@ -89,15 +89,6 @@ class NormalModeKeys extends Polymer.Element {
               '=Shift',
             ]
           }]
-
-          // RESERVED (don't):
-          // <C-\>
-
-          // FORWARD/BACKWARDS (don't):
-          // f
-          // t
-          // F
-          // T
         }
       }
     }
