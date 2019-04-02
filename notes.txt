@@ -1,7 +1,7 @@
 http://www.viemu.com/vi-vim-cheat-sheet.gif
 
 Note: Vim by default uses 'z' as a name-space for:
-  > Scrolling (both horizontal and vertical)
+  > Scrolling
   > Folding
   > Spelling
   > Changing window height
