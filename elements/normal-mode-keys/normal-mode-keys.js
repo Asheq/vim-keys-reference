@@ -4,7 +4,7 @@ class NormalModeKeys extends Polymer.Element {
     return {
       selectedTab: {
         type: Number,
-        value: 5
+        value: 4
       },
       keys: {
         type: Object,

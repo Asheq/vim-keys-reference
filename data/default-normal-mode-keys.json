@@ -4241,7 +4241,8 @@
           "description": "execute the contents of register N times"
         },
         "@Shift": {
-          "type": "unused"
+          "type": "command",
+          "description": "execute the contents of register N times"
         },
         "\"": {
           "type": "unused"
@@ -4644,10 +4645,12 @@
           "type": "unused"
         },
         "@": {
-          "type": "unused"
+          "type": "command",
+          "description": "execute the contents of register N times"
         },
         "@Shift": {
-          "type": "unused"
+          "type": "command",
+          "description": "execute the contents of register N times"
         },
         "\"": {
           "type": "command",
@@ -5318,7 +5321,8 @@
           "type": "unused"
         },
         "@Shift": {
-          "type": "unused"
+          "type": "command",
+          "description": "execute the contents of register N times"
         },
         "\"": {
           "type": "unused"
@@ -5600,7 +5604,8 @@
           "type": "unused"
         },
         "@": {
-          "type": "unused"
+          "type": "command",
+          "description": "execute the contents of register N times"
         },
         "@Shift": {
           "type": "unused"
