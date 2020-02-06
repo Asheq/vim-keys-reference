@@ -1,5 +1,5 @@
 var fs = require('fs');
-const util = require('util')
+const util = require('util');
 
 fs.readFile('source-data.tsv', parse);
 
@@ -37,10 +37,23 @@ function parse(err, data) {
       key = '<' + key;
       key = GET_LOWER_CASE[key] || key;
       bin = control;
+    } else if (char.startsWith('<S-')) {
+      const idx = char.indexOf('-');
+      key = char.slice(idx + 1);
+      key = '<' + key;
+      key = GET_LOWER_CASE[key] || key;
+      bin = shift;
     } else {
-      key = char.replace('["x"]', '');
-      key = key.replace(/{.*}/g, '');
-      key = key[0];
+      key = char.replace('["x]', ''); // Remove register prefix
+      key = key.replace(/{.*?}/g, ''); // Remove {...} anywhere in key (TODO: too strong?)
+      const match = key.match(/<.*?>/); // Check if key is of form <...>
+      if (match && match.index === 0 ) {
+        // Key is of form <...>
+        key = match[0];
+      } else {
+        // Key is a single character
+        key = key[0];
+      }
       if (GET_LOWER_CASE[key]) {
         bin = shift;
         key = GET_LOWER_CASE[key];
@@ -52,22 +65,29 @@ function parse(err, data) {
     if (bin && key) {
       if (bin[key]) {
         const existingObject = bin[key];
+
         let newWrapperObject;
         if (existingObject.multiple) {
+          // Already a wrapper object
           existingObject.multiple.push(object);
           newWrapperObject = existingObject;
         } else {
           newWrapperObject = {};
-          newWrapperObject.multiple = [object];
+          newWrapperObject.multiple = [existingObject, object];
         }
+
         bin[key] = newWrapperObject;
       } else {
         bin[key] = object;
       }
     }
   }
+
+  console.log('const base = ');
   console.log(util.inspect(base, false, null));
+  console.log('const shift = ');
   console.log(util.inspect(shift, false, null));
+  console.log('const control = ');
   console.log(util.inspect(control, false, null));
 }
 
@@ -98,6 +118,7 @@ const GET_LOWER_CASE = {
   X: 'x',
   Y: 'y',
   Z: 'z',
+  '~': '`',
   '!': '1',
   '@': '2',
   '#': '3',
@@ -124,4 +145,8 @@ const GET_LOWER_CASE = {
   '<S-Right>': '<Right>',
   '<S-RightMouse>': '<RightMouse>',
   '<S-Up>': '<Up>',
+  '<S-ScrollWheelDown>': '<ScrollWheelDown>',
+  '<S-ScrollWheelLeft>': '<ScrollWheelLeft>',
+  '<S-ScrollWheelRight>': '<ScrollWheelRight>',
+  '<S-ScrollWheelUp>': '<ScrollWheelUp>',
 };
