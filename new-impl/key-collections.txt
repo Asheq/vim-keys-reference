@@ -1,0 +1,19 @@
+{char}
+        usually represents any printable character (including <Tab> but not <BS>) but sometimes {char} is used lazily (e.g. CTRL-W {char})
+
+{motion}
+        always represents a motion; always follows an operator
+
+{a-zA-Z0-9.%#:-"}
+{a-zA-Z0-9}
+{A-Za-z}
+{0-9a-zA-Z"}
+{a-z}
+        always represents those characters exactly
+
+{count}
+        irrelevant because it is a prefix
+
+{filter}
+{pattern}
+        irrelevant because they invoke a prompt where you can type anything
