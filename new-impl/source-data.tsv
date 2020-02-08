@@ -285,3 +285,52 @@
 |CTRL-W_<Up>|	CTRL-W <Up>		same as "CTRL-W k"
 |CTRL-W_<Left>|	CTRL-W <Left>		same as "CTRL-W h"
 |CTRL-W_<Right>|	CTRL-W <Right>		same as "CTRL-W l"
+
+
+
+|[_CTRL-D|	[ CTRL-D		jump to first #define found in current and included files matching the word under the cursor, start searching at beginning of current file
+|[_CTRL-I|	[ CTRL-I		jump to first line in current and included files that contains the word under the cursor, start searching at beginning of current file
+|[#|	[#	1	cursor to N previous unmatched #if, #else or #ifdef
+|['|	['	1	cursor to previous lowercase mark, on first non-blank
+|[(|	[(	1	cursor N times back to unmatched '('
+|[star|	[*	1	same as "[/"
+|[`|	[`	1	cursor to previous lowercase mark
+|[/|	[/	1	cursor to N previous start of a C comment
+|[D|	[D		list all defines found in current and included files matching the word under the cursor, start searching at beginning of current file
+|[I|	[I		list all lines found in current and included files that contain the word under the cursor, start searching at beginning of current file
+|[P|	[P	2	same as "[p"
+|[[|	[[	1	cursor N sections backward
+|[]|	[]	1	cursor N SECTIONS backward
+|[c|	[c	1	cursor N times backwards to start of change
+|[d|	[d		show first #define found in current and included files matching the word under the cursor, start searching at beginning of current file
+|[f|	[f		same as "gf"
+|[i|	[i		show first line found in current and included files that contains the word under the cursor, start searching at beginning of current file
+|[m|	[m	1	cursor N times back to start of member function
+|[p|	[p	2	like "P", but adjust indent to current line
+|[s|	[s	1	move to the previous misspelled word
+|[z|	[z	1	move to start of open fold
+|[{|	[{	1	cursor N times back to unmatched '{'
+|[<MiddleMouse>|	[<MiddleMouse>	2	same as "[p"
+|]_CTRL-D|	] CTRL-D		jump to first #define found in current and included files matching the word under the cursor, start searching at cursor position
+|]_CTRL-I|	] CTRL-I		jump to first line in current and included files that contains the word under the cursor, start searching at cursor position
+|]#|	]#	1	cursor to N next unmatched #endif or #else
+|]'|	]'	1	cursor to next lowercase mark, on first non-blank
+|])|	])	1	cursor N times forward to unmatched ')'
+|]star|	]*	1	same as "]/"
+|]`|	]`	1	cursor to next lowercase mark
+|]/|	]/	1	cursor to N next end of a C comment
+|]D|	]D		list all #defines found in current and included files matching the word under the cursor, start searching at cursor position
+|]I|	]I		list all lines found in current and included files that contain the word under the cursor, start searching at cursor position
+|]P|	]P	2	same as "[p"
+|][|	][	1	cursor N SECTIONS forward
+|]]|	]]	1	cursor N sections forward
+|]c|	]c	1	cursor N times forward to start of change
+|]d|	]d		show first #define found in current and included files matching the word under the cursor, start searching at cursor position
+|]f|	]f		same as "gf"
+|]i|	]i		show first line found in current and included files that contains the word under the cursor, start searching at cursor position
+|]m|	]m	1	cursor N times forward to end of member function
+|]p|	]p	2	like "p", but adjust indent to current line
+|]s|	]s	1	move to next misspelled word
+|]z|	]z	1	move to end of open fold
+|]}|	]}	1	cursor N times forward to unmatched '}'
+|]<MiddleMouse>|	]<MiddleMouse>	2	same as "]p"
