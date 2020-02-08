@@ -3,94 +3,150 @@ const util = require('util');
 
 fs.readFile('source-data.tsv', parse);
 
-// Bins
-control = {};
-base = {};
-shift = {};
+const binSets = {
+  // Object keys are starting keys (or 'none') like z or d
+  none: {
+    // Object keys are various types of modifiers
+    control: {},
+    unmod: {},
+    shift: {},
+  },
+};
 
 // Parse tsv
 function parse(err, data) {
   if (err) throw err;
   var lines = data.toString().split('\n');
-  for (i in lines) {
-    const line = lines[i];
-    if (line === '') {
-      continue;
-    }
-    const [tag, char, note, desc] = line.split('\t');
-    const object = {
-      tag,
-      char,
-      note,
-      desc,
-    };
-    let bin;
-    let key;
-    if (char.startsWith('CTRL-')) {
-      const idx = char.indexOf('-');
-      key = char.slice(idx + 1).split(' ')[0];
-      key = GET_LOWER_CASE[key] || key;
-      bin = control;
-    } else if (char.startsWith('<C-')) {
-      const idx = char.indexOf('-');
-      key = char.slice(idx + 1);
-      key = '<' + key;
-      key = GET_LOWER_CASE[key] || key;
-      bin = control;
-    } else if (char.startsWith('<S-')) {
-      const idx = char.indexOf('-');
-      key = char.slice(idx + 1);
-      key = '<' + key;
-      key = GET_LOWER_CASE[key] || key;
-      bin = shift;
-    } else {
-      key = char.replace('["x]', ''); // Remove register prefix
-      key = key.replace(/{.*?}/g, ''); // Remove {...} anywhere in key (TODO: too strong?)
-      const match = key.match(/<.*?>/); // Check if key is of form <...>
-      if (match && match.index === 0 ) {
-        // Key is of form <...>
-        key = match[0];
-      } else {
-        // Key is a single character
-        key = key[0];
-      }
-      if (GET_LOWER_CASE[key]) {
-        bin = shift;
-        key = GET_LOWER_CASE[key];
-      } else {
-        bin = base;
-      }
-    }
-
-    if (bin && key) {
-      if (bin[key]) {
-        const existingObject = bin[key];
-
-        let newWrapperObject;
-        if (existingObject.multiple) {
-          // Already a wrapper object
-          existingObject.multiple.push(object);
-          newWrapperObject = existingObject;
-        } else {
-          newWrapperObject = {};
-          newWrapperObject.multiple = [existingObject, object];
-        }
-
-        bin[key] = newWrapperObject;
-      } else {
-        bin[key] = object;
-      }
-    }
-  }
-
-  console.log('const base = ');
-  console.log(util.inspect(base, false, null));
-  console.log('const shift = ');
-  console.log(util.inspect(shift, false, null));
-  console.log('const control = ');
-  console.log(util.inspect(control, false, null));
+  const commands = lines
+    .filter(line => line !== '')
+    .map(line => {
+      const [tag, char, note, desc] = line.split('\t');
+      return {
+        tag,
+        char,
+        note,
+        desc,
+      };
+    });
+  categorizeCommands(commands);
 }
 
+function categorizeCommands(commands) {
+  commands.forEach(command => {
+    let { char } = command;
+    char = char.replace(/^\["x\]/, ''); // ["x] always appears at beginning
+    char = char.replace(/^\{count\}/, ''); // {count} always appears at beginning
+    const keyChordSequence = getKeyChordSequence(char);
+    console.log(keyChordSequence.join('\t'));
+  });
+}
+
+function getKeyChordSequence(sequenceAsString) {
+  const sequenceAsArray = [];
+  while (sequenceAsString !== '') {
+    while (sequenceAsString[0] === ' ') {
+      sequenceAsString = sequenceAsString.slice(1);
+    }
+
+    let match = sequenceAsString.match(/^<.*>|^CTRL-.|^{.*?}/);
+
+    let keyChord;
+
+    if (match === null) {
+      keyChord = sequenceAsString[0];
+    } else {
+      keyChord = match[0];
+    }
+
+    sequenceAsArray.push(keyChord);
+    sequenceAsString = sequenceAsString.replace(keyChord, '');
+  }
+  return sequenceAsArray;
+}
+
+// function categorizeCommands(binSet, commands, startingChar) {
+//   let modifier; // Will be used to decide which bin to put in
+//   let baseKey; // Will be used to decide where to place in said bin
+
+//   commands.forEach(command => {
+//     let { char } = command;
+//     char = char.replace('["x]', '').replace(startingChar, ''); // Remove register prefix and startingChar
+
+//     if (char.startsWith('CTRL-')) {
+//       const idx = char.indexOf('-');
+//       baseKey = char.slice(idx + 1).split(' ')[0];
+//       baseKey = GET_LOWER_CASE[baseKey] || baseKey;
+//       modifier = 'control';
+//     } else if (char.startsWith('<C-')) {
+//       const idx = char.indexOf('-');
+//       baseKey = char.slice(idx + 1);
+//       baseKey = '<' + baseKey;
+//       baseKey = GET_LOWER_CASE[baseKey] || baseKey;
+//       modifier = 'control';
+//     } else if (char.startsWith('<S-')) {
+//       const idx = char.indexOf('-');
+//       baseKey = '<' + char.slice(idx + 1);
+//       baseKey = GET_LOWER_CASE[baseKey] || baseKey;
+//       modifier = 'shift';
+//     } else {
+//       char.replace(/{.*}/g, '');
+
+//       const angleMatch = char.match(/<.*?>/); // Check if baseKey is of form <...>
+//       if (angleMatch && angleMatch.index === 0) {
+//         // baseKey is of form <...>
+//         baseKey = angleMatch[0];
+//       } else {
+//         // baseKey is a single character
+//         baseKey = char[0];
+//       }
+//       if (GET_LOWER_CASE[baseKey]) {
+//         modifier = 'shift';
+//         baseKey = GET_LOWER_CASE[baseKey];
+//       } else {
+//         modifier = 'unmod';
+//       }
+//     }
+//   });
+
+//   if (modifier && baseKey) {
+//     const bin = binSet[modifier];
+//     if (bin[baseKey]) {
+//       bin[baseKey] = {
+//         multiple: true,
+//         desc: 'multiple: see other bin',
+//       };
+//       if (!bin[baseKey].multiple) {
+//         // TODO: Add the first one to the other bin
+//       }
+
+//       const binSetId = `${startingChar}-${baseKey}`
+//       binSets[binSetId] = binSets[binSetId] || { control: {}, unmod: {}, shift: {} };
+
+//       categorizeCommands(binSets[binSetId], [command], );
+
+//       // const existingObject = bin[baseKey];
+//       // let newWrapperObject;
+//       // if (existingObject.multiple) {
+//       //   // Already a wrapper object
+//       //   existingObject.multiple.push(object);
+//       //   newWrapperObject = existingObject;
+//       // } else {
+//       //   newWrapperObject = {};
+//       //   newWrapperObject.multiple = [existingObject, object];
+//       // }
+//       // bin[baseKey] = newWrapperObject;
+//     } else {
+//       bin[baseKey] = object;
+//     }
+//   }
+// }
+
+// Object.keys(bins).forEach(binId => {
+// console.log(`const ${binId} = `);
+// console.log(util.inspect(bins[binId], false, null));
+// });
+
+// Maps a key that must be pressed with shift modifier to the base character
 const GET_LOWER_CASE = {
   A: 'a',
   B: 'b',
@@ -150,3 +206,6 @@ const GET_LOWER_CASE = {
   '<S-ScrollWheelRight>': '<ScrollWheelRight>',
   '<S-ScrollWheelUp>': '<ScrollWheelUp>',
 };
+
+// The set of all keys that are part {char}
+const chars = ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', '<Tab>', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '[', ']', '\\', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';', "'", 'z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '/', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '{', '}', '|', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ':', '"', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<', '>', '?'];
